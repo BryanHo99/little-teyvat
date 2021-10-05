@@ -1,0 +1,33 @@
+{
+  "key": "bennett",
+  "name": "班尼特",
+  "rarity": 4,
+  "element": "pyro",
+	"weaponType": "sword",
+  "materials": [
+    {
+      "key": "philosophies_of_resistance",
+      "type": "talent"
+    },
+    {
+      "key": "everflame_seed",
+      "type": "character_ascension"
+    },
+    {
+      "key": "agnidus_agate_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "windwheel_aster",
+      "type": "local"
+    },
+    {
+      "key": "golden_raven_insignia",
+      "type": "common"
+    },
+    {
+      "key": "dvalins_plume",
+      "type": "talent"
+    }
+  ]
+}

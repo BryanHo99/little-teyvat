@@ -1,0 +1,178 @@
+{
+  "key": "keqing",
+  "name": "Keqing",
+  "title": "Driving Thunder",
+  "affiliation": "Liyue Qixing",
+  "region": "liyue",
+  "rarity": 5,
+  "weaponType": "sword",
+  "substat": "CRIT DMG",
+  "element": "electro",
+  "birthday": "November 20",
+  "constellation": "Trulla Cementarii",
+  "cv": {
+    "english": "Kayli Mills",
+    "chinese": "谢莹",
+    "japanese": "喜多村英梨",
+    "korean": "이보희"
+  },
+  "description": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.",
+  "talents": [
+    {
+      "key": "talent_1",
+      "name": "Normal Attack: Yunlai Swordsmanship",
+      "description": [
+        "### Normal Attack\nPerform up to 5 rapid strikes.",
+        "### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.",
+        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+      ]
+    },
+    {
+      "key": "talent_2",
+      "name": "Stellar Restoration",
+      "description": [
+        "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder.\n\nWhen the Stiletto hits its target, it deals Electro DMG to opponents in a small AoE, and places a Stiletto Mark on the spot hit.",
+        "### Hold\nHold to adjust the direction in which the Stiletto shall be thrown.\n\nStilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time.",
+        "### Lightning Stiletto\nIf Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects:\n\n - If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash one slashing attack that deals AoE Electro DMG. When blinking to a Stiletto that was thrown from a Holding attack, Keqing can leap across obstructing terrain.\n - If Keqing uses a Charged Attack, she will ignite a series of thundering cuts at the Mark's location, dealing AoE Electro DMG.",
+        "*\"Humans are like moths, endlessly chasing the flame we call gods and adepti. But this light that I have here is my own.\"*"
+      ]
+    },
+    {
+      "key": "talent_3",
+      "name": "Starward Sword",
+      "description": [
+        "Keqing unleashes the power of lightning, dealing Electro DMG in an AOE.\n\nShe then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of Electro DMG. The final attack deals massive AoE Electro DMG.",
+        "*The swiftest technique in Keqing's personal arsenal is fast enough to bring stars crashing down.*"
+      ]
+    }
+  ],
+  "passives": [
+    {
+      "key": "talent_4",
+      "name": "Thundering Penance",
+      "description": "After recasting Stellar Restoration while a Lightning Stiletto is present, Keqing's weapon gains an Electro Infusion for 5s."
+    },
+    {
+      "key": "talent_5",
+      "name": "Aristocratic Dignity",
+      "description": "When casting Starward Sword, Keqing's CRIT Rate is increased by 15%, and her Energy Recharge is increased by 15%. This effect lasts for 8s."
+    },
+    {
+      "key": "talent_6",
+      "name": "Land's Overseer",
+      "description": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%."
+    }
+  ],
+	"talentFormats": [
+		[
+			{
+				"attribute": "1-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "2-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "3-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "4-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "5-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Charged Attack DMG",
+				"format": "%.1f%% + %d%%"
+			},
+			{
+				"attribute": "Charged Attack Stamina Cost",
+				"format": "%d"
+			},
+			{
+				"attribute": "Plunge DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Low/High Plunge DMG",
+				"format": "%d%% / %d%%"
+			}
+		],
+		[
+			{
+				"attribute": "Lightning Stiletto DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Slashing DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Thunderclap Slash DMG",
+				"format": "%.1f%% x 2"
+			},
+			{
+				"attribute": "CD",
+				"format": "%.1fs"
+			}
+		],
+		[
+			{
+				"attribute": "Skill DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Consecutive Slash DMG",
+				"format": "%.1f%% x 8"
+			},
+			{
+				"attribute": "Last Attack DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "CD",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Energy Cost",
+				"format": "%d"
+			}
+		]
+	],
+	"constellations": [
+    {
+      "key": "constellation_1",
+      "name": "Thundering Might",
+      "description": "Recasting Stellar Restoration while a Lightning Stiletto is present causes Keqing to deal 50% of her ATK as AoE Electro DMG at the start point and terminus of her Blink."
+    },
+    {
+      "key": "constellation_2",
+      "name": "Keen Extraction",
+      "description": "When Keqing's Normal and Charged Attacks hit opponents affected by Electro, they have a 50% chance of producing an Elemental Particle.\n\nThis effect can only occur once every 5s."
+    },
+    {
+      "key": "constellation_3",
+      "name": "Foreseen Reformation",
+      "description": "Increases the Level of Starward Sword by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_4",
+      "name": "Attunement",
+      "description": "For 10s after Keqing triggers an Electro-related Elemental Reaction, her ATK is increased by 25%."
+    },
+    {
+      "key": "constellation_5",
+      "name": "Beckoning Stars",
+      "description": "Increases the Level of Stellar Restoration by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_6",
+      "name": "Tenacious Star",
+      "description": "When initiating a Normal Attack, a Charged Attack, Elemental Skill or Elemental Burst, Keqing gains a 6% Electro DMG Bonus for 8s.\n\nEffects triggered by Normal Attacks, Charged Attacks, Elemental Skills and Elemental Bursts are considered independent entities."
+    }
+  ]
+}

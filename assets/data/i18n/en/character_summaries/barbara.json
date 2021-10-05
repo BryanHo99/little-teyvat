@@ -1,0 +1,33 @@
+{
+  "key": "barbara",
+  "name": "Barbara",
+  "rarity": 4,
+  "element": "hydro",
+	"weaponType": "catalyst",
+  "materials": [
+    {
+      "key": "philosophies_of_freedom",
+      "type": "talent"
+    },
+    {
+      "key": "cleansing_heart",
+      "type": "character_ascension"
+    },
+    {
+      "key": "varunada_lazurite_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "philanemo_mushroom",
+      "type": "local"
+    },
+    {
+      "key": "forbidden_curse_scroll",
+      "type": "common"
+    },
+    {
+      "key": "ring_of_boreas",
+      "type": "talent"
+    }
+  ]
+}

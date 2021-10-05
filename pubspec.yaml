@@ -1,0 +1,118 @@
+name: little_teyvat
+description: A Genshin database.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.3
+  enum_to_string: ^2.0.1
+  fast_immutable_collections: ^7.0.3
+  flutter_hooks: ^0.18.0
+  flutter_markdown: ^0.6.6
+  flutter_rating_bar: ^4.0.0
+  freezed: ^0.14.5
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  hooks_riverpod: ^1.0.0-dev.7
+  intl: ^0.17.0
+  json_annotation: ^4.1.0
+  sprintf: ^6.0.0
+  transparent_image: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.1.2
+  flutter_launcher_icons: ^0.9.2
+  flutter_lints: ^1.0.4
+  freezed_annotation: ^0.14.3
+  hive_generator: ^1.1.1
+  json_serializable: ^5.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app/app.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/i18n/en/characters/
+    - assets/data/i18n/en/character_summaries/
+    - assets/data/i18n/zh/characters/
+    - assets/data/i18n/zh/character_summaries/
+    - assets/data/stats/characters/
+    - assets/images/app/
+    - assets/images/drawer/
+    - assets/images/characters/
+    - assets/images/character_cards/
+    - assets/images/elements/
+    - assets/images/items/character_ascension/
+    - assets/images/items/common/
+    - assets/images/items/currency/
+    - assets/images/items/event/
+    - assets/images/items/experience/
+    - assets/images/items/forging/
+    - assets/images/items/furnishing/
+    - assets/images/items/gadget/
+    - assets/images/items/local/
+    - assets/images/items/talent/
+    - assets/images/items/weapon_ascension/
+    - assets/images/regions/
+    - assets/images/skills/albedo/
+    - assets/images/skills/amber/
+    - assets/images/skills/ayaka/
+    - assets/images/skills/barbara/
+    - assets/images/skills/beidou/
+    - assets/images/skills/bennett/
+    - assets/images/skills/chongyun/
+    - assets/images/skills/diluc/
+    - assets/images/skills/diona/
+    - assets/images/skills/eula/
+    - assets/images/skills/fischl/
+    - assets/images/skills/ganyu/
+    - assets/images/skills/hu_tao/
+    - assets/images/skills/jean/
+    - assets/images/skills/kaeya/
+    - assets/images/skills/kazuha/
+    - assets/images/skills/keqing/
+    - assets/images/skills/klee/
+    - assets/images/skills/lisa/
+    - assets/images/skills/mona/
+    - assets/images/weapon_types/
+
+  fonts:
+    - family: Genshin
+      fonts:
+        - asset: assets/fonts/Genshin.ttf
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  

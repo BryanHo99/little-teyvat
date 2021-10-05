@@ -1,0 +1,33 @@
+{
+  "key": "jean",
+  "name": "琴",
+  "rarity": 5,
+  "element": "anemo",
+	"weaponType": "sword",
+  "materials": [
+    {
+      "key": "philosophies_of_resistance",
+      "type": "talent"
+    },
+    {
+      "key": "hurricane_seed",
+      "type": "character_ascension"
+    },
+    {
+      "key": "vayuda_turquoise_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "dandelion_seed",
+      "type": "local"
+    },
+    {
+      "key": "ominous_mask",
+      "type": "common"
+    },
+    {
+      "key": "dvalins_plume",
+      "type": "talent"
+    }
+  ]
+}

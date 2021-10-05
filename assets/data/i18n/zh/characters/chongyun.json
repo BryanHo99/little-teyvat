@@ -1,0 +1,172 @@
+{
+  "key": "chongyun",
+  "name": "Chongyun",
+  "title": "Frozen Ardor",
+  "affiliation": "Liyue Harbor",
+  "region": "liyue",
+  "rarity": 4,
+  "weaponType": "claymore",
+  "substat": "ATK",
+  "element": "cryo",
+  "birthday": "September 7",
+  "constellation": "Nubis Caesor",
+  "cv": {
+    "english": "Beau Bridgland",
+    "chinese": "kinsen",
+    "japanese": "斉藤壮馬",
+    "korean": "양정화"
+  },
+  "description": "A young exorcist from a family of exorcists. He does everything he can to suppress his abundance of yang energy.",
+  "talents": [
+    {
+      "key": "talent_1",
+      "name": "Normal Attack: Demonbane",
+      "description": [
+        "### Normal Attack\nPerform up to 4 consecutive strikes.",
+        "### Charged Attack\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\n\nAt end of the sequence, perform a more powerful slash.",
+        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+      ]
+    },
+    {
+      "key": "talent_2",
+      "name": "Spirit Blade: Chonghua's Layered Frost",
+      "description": [
+        "Chongyun strikes the ground with his greatsword, causing a Cryo explosion in a circular AoE in front of him that deals Cryo DMG.\n\nAfter a short delay, the cold air created by the Cryo explosion will coalesce into a Chonghua Frost Field, within which all Sword, Claymore and Polearm-wielding characters' weapons will be infused with Cryo.",
+        "*\"A crystal-clear ring, and all is silent. The rivers move not, and the clouds are heavy with frost. The altar gates open, and evil is banished.\"*"
+      ]
+    },
+    {
+      "key": "talent_3",
+      "name": "Spirit Blade: Cloud-Parting Star",
+      "description": [
+        "Performing the secret hand seals, Chongyun summons 3 giant spirit blades in mid-air that fall to the earth one by one after a short delay, exploding as they hit the ground.\n\nWhen the spirit blades explode, they will deal AoE Cryo DMG and launch opponents.",
+        "*\"As ice doth give the biting frost birth, My transcendent blade shakes heaven and earth. Heed my summons and come hence!\"*"
+      ]
+    }
+  ],
+  "passives": [
+    {
+      "key": "talent_4",
+      "name": "Steady Breathing",
+      "description": "Sword, Claymore, or Polearm-wielding characters within the field created by Spirit Blade: Chonghua's Layered Frost have their Normal ATK SPD increased by 8%."
+    },
+    {
+      "key": "talent_5",
+      "name": "Rimechaser Blade",
+      "description": "When the field created by Spirit Blade: Chonghua's Layered Frost disappears, another spirit blade will be summoned to strike nearby opponents, dealing 100% of Chonghua's Layered Frost's Skill DMG as AoE Cryo DMG. Opponents hit by this blade will have their Cryo RES decreased by 10% for 8s."
+    },
+    {
+      "key": "talent_6",
+      "name": "Gallant Journey",
+      "description": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%."
+    }
+  ],
+	"talentFormats": [
+		[
+			{
+				"attribute": "1-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "2-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "3-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "4-Hit DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Charged Attack Spinning DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Charged Attack Final DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Charged Attack Stamina Cost",
+				"format": "%d/s"
+			},
+			{
+				"attribute": "Max Duration",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Plunge DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Low/High Plunge DMG",
+				"format": "%d%% / %d%%"
+			}
+		],
+		[
+			{
+				"attribute": "Skill DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Infusion Duration",
+				"format": "%.1fs"
+			},
+			{
+				"attribute": "Field Duration",
+				"format": "%ds"
+			},
+			{
+				"attribute": "CD",
+				"format": "%ds"
+			}
+		],
+		[
+			{
+				"attribute": "Skill DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "CD",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Energy Cost",
+				"format": "%d"
+			}
+		]
+	],
+	"constellations": [
+    {
+      "key": "constellation_1",
+      "name": "Ice Unleashed",
+      "description": "The last attack of Chongyun's Normal Attack combo releases 3 ice blades. Each blade deals 50% of Chongyun's ATK as Cryo DMG to all opponents in its path."
+    },
+    {
+      "key": "constellation_2",
+      "name": "Atmospheric Revolution",
+      "description": "Elemental Skills and Elemental Bursts cast within the Frost Field created by Spirit Blade: Chonghua's Layered Frost have their CD time decreased by 15%."
+    },
+    {
+      "key": "constellation_3",
+      "name": "Cloudburst",
+      "description": "Increases the Level of Spirit Blade: Cloud-parting Star by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_4",
+      "name": "Frozen Skies",
+      "description": "Chongyun regenerates 1 Energy every time he hits an opponent affected by Cryo.\n\nThis effect can only occur once every 2s."
+    },
+    {
+      "key": "constellation_5",
+      "name": "The True Path",
+      "description": "Increases the Level of Spirit Blade: Chonghua's Layered Frost by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_6",
+      "name": "Rally of Four Blades",
+      "description": "Spirit Blade: Cloud-parting Star deals 15% more DMG to opponents with a lower percentage of their Max HP remaining than Chongyun.\n\nThis skill will also summon 1 additional spirit blade."
+    }
+  ]
+}

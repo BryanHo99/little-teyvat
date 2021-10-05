@@ -1,0 +1,619 @@
+{
+  "key": "hu_tao",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 1211,
+      "baseAtk": 8,
+      "baseDef": 68,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3141,
+      "baseAtk": 21,
+      "baseDef": 177,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 4179,
+      "baseAtk": 29,
+      "baseDef": 235,
+      "bonus": 50,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 6253,
+      "baseAtk": 43,
+      "baseDef": 352,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 6990,
+      "baseAtk": 48,
+      "baseDef": 394,
+      "bonus": 59.6,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 8042,
+      "baseAtk": 55,
+      "baseDef": 453,
+      "bonus": 59.6,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 9026,
+      "baseAtk": 62,
+      "baseDef": 508,
+      "bonus": 69.2,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 10089,
+      "baseAtk": 69,
+      "baseDef": 568,
+      "bonus": 69.2,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 10826,
+      "baseAtk": 74,
+      "baseDef": 610,
+      "bonus": 69.2,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 11899,
+      "baseAtk": 81,
+      "baseDef": 670,
+      "bonus": 69.2,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 12637,
+      "baseAtk": 86,
+      "baseDef": 712,
+      "bonus": 78.8,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 13721,
+      "baseAtk": 94,
+      "baseDef": 773,
+      "bonus": 78.8,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 14459,
+      "baseAtk": 99,
+      "baseDef": 815,
+      "bonus": 88.4,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 15552,
+      "baseAtk": 106,
+      "baseDef": 876,
+      "bonus": 88.4,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "agnidus_agate_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "agnidus_agate_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "juvenile_jade",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "agnidus_agate_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "juvenile_jade",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "agnidus_agate_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "juvenile_jade",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "agnidus_agate_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "juvenile_jade",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "agnidus_agate_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "juvenile_jade",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "silk_flower",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[46.9], [50.1], [53.3], [57.5], [60.7], [64.5], [69.3], [74.1], [78.9], [83.6], [88.4], [93.2], [98.0]
+				]
+			},
+			{
+				"stats": [
+					[48.3], [51.5], [54.8], [59.2], [62.5], [66.3], [71.3], [76.2], [81.2], [86.1], [91.0], [96.0], [100.9]
+				]
+			},
+			{
+				"stats": [
+					[61.0], [65.2], [69.4], [74.9], [79.1], [83.9], [90.2], [96.4], [102.7], [108.9], [115.2], [121.4], [127.6]
+				]
+			},
+			{
+				"stats": [
+					[65.6], [70.1], [74.6], [80.6], [85.0], [90.3], [97.0], [103.7], [110.4], [117.1], [123.8], [130.5], [137.2]
+				]
+			},
+			{
+				"stats": [
+					[33.3, 35.2], [35.5, 37.6], [37.8, 40.0], [40.8, 43.2], [43.1, 45.6], [45.8, 48.4], [49.2, 52.0], [52.6, 55.6], [56.0, 59.2], [59.4, 62.8], [62.8, 66.4], [66.2, 70.0], [69.6, 73.6]
+				]
+			},
+			{
+				"stats": [
+					[86.0], [91.8], [97.7], [105.5], [111.4], [118.2], [127.0], [135.8], [144.6], [153.4], [162.1], [170.9], [179.7]
+				]
+			},
+			{
+				"stats": [
+					[136.0], [145.2], [154.5], [166.9], [176.1], [186.9], [200.9], [214.8], [228.7], [242.6], [256.5], [270.4], [284.3]
+				]
+			},
+			{
+				"stats": [
+					[25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25]
+				]
+			},
+			{
+				"stats": [
+					[65.4], [69.9], [74.3], [80.3], [84.7], [90.0], [96.6], [103.3], [110.0], [116.7], [123.4], [130.1], [136.8]
+				]
+			},
+			{
+				"stats": [
+					[131, 163], [140, 175], [149, 186], [161, 201], [169, 212], [180, 225], [193, 241], [207, 258], [220, 275], [233, 292], [247, 308], [260, 325], [274, 342]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]
+				]
+			},
+      {
+				"stats": [
+					[3.84], [4.07], [4.30], [4.60], [4.83], [5.06], [5.36], [5.66], [5.96], [6.26], [6.55], [6.85], [7.15]
+				]
+			},
+      {
+				"stats": [
+					[64], [69], [74], [80], [85], [90], [96], [102], [109], [115], [122], [128], [136]
+				]
+			},
+      {
+				"stats": [
+					[8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8]
+				]
+			},
+			{
+				"stats": [
+					[9], [9], [9], [9], [9], [9], [9], [9], [9], [9], [9], [9], [9]
+				]
+			},
+			{
+				"stats": [
+					[16], [16], [16], [16], [16], [16], [16], [16], [16], [16], [16], [16], [16]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[303], [321], [340], [363], [381], [400], [423], [447], [470], [494], [518], [541], [565]
+				]
+			},
+      {
+				"stats": [
+					[379], [402], [424], [454], [477], [499], [529], [558], [588], [617], [647], [676], [706]
+				]
+			},
+      {
+				"stats": [
+					[6.26], [6.64], [7.01], [7.50], [7.87], [8.25], [8.74], [9.22], [9.71], [10.20], [10.69], [11.17], [11.66]
+				]
+			},
+      {
+				"stats": [
+					[8.35], [8.85], [9.35], [10.00], [10.50], [11.00], [11.65], [12.30], [12.95], [13.60], [14.25], [14.90], [15.55]
+				]
+			},
+      {
+				"stats": [
+					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
+				]
+			},
+      {
+				"stats": [
+					[60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_diligence",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_diligence",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_diligence",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_diligence",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_diligence",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_diligence",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "shard_of_a_foul_legacy",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_diligence",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "shard_of_a_foul_legacy",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_diligence",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "shard_of_a_foul_legacy",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_diligence",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "shard_of_a_foul_legacy",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

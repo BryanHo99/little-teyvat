@@ -1,0 +1,614 @@
+{
+  "key": "beidou",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 1094,
+      "baseAtk": 19,
+      "baseDef": 54,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2811,
+      "baseAtk": 48,
+      "baseDef": 140,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3628,
+      "baseAtk": 63,
+      "baseDef": 180,
+      "bonus": 0,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 5435,
+      "baseAtk": 94,
+      "baseDef": 270,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 6015,
+      "baseAtk": 104,
+      "baseDef": 299,
+      "bonus": 6,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 6919,
+      "baseAtk": 119,
+      "baseDef": 344,
+      "bonus": 6,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 7694,
+      "baseAtk": 133,
+      "baseDef": 382,
+      "bonus": 12,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 8597,
+      "baseAtk": 148,
+      "baseDef": 427,
+      "bonus": 12,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 9178,
+      "baseAtk": 158,
+      "baseDef": 456,
+      "bonus": 12,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 10081,
+      "baseAtk": 174,
+      "baseDef": 501,
+      "bonus": 18,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 10662,
+      "baseAtk": 184,
+      "baseDef": 530,
+      "bonus": 18,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 11565,
+      "baseAtk": 200,
+      "baseDef": 575,
+      "bonus": 18,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 12146,
+      "baseAtk": 210,
+      "baseDef": 603,
+      "bonus": 24,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 13050,
+      "baseAtk": 225,
+      "baseDef": 648,
+      "bonus": 24,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "vajrada_amethyst_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "treasure_hoarder_insignia",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "vajrada_amethyst_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "treasure_hoarder_insignia",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "vajrada_amethyst_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "vajrada_amethyst_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "vajrada_amethyst_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "vajrada_amethyst_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "noctilucous_jade",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[71.1], [76.9], [82.7], [91.0], [96.8], [103.4], [112.5], [121.6], [130.7], [140.6], [152.0], [165.3], [178.7]
+				]
+			},
+			{
+				"stats": [
+					[70.9], [76.6], [82.4], [90.6], [96.4], [103.0], [112.1], [121.1], [130.2], [140.1], [151.4], [164.7], [178.1]
+				]
+			},
+			{
+				"stats": [
+					[88.3], [95.5], [102.7], [113.0], [120.2], [128.4], [139.7], [151.0], [162.3], [174.6], [188.7], [205.3], [221.9]
+				]
+			},
+			{
+				"stats": [
+					[86.5], [93.6], [100.6], [110.7], [117.7], [125.8], [136.8], [147.9], [158.9], [171.0], [184.9], [201.1], [217.4]
+				]
+			},
+			{
+				"stats": [
+					[112], [121], [130], [143], [153], [163], [177], [192], [206], [222], [240], [261], [282]
+				]
+			},
+			{
+				"stats": [
+					[56.2], [60.8], [65.4], [71.9], [76.5], [81.7], [88.9], [96.1], [103.3], [111.2], [120.2], [130.7], [141.3]
+				]
+			},
+			{
+				"stats": [
+					[102], [110], [118], [130], [139], [148], [161], [174], [187], [201], [218], [237], [256]
+				]
+			},
+			{
+				"stats": [
+					[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]
+				]
+			},
+			{
+				"stats": [
+					[5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5]
+				]
+			},
+			{
+				"stats": [
+					[74.6], [80.7], [86.7], [95.4], [101.5], [108.4], [118.0], [127.5], [137.0], [147.4], [157.8], [168.3], [178.7]
+				]
+			},
+			{
+				"stats": [
+					[149, 186], [161, 201], [173, 217], [191, 238], [203, 253], [217, 271], [236, 295], [255, 318], [274, 342], [295, 368], [316, 394], [336, 420], [357, 446]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[14.4, 1386], [15.5, 1525], [16.6, 1675], [18.0, 1837], [19.1, 2010], [20.2, 2195], [21.6, 2392], [23.0, 2600], [24.5, 2819], [25.9, 3050], [27.4, 3293], [28.8, 3547], [30.6, 3813]
+				]
+			},
+      {
+				"stats": [
+					[122], [131], [140], [152], [161], [170], [182], [195], [207], [219], [231], [243], [258]
+				]
+			},
+      {
+				"stats": [
+					[160], [172], [184], [200], [212], [224], [240], [256], [272], [288], [304], [320], [340]
+				]
+			},
+      {
+				"stats": [
+					[7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[122], [131], [140], [152], [161], [170], [182], [195], [207], [219], [231], [243], [258]
+				]
+			},
+      {
+				"stats": [
+					[96.0], [103.2], [110.4], [120.0], [127.2], [134.4], [144.0], [153.6], [163.2], [172.8], [182.4], [192.0], [204.0]
+				]
+			},
+			{
+				"stats": [
+					[20], [21], [22], [24], [25], [26], [28], [30], [32], [34], [35], [36], [37]
+				]
+			},
+			{
+				"stats": [
+					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
+				]
+			},
+      {
+				"stats": [
+					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
+				]
+			},
+      {
+				"stats": [
+					[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]
+				]
+			}
+    ]
+	],
+	"talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_gold",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "treasure_hoarder_insignia",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_gold",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_gold",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_gold",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_gold",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "silver_raven_insignia",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_gold",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "dvalins_sigh",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_gold",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "dvalins_sigh",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_gold",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "dvalins_sigh",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_gold",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "golden_raven_insignia",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "dvalins_sigh",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

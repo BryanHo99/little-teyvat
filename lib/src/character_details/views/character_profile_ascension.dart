@@ -1,0 +1,81 @@
+import 'package:fast_immutable_collections/fast_immutable_collections.dart';
+import 'package:flutter/material.dart';
+import 'package:little_teyvat/extensions/build_context_extension.dart';
+import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
+import 'package:little_teyvat/src/character_details/models/character_ascension_materials_model.dart';
+import 'package:little_teyvat/src/character_details/models/character_ascension_stats_model.dart';
+import 'package:little_teyvat/src/character_details/models/character_model.dart';
+import 'package:little_teyvat/src/character_details/views/character_materials_table.dart';
+import 'package:little_teyvat/src/character_details/views/character_stats_table.dart';
+
+class CharacterProfileAscension extends StatelessWidget {
+  final CharacterModel character;
+  final CharacterAscensionStatsModel characterAscensionStats;
+  final CharacterAscensionMaterialsModel characterAscensionMaterials;
+
+  const CharacterProfileAscension({
+    Key? key,
+    required this.character,
+    required this.characterAscensionStats,
+    required this.characterAscensionMaterials,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Text(
+                context.tr.ascensionStats,
+                style: const TextStyle(
+                  fontSize: constants.titleFontSize,
+                ),
+              ),
+              const SizedBox(height: constants.sizedBoxHeight),
+              CharacterStatsTable(
+                header: <String>[
+                  context.tr.level,
+                  context.tr.baseHp,
+                  context.tr.baseAtk,
+                  context.tr.baseDef,
+                  character.substat,
+                ].lock,
+                characterStats: characterAscensionStats,
+              ),
+            ],
+          ),
+        ),
+        const Divider(
+          height: constants.dividerHeight,
+          thickness: constants.dividerThickness,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Text(
+                context.tr.ascensionMaterials,
+                style: const TextStyle(
+                  fontSize: constants.titleFontSize,
+                ),
+              ),
+              const SizedBox(height: constants.sizedBoxHeight),
+              CharacterMaterialsTable(
+                headerTitles: <String>[
+                  context.tr.rank,
+                  context.tr.materials,
+                ].lock,
+                characterMaterials: characterAscensionMaterials,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}

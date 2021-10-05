@@ -1,0 +1,33 @@
+{
+  "key": "chongyun",
+  "name": "重云",
+  "rarity": 4,
+  "element": "cryo",
+	"weaponType": "claymore",
+  "materials": [
+    {
+      "key": "philosophies_of_diligence",
+      "type": "talent"
+    },
+    {
+      "key": "hoarfrost_core",
+      "type": "character_ascension"
+    },
+    {
+      "key": "shivada_jade_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "cor_lapis",
+      "type": "local"
+    },
+    {
+      "key": "ominous_mask",
+      "type": "common"
+    },
+    {
+      "key": "dvalins_sigh",
+      "type": "talent"
+    }
+  ]
+}

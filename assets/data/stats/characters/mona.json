@@ -1,0 +1,606 @@
+{
+  "key": "mona",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 810,
+      "baseAtk": 22,
+      "baseDef": 51,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2102,
+      "baseAtk": 58,
+      "baseDef": 132,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2797,
+      "baseAtk": 77,
+      "baseDef": 176,
+      "bonus": 0,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 4185,
+      "baseAtk": 115,
+      "baseDef": 263,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 4678,
+      "baseAtk": 129,
+      "baseDef": 294,
+      "bonus": 8,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 5383,
+      "baseAtk": 148,
+      "baseDef": 338,
+      "bonus": 8,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 6041,
+      "baseAtk": 167,
+      "baseDef": 379,
+      "bonus": 16,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 6752,
+      "baseAtk": 186,
+      "baseDef": 424,
+      "bonus": 16,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 7246,
+      "baseAtk": 200,
+      "baseDef": 455,
+      "bonus": 16,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 7964,
+      "baseAtk": 220,
+      "baseDef": 500,
+      "bonus": 16,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 8458,
+      "baseAtk": 233,
+      "baseDef": 531,
+      "bonus": 24,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 9184,
+      "baseAtk": 253,
+      "baseDef": 576,
+      "bonus": 24,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 9677,
+      "baseAtk": 267,
+      "baseDef": 607,
+      "bonus": 32,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 10409,
+      "baseAtk": 287,
+      "baseDef": 653,
+      "bonus": 32,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "varunada_lazurite_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "varunada_lazurite_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "cleansing_heart",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "varunada_lazurite_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "cleansing_heart",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "varunada_lazurite_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "cleansing_heart",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "varunada_lazurite_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "cleansing_heart",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "varunada_lazurite_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "cleansing_heart",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "philanemo_mushroom",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[37.6], [40.4], [43.2], [47.0], [49.8], [52.6], [56.4], [60.2], [63.9], [67.7], [71.4], [75.2], [79.9]
+				]
+			},
+			{
+				"stats": [
+					[36.0], [38.7], [41.4], [45.0], [47.7], [50.4], [54.0], [57.6], [61.2], [64.8], [68.4], [72.0], [76.5]
+				]
+			},
+			{
+				"stats": [
+					[44.8], [48.2], [51.5], [56.0], [59.4], [62.7], [67.2], [71.7], [76.2], [80.6], [85.1], [89.6], [95.2]
+				]
+			},
+			{
+				"stats": [
+					[56.2], [60.4], [64.6], [70.2], [74.4], [78.6], [84.2], [89.9], [95.5], [101.1], [106.7], [112.3], [119.3]
+				]
+			},
+			{
+				"stats": [
+					[150], [161], [172], [187], [198], [210], [225], [240], [255], [269], [285], [305], [326]
+				]
+			},
+			{
+				"stats": [
+					[50], [50], [50], [50], [50], [50], [50], [50], [50], [50], [50], [50], [50]
+				]
+			},
+			{
+				"stats": [
+					[56.8], [61.5], [66.1], [72.7], [77.3], [82.6], [89.9], [97.1], [104.4], [112.3], [120.3], [128.2], [136.1]
+				]
+			},
+			{
+				"stats": [
+					[114, 142], [123, 153], [132, 165], [145, 182], [155, 193], [165, 206], [180, 224], [194, 243], [209, 261], [225, 281], [240, 300], [256, 320], [272, 340]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[32.0], [34.4], [36.8], [40.0], [42.4], [44.8], [48.0], [51.2], [54.4], [57.6], [60.8], [64.0], [68.0]
+				]
+			},
+      {
+				"stats": [
+					[133], [143], [153], [166], [176], [186], [199], [212], [226], [239], [252], [266], [282]
+				]
+			},
+      {
+				"stats": [
+					[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[10], [], [], [], [], [], [], [], [], [], [], [], []
+				]
+			},
+			{
+				"stats": [
+					[15], [], [], [], [], [], [], [], [], [], [], [], []
+				]
+			}
+    ],
+		[
+      {
+				"stats": [
+					[8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8]
+				]
+			},
+      {
+				"stats": [
+					[442], [476], [509], [553], [586], [619], [664], [708], [752], [796], [841], [885], [940]
+				]
+			},
+      {
+				"stats": [
+					[42], [44], [46], [48], [50], [52], [54], [56], [58], [60], [60], [60], [60]
+				]
+			},
+			{
+				"stats": [
+					[4.0], [4.0], [4.0], [4.5], [4.5], [4.5], [5.0], [5.0], [5.0], [5.0], [5.0], [5.0], [5.0]
+				]
+			},
+      {
+				"stats": [
+					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
+				]
+			},
+      {
+				"stats": [
+					[60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_resistance",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "whopperflower_nectar",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "shimmering_nectar",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "ring_of_boreas",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "ring_of_boreas",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "ring_of_boreas",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "energy_nectar",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "ring_of_boreas",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

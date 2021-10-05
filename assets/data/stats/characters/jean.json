@@ -1,0 +1,604 @@
+{
+  "key": "jean",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 1144,
+      "baseAtk": 19,
+      "baseDef": 60,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2967,
+      "baseAtk": 48,
+      "baseDef": 155,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3948,
+      "baseAtk": 64,
+      "baseDef": 206,
+      "bonus": 0,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 5908,
+      "baseAtk": 96,
+      "baseDef": 309,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 6605,
+      "baseAtk": 108,
+      "baseDef": 345,
+      "bonus": 5.5,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 7599,
+      "baseAtk": 124,
+      "baseDef": 397,
+      "bonus": 5.5,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 8528,
+      "baseAtk": 139,
+      "baseDef": 446,
+      "bonus": 11.1,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 9533,
+      "baseAtk": 155,
+      "baseDef": 499,
+      "bonus": 11.1,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 10230,
+      "baseAtk": 166,
+      "baseDef": 535,
+      "bonus": 11.1,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 11243,
+      "baseAtk": 183,
+      "baseDef": 588,
+      "bonus": 11.1,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 11940,
+      "baseAtk": 194,
+      "baseDef": 624,
+      "bonus": 16.6,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 12965,
+      "baseAtk": 211,
+      "baseDef": 678,
+      "bonus": 16.6,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 13662,
+      "baseAtk": 222,
+      "baseDef": 715,
+      "bonus": 22.2,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 14695,
+      "baseAtk": 239,
+      "baseDef": 769,
+      "bonus": 22.2,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "vayuda_turquoise_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "damaged_mask",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "vayuda_turquoise_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "hurricane_seed",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "damaged_mask",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "vayuda_turquoise_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "hurricane_seed",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "vayuda_turquoise_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "hurricane_seed",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "vayuda_turquoise_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "hurricane_seed",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "vayuda_turquoise_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "hurricane_seed",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "dandelion_seed",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[48.3], [52.3], [56.2], [61.8], [65.8], [70.2], [76.4], [82.6], [88.8], [95.5], [103.3], [112.4], [121.4]
+				]
+			},
+			{
+				"stats": [
+					[45.6], [49.3], [53.0], [58.3], [62.0], [66.3], [72.1], [77.9], [83.7], [90.1], [97.4], [106.0], [114.5]
+				]
+			},
+			{
+				"stats": [
+					[60.3], [65.2], [70.1], [77.1], [82.0], [87.6], [95.3], [103.0], [110.8], [119.2], [128.8], [140.1], [151.5]
+				]
+			},
+			{
+				"stats": [
+					[65.9], [71.2], [76.6], [84.3], [89.6], [95.7], [104.2], [112.6], [121.0], [130.2], [140.8], [153.1], [165.5]
+				]
+			},
+			{
+				"stats": [
+					[79.2], [85.7], [92.1], [101.3], [107.8], [115.1], [125.3], [135.4], [145.5], [156.6], [169.2], [184.1], [199.0]
+				]
+			},
+			{
+				"stats": [
+					[162], [175], [188], [207], [220], [236], [256], [277], [298], [320], [346], [377], [407]
+				]
+			},
+			{
+				"stats": [
+					[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]
+				]
+			},
+			{
+				"stats": [
+					[63.9], [69.1], [74.3], [81.8], [87.0], [92.9], [101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]
+				]
+			},
+			{
+				"stats": [
+					[128, 160], [138, 173], [149, 186], [164, 204], [174, 217], [186, 232], [202, 253], [219, 273], [235, 293], [253, 316], [271, 338], [288, 360], [306, 382]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[292], [314], [336], [365], [387], [409], [438], [467], [496], [526], [555], [584], [620]
+				]
+			},
+      {
+				"stats": [
+					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
+				]
+			},
+      {
+				"stats": [
+					[5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5]
+				]
+			},
+      {
+				"stats": [
+					[6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[425], [457], [489], [531], [563], [595], [637], [680], [722], [765], [807], [850], [903]
+				]
+			},
+      {
+				"stats": [
+					[78.4], [84.3], [90.2], [98.0], [103.9], [109.8], [117.6], [125.4], [133.3], [141.1], [149.0], [156.8], [166.6]
+				]
+			},
+      {
+				"stats": [
+					[251, 1540], [270, 1694], [289, 1861], [314, 2041], [333, 2234], [352, 2439], [377, 2657], [402, 2888], [427, 3132], [452, 3389], [477, 3659], [502, 3941], [534, 4236]
+				]
+			},
+      {
+				"stats": [
+					[25.12, 154], [27.00, 169], [28.89, 186], [31.40, 204], [33.28, 223], [35.17, 244], [37.68, 266], [40.19, 289], [42.70, 313], [45.22, 339], [47.73, 366], [50.24, 394], [53.38, 424]
+				]
+			},
+      {
+				"stats": [
+					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
+				]
+			},
+      {
+				"stats": [
+					[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_resistance",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "damaged_mask",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_resistance",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "stained_mask",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "dvalins_plume",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "dvalins_plume",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "dvalins_plume",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_resistance",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "ominous_mask",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "dvalins_plume",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

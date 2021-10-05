@@ -1,0 +1,594 @@
+{
+  "key": "albedo",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 1030,
+      "baseAtk": 20,
+      "baseDef": 68,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2671,
+      "baseAtk": 51,
+      "baseDef": 177,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3554,
+      "baseAtk": 67,
+      "baseDef": 235,
+      "bonus": 0,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 5317,
+      "baseAtk": 101,
+      "baseDef": 352,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 5944,
+      "baseAtk": 113,
+      "baseDef": 394,
+      "bonus": 7.2,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 6839,
+      "baseAtk": 130,
+      "baseDef": 453,
+      "bonus": 7.2,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 7675,
+      "baseAtk": 146,
+      "baseDef": 508,
+      "bonus": 14.4,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 8579,
+      "baseAtk": 163,
+      "baseDef": 568,
+      "bonus": 14.4,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 9207,
+      "baseAtk": 175,
+      "baseDef": 610,
+      "bonus": 14.4,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 10119,
+      "baseAtk": 192,
+      "baseDef": 670,
+      "bonus": 14.4,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 10746,
+      "baseAtk": 204,
+      "baseDef": 712,
+      "bonus": 21.6,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 11669,
+      "baseAtk": 222,
+      "baseDef": 773,
+      "bonus": 21.6,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 12296,
+      "baseAtk": 233,
+      "baseDef": 815,
+      "bonus": 28.8,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 13226,
+      "baseAtk": 251,
+      "baseDef": 876,
+      "bonus": 28.8,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "prithiva_topaz_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "divining_scroll",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "prithiva_topaz_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "basalt_pillar",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "divining_scroll",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "prithiva_topaz_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "basalt_pillar",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "prithiva_topaz_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "basalt_pillar",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "prithiva_topaz_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "basalt_pillar",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "prithiva_topaz_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "basalt_pillar",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "cecilia",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[36.7], [39.7], [42.7],	[47.0],	[50.0],	[53.4],	[58.1],	[62.8],	[67.5],	[72.6],	[78.5],	[85.4],	[92.3]
+				]
+			},
+			{
+				"stats": [
+					[36.7], [39.7], [42.7],	[47.0],	[50.0],	[53.4],	[58.1],	[62.8],	[67.5],	[72.6],	[78.5],	[85.4],	[92.3]
+				]
+			},
+			{
+				"stats": [
+					[47.5],	[51.3],	[55.2],	[60.7],	[64.6],	[69.0],	[75.0],	[81.1],	[87.2],	[93.8],	[101.4], [110.3], [119.2]
+				]
+			},
+			{
+				"stats": [
+					[49.8], [53.8], [57.8], [63.6], [67.7], [72.3], [78.7], [85.0], [91.4], [98.3], [106.3], [115.7], [125.0]
+				]
+			},
+			{
+				"stats": [
+					[62.1],	[67.1],	[72.2],	[79.4],	[84.4],	[90.2],	[98.2],	[106.1], [114.0],	[122.7], [132.6],	[144.3], [156.0]
+				]
+			},
+			{
+				"stats": [
+					[47.3, 60.2],	[51.2, 65.1],	[55.0, 70.0],	[60.5, 77.0],	[64.3, 81.9],	[68.8, 87.5],	[74.8, 95.2],	[80.8, 102.9], [86.9, 110.6],	[93.5, 119.0], [101.1, 128.6],	[110.0, 139.9],	[118.8, 151.3]
+				]
+			},
+			{
+				"stats": [
+					[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]
+				]
+			},
+			{
+				"stats": [
+					[63.9],	[69.1],	[74.3],	[81.8],	[87.0],	[92.9],	[101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]
+				]
+			},
+			{
+				"stats": [
+					[128, 160],	[138, 173],	[149, 186],	[164, 204],	[174, 217],	[186, 232],	[202, 253],	[219, 273],	[235, 293], [253, 316],	[271, 338],	[288, 360],	[306, 382]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[130], [140], [150], [163], [173], [183], [196], [209], [222], [235], [248], [261], [277]
+				]
+			},
+      {
+				"stats": [
+					[134], [144], [154], [167], [177], [187], [200], [214], [227], [240], [254], [267], [284]
+				]
+			},
+      {
+				"stats": [
+					[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]
+				]
+			},
+      {
+				"stats": [
+					[4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[367], [395], [422], [459], [487], [514], [551], [588], [624], [661], [698], [734], [780]
+				]
+			},
+      {
+				"stats": [
+					[72.0], [77.4], [82.8], [90.0], [95.4], [100.8], [108.0], [115.2], [122.4], [129.6], [136.8], [144.0], [153.0]
+				]
+			},
+      {
+				"stats": [
+					[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]
+				]
+			},
+      {
+				"stats": [
+					[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_ballad",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "divining_scroll",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "sealed_scroll",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "tusk_of_monoceros_caeli",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "tusk_of_monoceros_caeli",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "tusk_of_monoceros_caeli",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "forbidden_curse_scroll",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "tusk_of_monoceros_caeli",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "key": "kazuha",
+  "name": "Kaedehara Kazuha",
+  "title": "Scarlet Leaves Pursue Wild Waves",
+  "affiliation": "The Crux",
+  "region": "inazuma",
+  "rarity": 5,
+  "weaponType": "sword",
+  "substat": "Elemental Mastery",
+  "element": "anemo",
+  "birthday": "October 29",
+  "constellation": "Acer Palmatum",
+  "cv": {
+    "english": "Mark Whitten",
+    "chinese": "斑马",
+    "japanese": "島﨑信長",
+    "korean": "김신우"
+  },
+  "description": "A wandering samurai from Inazuma who is currently with Liyue's Crux Fleet. A gentle and carefree soul whose heart hides a great many burdens from the past.",
+  "talents": [
+    {
+      "key": "talent_1",
+      "name": "Normal Attack: Garyuu Bladework",
+      "description": [
+        "### Normal Attack\nPerform up to 5 rapid strikes.",
+        "### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.",
+        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact. If this Plunging Attack is triggered by Chihayaburu, it will be converted to Plunging Attack: Midare Ranzan.",
+        "### Plunging Attack: Midare Ranzan\nWhen a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG and will create a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents."
+      ]
+    },
+    {
+      "key": "talent_2",
+      "name": "Chihayaburu",
+      "description": [
+        "Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind.",
+        "Within 10s of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan.",
+        "### Press\nCan be used in mid-air.",
+        "### Hold\nCharges up before unleashing greater Anemo DMG over a larger AoE than Press Mode.",
+        "### Plunging Attack: Midare Ranzan\nWhen a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG. On landing, Kazuha creates a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents.\n\nMidare Ranzan's DMG is considered Plunging Attack DMG.",
+        "*\"Wind in branches grieves*\n\n*Bygone ages, gods of old*\n\n*Withered autumn leaves\"*"
+      ]
+    },
+    {
+      "key": "talent_3",
+      "name": "Kazuha Slash",
+      "description": [
+        "The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG.\n\nThe blade's passage will leave behind a field named \"Autumn Whirlwind\" that periodically deals AoE Anemo DMG to opponents within its range.",
+        "### Elemental Absorption\nIf Autumn Whirlwind comes into contact with Hydro/Pyro/Cryo/Electro, it will deal additional elemental DMG of that type.\n\nElemental Absorption may only occur once per use.",
+        "*\"I see eternity go by in an instant, the autumns of many years from a single leaf. Thus I shall slice this maple in a flash, and ask a question of the ages.\"*"
+      ]
+    }
+  ],
+  "passives": [
+    {
+      "key": "talent_4",
+      "name": "Soumon Swordsmanship",
+      "description": "If Chihayaburu comes into contact with Hydro/Pyro/Cryo/Electro when cast, Chihayaburu will absorb that element and if Plunging Attack: Midare Ranzan is used before the effect expires, it will deal an additional 200% ATK of the absorbed elemental type as DMG. This will be considered Plunging Attack DMG.\n\nElemental Absorption may only occur once per use of Chihayaburu."
+    },
+    {
+      "key": "talent_5",
+      "name": "Poetics of Fuubutsu",
+      "description": "Upon triggering a Swirl reaction, Kaedehara Kazuha will grant teammates a 0.04% Elemental DMG Bonus to their corresponding Element for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist."
+    },
+    {
+      "key": "talent_6",
+      "name": "Cloud Strider",
+      "description": "Decreases sprinting Stamina consumption for your own party members by 20%.\n\nNot stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+	"talentFormats": [
+		[
+			{
+				"attribute": "1-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "2-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "3-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "4-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "5-Hit DMG",
+				"format": "%.1f%% x 3"
+			},
+			{
+				"attribute": "Charged Attack DMG",
+				"format": "%.1f%% + %.1f%%"
+			},
+			{
+				"attribute": "Charged Attack Stamina Cost",
+				"format": "%d"
+			},
+			{
+				"attribute": "Plunge DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Low/High Plunge DMG",
+				"format": "%d%% / %d%%"
+			}
+		],
+		[
+			{
+				"attribute": "Press Skill DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Press CD",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Hold Skill DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "CD (hold)",
+				"format": "%ds"
+			}
+		],
+		[
+			{
+				"attribute": "Slashing DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "DoT",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Additional Elemental DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Duration",
+				"format": "%ds"
+			},
+			{
+				"attribute": "CD",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Energy Cost",
+				"format": "%d"
+			}
+		]
+	],
+	"constellations": [
+    {
+      "key": "constellation_1",
+      "name": "Scarlet Hills",
+      "description": "Decreases Chihayaburu's CD by 10%.\n\nUsing Kazuha Slash resets the CD of Chihayaburu."
+    },
+    {
+      "key": "constellation_2",
+      "name": "Yamaarashi Tailwind",
+      "description": "The Autumn Whirlwind field created by Kazuha Slash has the following effects:\n\n - Increases Kaedehara Kazuha's own Elemental Mastery by 200.\n - Increases the Elemental Mastery of characters within the field by 200.\n\nThe Elemental Mastery-increasing effects of this Constellation do not stack."
+    },
+    {
+      "key": "constellation_3",
+      "name": "Maple Monogatari",
+      "description": "Increases the Level of Chihayaburu by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_4",
+      "name": "Oozora Genpou",
+      "description": "When Kaedehara Kazuha's Energy is lower than 45, he obtains the following effects:\n\n - Pressing or Holding Chihayaburu regenerates 3 or 4 Energy for Kaedehara Kazuha, respectively.\n - When gliding, Kaedehara Kazuha regenerates 2 Energy per second."
+    },
+    {
+      "key": "constellation_5",
+      "name": "Wisdom of Bansei",
+      "description": "Increases the Level of Kazuha Slash by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_6",
+      "name": "Crimson Momiji",
+      "description": "After using Chihayaburu or Kazuha Slash, Kaedehara Kazuha gains an Anemo Infusion for 5s. Additionally, each point of Elemental Mastery will increase the DMG dealt by Kaedehara Kazuha's Normal, Charged, and Plunging Attack by 0.2%."
+    }
+  ]
+}

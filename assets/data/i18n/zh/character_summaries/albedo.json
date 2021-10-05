@@ -1,0 +1,33 @@
+{
+  "key": "albedo",
+  "name": "阿贝多",
+  "rarity": 5,
+  "element": "geo",
+	"weaponType": "sword",
+  "materials": [
+    {
+      "key": "philosophies_of_ballad",
+      "type": "talent"
+    },
+    {
+      "key": "basalt_pillar",
+      "type": "character_ascension"
+    },
+    {
+      "key": "prithiva_topaz_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "cecilia",
+      "type": "local"
+    },
+    {
+      "key": "forbidden_curse_scroll",
+      "type": "common"
+    },
+    {
+      "key": "tusk_of_monoceros_caeli",
+      "type": "talent"
+    }
+  ]
+}

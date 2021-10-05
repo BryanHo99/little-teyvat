@@ -1,0 +1,33 @@
+{
+  "key": "hu_tao",
+  "name": "Hu Tao",
+  "rarity": 5,
+  "element": "pyro",
+	"weaponType": "polearm",
+  "materials": [
+    {
+      "key": "philosophies_of_diligence",
+      "type": "talent"
+    },
+    {
+      "key": "juvenile_jade",
+      "type": "character_ascension"
+    },
+    {
+      "key": "agnidus_agate_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "silk_flower",
+      "type": "local"
+    },
+    {
+      "key": "energy_nectar",
+      "type": "common"
+    },
+    {
+      "key": "shard_of_a_foul_legacy",
+      "type": "talent"
+    }
+  ]
+}

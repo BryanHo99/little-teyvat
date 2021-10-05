@@ -1,0 +1,589 @@
+{
+  "key": "fischl",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 770,
+      "baseAtk": 20,
+      "baseDef": 50,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 1979,
+      "baseAtk": 53,
+      "baseDef": 128,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2555,
+      "baseAtk": 68,
+      "baseDef": 165,
+      "bonus": 0,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 3827,
+      "baseAtk": 102,
+      "baseDef": 247,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 4236,
+      "baseAtk": 113,
+      "baseDef": 274,
+      "bonus": 6,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 4872,
+      "baseAtk": 130,
+      "baseDef": 315,
+      "bonus": 6,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 5418,
+      "baseAtk": 144,
+      "baseDef": 350,
+      "bonus": 12,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 6054,
+      "baseAtk": 161,
+      "baseDef": 391,
+      "bonus": 12,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 6463,
+      "baseAtk": 172,
+      "baseDef": 418,
+      "bonus": 12,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 7099,
+      "baseAtk": 189,
+      "baseDef": 459,
+      "bonus": 12,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 7508,
+      "baseAtk": 200,
+      "baseDef": 485,
+      "bonus": 18,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 8144,
+      "baseAtk": 216,
+      "baseDef": 526,
+      "bonus": 18,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 8553,
+      "baseAtk": 227,
+      "baseDef": 553,
+      "bonus": 24,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 9189,
+      "baseAtk": 244,
+      "baseDef": 594,
+      "bonus": 24,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "vajrada_amethyst_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "firm_arrowhead",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "vajrada_amethyst_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "firm_arrowhead",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "vajrada_amethyst_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "vajrada_amethyst_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "vajrada_amethyst_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "vajrada_amethyst_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "lightning_prism",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "small_lamp_grass",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[44.1], [47.7], [51.3], [56.4], [60.0], [64.1], [69.8], [75.4], [81.1], [87.2], [93.4], [99.5], [105.7]
+				]
+			},
+			{
+				"stats": [
+					[46.8], [50.6], [54.4], [59.8], [63.6], [68.0], [74.0], [80.0], [86.0], [92.5], [99.0], [105.5], [112.1]
+				]
+			},
+			{
+				"stats": [
+					[58.1], [62.9], [67.6], [74.4], [79.1], [84.5], [91.9], [99.4], [106.8], [114.9], [123.0], [131.1], [139.3]
+				]
+			},
+			{
+				"stats": [
+					[57.7], [62.4], [67.1], [73.8], [78.5], [83.9], [91.3], [98.6], [106.0], [114.1], [122.1], [130.2], [138.2]
+				]
+			},
+			{
+				"stats": [
+					[72.1], [77.9], [83.8], [92.2], [98.0], [104.8], [114.0], [123.2], [132.4], [142.5], [152.5], [162.6], [172.6]
+				]
+			},
+			{
+				"stats": [
+					[43.9], [47.4], [51.0], [56.1], [59.7], [63.7], [69.4], [75.0], [80.6], [86.7], [92.8], [98.9], [105.1]
+				]
+			},
+			{
+				"stats": [
+					[124], [133], [143], [155], [164], [174], [186], [198], [211], [223], [236], [248], [263]
+				]
+			},
+			{
+				"stats": [
+					[56.8], [61.5], [66.1], [72.7], [77.3], [82.6], [89.9], [97.1], [104.4], [112.3], [120.3], [128.2], [136.1]
+				]
+			},
+			{
+				"stats": [
+					[114, 142], [123, 153], [132, 165], [145, 182], [155, 193], [165, 206], [180, 224], [194, 243], [209, 261], [225, 281], [240, 300], [256, 320], [272, 340]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[88.8], [95.5], [102.1], [111.0], [117.7], [124.3], [133.2], [142.1], [151.0], [159.8], [168.7], [177.6], [188.7]
+				]
+			},
+      {
+				"stats": [
+					[115], [124], [133], [144], [153], [162], [173], [185], [196], [208], [219], [231], [245]
+				]
+			},
+      {
+				"stats": [
+					[10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10]
+				]
+			},
+      {
+				"stats": [
+					[25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25]
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[208], [224], [239], [260], [276], [291], [312], [333], [354], [374], [395], [416], [442]
+				]
+			},
+      {
+				"stats": [
+					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
+				]
+			},
+      {
+				"stats": [
+					[60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_ballad",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "firm_arrowhead",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_ballad",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "sharp_arrowhead",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "spirit_locket_of_boreas",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "spirit_locket_of_boreas",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "spirit_locket_of_boreas",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_ballad",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "weathered_arrowhead",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "spirit_locket_of_boreas",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

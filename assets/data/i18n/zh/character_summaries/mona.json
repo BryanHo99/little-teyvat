@@ -1,0 +1,33 @@
+{
+  "key": "mona",
+  "name": "莫娜",
+  "rarity": 5,
+  "element": "hydro",
+	"weaponType": "catalyst",
+  "materials": [
+    {
+      "key": "philosophies_of_resistance",
+      "type": "talent"
+    },
+    {
+      "key": "cleansing_heart",
+      "type": "character_ascension"
+    },
+    {
+      "key": "varunada_lazurite_gemstone",
+      "type": "character_ascension"
+    },
+    {
+      "key": "philanemo_mushroom",
+      "type": "local"
+    },
+    {
+      "key": "energy_nectar",
+      "type": "common"
+    },
+    {
+      "key": "ring_of_boreas",
+      "type": "talent"
+    }
+  ]
+}

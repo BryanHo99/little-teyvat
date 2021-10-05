@@ -1,0 +1,169 @@
+{
+  "key": "barbara",
+  "name": "Barbara",
+  "title": "Shining Idol",
+  "affiliation": "Church of Favonius",
+  "region": "mondstadt",
+  "rarity": 4,
+  "weaponType": "catalyst",
+  "substat": "HP",
+  "element": "hydro",
+  "birthday": "July 5",
+  "constellation": "Crater",
+  "cv": {
+    "english": "Laura Stahl",
+    "chinese": "宋媛媛",
+    "japanese": "鬼頭明里",
+    "korean": "윤아영"
+  },
+  "description": "Every citizen of Mondstadt adores Barbara. She learned the word \"idol\" from a magazine.",
+  "talents": [
+    {
+      "key": "talent_1",
+      "name": "Normal Attack: Whisper of Water",
+      "description": [
+        "### Normal Attack\nPerform up to 4 water splash attacks that deal Hydro DMG.",
+        "### Charged Attack\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.",
+        "### Plunging Attack\nGathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground."
+      ]
+    },
+    {
+      "key": "talent_2",
+      "name": "Let the Show Begin ♪",
+      "description": [
+        "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them.",
+        "### Melody Loop\n - On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP.\n - On hit, Barbara's Charged Attack generates 4 times the amount of healing.\n - Periodically regenerates your own active character's HP.\n - Applies the Wet status to the character and to opponents who come in contact with them.",
+        "*Barbara's music is the magic that heals her companions.*"
+      ]
+    },
+    {
+      "key": "talent_3",
+      "name": "Shining Miracle ♪",
+      "description": [
+        "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP.",
+        "*Barbara's desire to heal strengthens her will to fight and sing.*"
+      ]
+    }
+  ],
+  "passives": [
+    {
+      "key": "talent_4",
+      "name": "Glorious Season",
+      "description": "The Stamina Consumption of characters within Let the Show Begin♪'s Melody Loop is reduced by 12%."
+    },
+    {
+      "key": "talent_5",
+      "name": "Encore",
+      "description": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin♪ is extended by 1s.\nThe maximum extension is 5s."
+    },
+    {
+      "key": "talent_6",
+      "name": "With My Whole Heart ♪",
+      "description": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product."
+    }
+  ],
+	"talentFormats": [
+		[
+			{
+				"attribute": "1-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "2-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "3-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "4-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Charged Attack DMG",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Charged Attack Stamina Cost",
+				"format": "%d"
+			},
+			{
+				"attribute": "Plunge DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Low/High Plunge DMG",
+				"format": "%d%% / %d%%"
+			}
+		],
+		[
+      {
+				"attribute": "HP Regeneration Per Hit",
+				"format": "%.2f%% Max HP +%d"
+			},
+      {
+				"attribute": "Continuous Regeneration",
+				"format": "%.1f%% Max HP +%d"
+			},
+			{
+				"attribute": "Droplet DMG",
+				"format": "%.1f%%"
+			},
+      {
+				"attribute": "Duration",
+				"format": "%ds"
+			},
+      {
+				"attribute": "CD",
+				"format": "%ds"
+			}
+		],
+    [
+      {
+				"attribute": "Regeneration",
+				"format": "%.1f%% Max HP +%d"
+			},
+      {
+				"attribute": "CD",
+				"format": "%ds"
+			},
+      {
+				"attribute": "Energy Cost",
+				"format": "%d"
+			}
+    ]
+	],
+	"constellations": [
+    {
+      "key": "constellation_1",
+      "name": "Gleeful Songs",
+      "description": "Barbara regenerates 1 Energy every 10s."
+    },
+    {
+      "key": "constellation_2",
+      "name": "Vitality Burst",
+      "description": "Decreases the CD of Let the Show Begin ♪ by 15%.\n\nDuring the ability's duration, your active character gains a 15% Hydro DMG Bonus."
+    },
+    {
+      "key": "constellation_3",
+      "name": "Star of Tomorrow",
+      "description": "Increases the Level of Shining Miracle ♪ by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_4",
+      "name": "Attentiveness be My Power",
+      "description": "Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her.\n\nA maximum of 5 energy can be regenerated in this manner with any one Charged Attack."
+    },
+    {
+      "key": "constellation_5",
+      "name": "The Purest Companionship",
+      "description": "Increases the Level of Let the Show Begin ♪ by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_6",
+      "name": "Dedicating Everything to You",
+      "description": "When Barbara is in the party but not on the field, and one of your own party members falls:\n\n - Automatically revives the fallen character.\n - Fully restores the revived character's HP to 100%.\n\nThis effect can only occur once every 15 mins."
+    }
+  ]
+}

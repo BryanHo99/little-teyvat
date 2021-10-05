@@ -1,0 +1,174 @@
+{
+  "key": "amber",
+  "name": "Amber",
+  "title": "Gliding Champion",
+  "affiliation": "Knights of Favonius",
+  "region": "mondstadt",
+  "rarity": 4,
+  "weaponType": "bow",
+  "substat": "ATK",
+  "element": "pyro",
+  "birthday": "August 10",
+  "constellation": "Lepus",
+  "cv": {
+    "english": "Kelly Baskin",
+    "chinese": "蔡书瑾",
+    "japanese": "石見舞菜香",
+    "korean": "김연우"
+  },
+  "description": "Always energetic and full of life, Amber's the best — albeit only — Outrider of the Knights of Favonius.",
+  "talents": [
+    {
+      "key": "talent_1",
+      "name": "Normal Attack: Sharpshooter",
+      "description": [
+        "### Normal Attack\nPerform up to 5 consecutive shots with a bow.",
+        "### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, flames will accumulate on the arrowhead. A fully charged flaming arrow will deal Pyro DMG.",
+        "### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+      ]
+    },
+    {
+      "key": "talent_2",
+      "name": "Explosive Puppet",
+      "description": [
+        "The ever-reliable Baron Bunny takes the stage.",
+        "### Baron Bunny\n - Continuously taunts the enemy, drawing their fire.\n - Baron Bunny's HP scales with Amber's Max HP.\n - When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG.",
+        "### Hold\nAdjusts the throwing direction of Baron Bunny.\n\nThe longer the button is held, the further the throw.",
+        "*Baron Bunny hails from a storied lineage, but Amber has stopped keeping count since Baron Bunny the 893rd.*"
+      ]
+    },
+    {
+      "key": "talent_3",
+      "name": "Fiery Rain",
+      "description": [
+        "Fires off a shower of arrows, dealing continuous AoE Pyro DMG.",
+        "*Amber's passion truly burns hot.*"
+      ]
+    }
+  ],
+  "passives": [
+    {
+      "key": "talent_4",
+      "name": "Every Arrow Finds Its Target",
+      "description": "Increases the CRIT Rate of Fiery Rain by 10% and widens its AoE by 30%."
+    },
+    {
+      "key": "talent_5",
+      "name": "Precise Shot",
+      "description": "Aimed Shot hits on weak points increase ATK by 15% for 10s."
+    },
+    {
+      "key": "talent_6",
+      "name": "Gliding Champion",
+      "description": "Decreases gliding Stamina consumption for your own party members by 20%.\n\nNot stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+	"talentFormats": [
+		[
+			{
+				"attribute": "1-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "2-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "3-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "4-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "5-Hit DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Aimed Shot",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Fully-Charged Aimed Shot",
+				"format": "%d%%"
+			},
+			{
+				"attribute": "Plunge DMG",
+				"format": "%.1f%%"
+			},
+			{
+				"attribute": "Low/High Plunge DMG",
+				"format": "%d%% / %d%%"
+			}
+		],
+		[
+      {
+				"attribute": "Inherited HP",
+				"format": "%.1f%%"
+			},
+      {
+				"attribute": "Explosion DMG",
+				"format": "%d%%"
+			},
+      {
+				"attribute": "CD",
+				"format": "%ds"
+			}
+		],
+    [
+      {
+				"attribute": "Fiery Rain DMG Per Wave",
+				"format": "%.1f%%"
+			},
+      {
+				"attribute": "Total Fiery Rain DMG",
+				"format": "%d%%"
+			},
+      {
+				"attribute": "Duration",
+				"format": "%ds"
+			},
+      {
+				"attribute": "CD",
+				"format": "%ds"
+			},
+			{
+				"attribute": "Energy Cost",
+				"format": "%d"
+			}
+    ]
+	],
+	"constellations": [
+    {
+      "key": "constellation_1",
+      "name": "One Arrow to Rule Them All",
+      "description": "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG."
+    },
+    {
+      "key": "constellation_2",
+      "name": "Bunny Triggered",
+      "description": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\n\nExplosion via manual detonation deals 200% additional DMG."
+    },
+    {
+      "key": "constellation_3",
+      "name": "It Burns!",
+      "description": "Increases the Level of Fiery Rain by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_4",
+      "name": "It's Not Just Any Doll...",
+      "description": "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge."
+    },
+    {
+      "key": "constellation_5",
+      "name": "It's Baron Bunny!",
+      "description": "Increases the Level of Explosive Puppet by 3.\n\nMaximum upgrade level is 15."
+    },
+    {
+      "key": "constellation_6",
+      "name": "Wildfire",
+      "description": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "key": "ayaka",
+  "ascensionStats": [
+    {
+      "level": 1,
+      "baseHp": 1001,
+      "baseAtk": 27,
+      "baseDef": 61,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 2597,
+      "baseAtk": 69,
+      "baseDef": 158,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3455,
+      "baseAtk": 92,
+      "baseDef": 211,
+      "bonus": 50,
+      "isAscension": true
+    },
+    {
+      "level": 40,
+      "baseHp": 5170,
+      "baseAtk": 138,
+      "baseDef": 315,
+      "bonus": 50,
+      "isAscension": false
+    },
+    {
+      "level": 40,
+      "baseHp": 5779,
+      "baseAtk": 154,
+      "baseDef": 352,
+      "bonus": 59.6,
+      "isAscension": true
+    },
+    {
+      "level": 50,
+      "baseHp": 6649,
+      "baseAtk": 177,
+      "baseDef": 405,
+      "bonus": 59.6,
+      "isAscension": false
+    },
+    {
+      "level": 50,
+      "baseHp": 7462,
+      "baseAtk": 198,
+      "baseDef": 455,
+      "bonus": 69.2,
+      "isAscension": true
+    },
+    {
+      "level": 60,
+      "baseHp": 8341,
+      "baseAtk": 222,
+      "baseDef": 509,
+      "bonus": 69.2,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 8951,
+      "baseAtk": 238,
+      "baseDef": 546,
+      "bonus": 69.2,
+      "isAscension": true
+    },
+    {
+      "level": 70,
+      "baseHp": 9838,
+      "baseAtk": 262,
+      "baseDef": 600,
+      "bonus": 69.2,
+      "isAscension": false
+    },
+    {
+      "level": 70,
+      "baseHp": 10448,
+      "baseAtk": 278,
+      "baseDef": 637,
+      "bonus": 78.8,
+      "isAscension": true
+    },
+    {
+      "level": 80,
+      "baseHp": 11345,
+      "baseAtk": 302,
+      "baseDef": 692,
+      "bonus": 78.8,
+      "isAscension": false
+    },
+    {
+      "level": 80,
+      "baseHp": 11954,
+      "baseAtk": 318,
+      "baseDef": 729,
+      "bonus": 88.4,
+      "isAscension": true
+    },
+    {
+      "level": 90,
+      "baseHp": 12858,
+      "baseAtk": 342,
+      "baseDef": 784,
+      "bonus": 88.4,
+      "isAscension": false
+    }
+  ],
+  "ascensionMaterials": [
+    {
+      "level": 1,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 20000
+        },
+        {
+          "key": "shivada_jade_sliver",
+          "type": "character_ascension",
+          "amount": 1
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 3
+        },
+        {
+          "key": "old_handguard",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 40000
+        },
+        {
+          "key": "shivada_jade_fragment",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "perpetual_heart",
+          "type": "character_ascension",
+          "amount": 2
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 10
+        },
+        {
+          "key": "old_handguard",
+          "type": "common",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 60000
+        },
+        {
+          "key": "shivada_jade_fragment",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "perpetual_heart",
+          "type": "character_ascension",
+          "amount": 4
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 20
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 80000
+        },
+        {
+          "key": "shivada_jade_chunk",
+          "type": "character_ascension",
+          "amount": 3
+        },
+        {
+          "key": "perpetual_heart",
+          "type": "character_ascension",
+          "amount": 8
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 30
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 100000
+        },
+        {
+          "key": "shivada_jade_chunk",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "perpetual_heart",
+          "type": "character_ascension",
+          "amount": 12
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 45
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "shivada_jade_gemstone",
+          "type": "character_ascension",
+          "amount": 6
+        },
+        {
+          "key": "perpetual_heart",
+          "type": "character_ascension",
+          "amount": 20
+        },
+        {
+          "key": "sakura_bloom",
+          "type": "local",
+          "amount": 60
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 24
+        }
+      ]
+    }
+  ],
+	"talentStats": [
+		[
+			{
+				"stats": [
+					[45.7], [49.4], [53.2], [58.5], [62.2], [66.5], [72.3], [78.2], [84.0], [90.4], [96.8], [103.1], [109.5]
+				]
+			},
+			{
+				"stats": [
+					[48.7], [52.6], [56.6], [62.3], [66.2], [70.8], [77.0], [83.2], [89.4], [96.2], [103.0], [109.8], [116.6]
+				]
+			},
+			{
+				"stats": [
+					[62.6], [67.7], [72.8], [80.1], [85.2], [91.0], [99.0], [107.0], [115.0], [123.8], [132.5], [141.3], [150.0]
+				]
+			},
+			{
+				"stats": [
+					[22.6], [24.5], [26.3], [29.0], [30.8], [32.9], [35.8], [38.7], [41.6], [44.8], [47.9], [51.1], [54.2]
+				]
+			},
+			{
+				"stats": [
+					[78.2], [84.5], [90.9], [100.0], [106.4], [113.6], [123.6], [133.6], [143.6], [154.5], [165.5], [176.4], [187.3]
+				]
+			},
+			{
+				"stats": [
+					[55.1], [59.6], [64.1], [70.5], [75.0], [80.1], [87.2], [94.2], [101.3], [109.0], [116.7], [124.4], [132.0]
+				]
+			},
+			{
+				"stats": [
+					[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]
+				]
+			},
+			{
+				"stats": [
+					[64], [69], [74], [82], [87], [93], [101], [109], [117], [126], [135], [144], [153]
+				]
+			},
+			{
+				"stats": [
+					[128, 160], [138, 173], [149, 186], [164, 204], [174, 217], [186, 232], [202, 253], [219, 273], [235, 293], [253, 316], [271, 338], [288, 360], [306, 382]
+				]
+			}
+		],
+		[
+      {
+				"stats": [
+					[239], [257], [275], [299], [317], [335], [359], [383], [407], [431], [454], [478], [508]
+				]
+			},
+      {
+				"stats": [
+					[10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10]
+				]
+			}
+		],
+		[
+			{
+				"stats": [
+					[10], [], [], [], [], [], [], [], [], [], [], [], []
+				]
+			},
+			{
+				"stats": [
+					[15], [], [], [], [], [], [], [], [], [], [], [], []
+				]
+			},
+			{
+				"stats": [
+					[5], [], [], [], [], [], [], [], [], [], [], [], []
+				]
+			}
+		],
+    [
+      {
+				"stats": [
+					[112], [121], [129], [140], [149], [157], [168], [180], [191], [202], [213], [225], [239]
+				]
+			},
+      {
+				"stats": [
+					[168], [181], [194], [211], [223], [236], [253], [270], [286], [303], [320], [337], [358]
+				]
+			},
+			{
+				"stats": [
+					[5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5]
+				]
+			},
+      {
+				"stats": [
+					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
+				]
+			},
+      {
+				"stats": [
+					[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]
+				]
+			}
+    ]
+	],
+  "talentMaterials": [
+    {
+      "level": 2,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 12500
+        },
+        {
+          "key": "teachings_of_elegance",
+          "type": "talent",
+          "amount": 3
+        },
+        {
+          "key": "old_handguard",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 17500
+        },
+        {
+          "key": "guide_to_elegance",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 25000
+        },
+        {
+          "key": "guide_to_elegance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 30000
+        },
+        {
+          "key": "guide_to_elegance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 37500
+        },
+        {
+          "key": "guide_to_elegance",
+          "type": "talent",
+          "amount": 9
+        },
+        {
+          "key": "kageuchi_handguard",
+          "type": "common",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 120000
+        },
+        {
+          "key": "philosophies_of_elegance",
+          "type": "talent",
+          "amount": 4
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 4
+        },
+        {
+          "key": "bloodjade_branch",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 260000
+        },
+        {
+          "key": "philosophies_of_elegance",
+          "type": "talent",
+          "amount": 6
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 6
+        },
+        {
+          "key": "bloodjade_branch",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 450000
+        },
+        {
+          "key": "philosophies_of_elegance",
+          "type": "talent",
+          "amount": 12
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 9
+        },
+        {
+          "key": "bloodjade_branch",
+          "type": "talent",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "materials": [
+        {
+          "key": "mora",
+          "type": "currency",
+          "amount": 700000
+        },
+        {
+          "key": "philosophies_of_elegance",
+          "type": "talent",
+          "amount": 16
+        },
+        {
+          "key": "famed_handguard",
+          "type": "common",
+          "amount": 12
+        },
+        {
+          "key": "bloodjade_branch",
+          "type": "talent",
+          "amount": 2
+        },
+        {
+          "key": "crown_of_insight",
+          "type": "talent",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}
