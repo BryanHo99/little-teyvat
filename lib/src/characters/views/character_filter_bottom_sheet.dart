@@ -6,7 +6,7 @@ import 'package:little_teyvat/src/characters/controllers/filter_characters_contr
 import 'package:little_teyvat/src/characters/models/character_card_model.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
 import 'package:little_teyvat/src/filters/filter_bottom_sheet.dart';
-import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item.dart';
+import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
 import 'package:little_teyvat/src/filters/views/element_filter.dart';
 import 'package:little_teyvat/src/filters/views/rarity_filter.dart';
 import 'package:little_teyvat/src/filters/views/sort_filter.dart';
@@ -23,7 +23,7 @@ class CharacterFilterBottomSheet extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final FilterCharactersController filterController = ref.watch(filterCharactersController(characters).notifier);
-    final IList<SortDropdownMenuItem> dropdownMenuItems = ref.watch(characterSortDropdownController).initDropdownItems(context);
+    final IList<SortDropdownMenuItemModel> dropdownMenuItems = ref.watch(characterSortDropdownController).initDropdownItems(context);
 
     return FilterBottomSheet(
       children: <Widget>[

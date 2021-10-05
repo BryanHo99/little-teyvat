@@ -5,10 +5,10 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/filters/controllers/sort_filter_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
-import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item.dart';
+import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
 
 class SortFilter extends StatelessWidget {
-  final IList<SortDropdownMenuItem> dropdownMenuItems;
+  final IList<SortDropdownMenuItemModel> dropdownMenuItems;
   final AutoDisposeStateNotifierProvider<SortFilterController, SortFilterState> controller;
 
   const SortFilter({
@@ -40,7 +40,7 @@ class SortFilter extends StatelessWidget {
                     value: selected,
                     items: <DropdownMenuItem<String>>[
                       ...dropdownMenuItems.map(
-                        (SortDropdownMenuItem item) => DropdownMenuItem<String>(
+                        (SortDropdownMenuItemModel item) => DropdownMenuItem<String>(
                           child: Text(
                             item.itemName,
                             style: const TextStyle(

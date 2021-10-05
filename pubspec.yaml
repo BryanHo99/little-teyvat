@@ -36,6 +36,7 @@ dependencies:
   hive: ^2.0.4
   hive_flutter: ^1.1.0
   hooks_riverpod: ^1.0.0-dev.7
+  http: ^0.13.4
   intl: ^0.17.0
   json_annotation: ^4.1.0
   sprintf: ^6.0.0
