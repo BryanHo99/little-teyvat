@@ -11,6 +11,7 @@ import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
 import 'package:little_teyvat/src/shared/scaffolds/search_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
+import 'package:little_teyvat/src/shared/wrappers/fade_in_wrapper.dart';
 
 class Characters extends ConsumerWidget {
   const Characters({Key? key}) : super(key: key);
@@ -46,15 +47,18 @@ class Characters extends ConsumerWidget {
 
         return SearchScaffold(
           title: context.tr.characters,
-          body: ListView.builder(
-            padding: const EdgeInsets.symmetric(vertical: 5.0),
-            itemCount: characters.length,
-            itemBuilder: (BuildContext context, int index) => CharacterCard(
-              characterKey: characters[index].key,
-              characterName: characters[index].name,
-              elementKey: characters[index].element,
-              characterRarity: characters[index].rarity,
-              characterMaterials: characters[index].materials,
+          body: FadeInWrapper(
+            child: ListView.builder(
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
+              itemCount: characters.length,
+              itemBuilder: (BuildContext context, int index) => CharacterCard(
+                id: characters[index].id,
+                name: characters[index].name,
+                element: characters[index].element,
+                rarity: characters[index].rarity,
+                cardImage: characters[index].cardImage,
+                materials: characters[index].materials,
+              ),
             ),
           ),
           hintText: context.tr.searchCharacter,
@@ -62,7 +66,11 @@ class Characters extends ConsumerWidget {
           onTextChanged: (String value) => filterController.searchCharacters(value),
         );
       },
-      loading: () => const LoadingView(),
+      loading: () => DefaultScaffold(
+        title: context.tr.characters,
+        body: const LoadingView(),
+        absorbing: true,
+      ),
       error: (Object error, StackTrace? stack) => DefaultScaffold(
         title: context.tr.characters,
         body: ErrorView(

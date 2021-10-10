@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_character_ascension_stats_character_ascension_stats",
+  "info": {
+    "name": "Character Ascension Stats",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "integer",
+      "required": true
+    },
+    "baseHp": {
+      "type": "integer",
+      "required": true
+    },
+    "baseAtk": {
+      "type": "integer",
+      "required": true
+    },
+    "baseDef": {
+      "type": "integer",
+      "required": true
+    },
+    "bonus": {
+      "type": "decimal",
+      "required": true
+    },
+    "isAscension": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

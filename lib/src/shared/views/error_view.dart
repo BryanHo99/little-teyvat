@@ -21,11 +21,6 @@ class ErrorView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red.shade900,
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.all(
-          Radius.circular(20),
-        ),
-      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

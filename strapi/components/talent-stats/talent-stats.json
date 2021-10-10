@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_talent_stats_talent_stats",
+  "info": {
+    "name": "Talent Stats",
+    "icon": "percentage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "attribute": {
+      "type": "string",
+      "required": true
+    },
+    "textFormat": {
+      "type": "string",
+      "required": true
+    },
+    "stats": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

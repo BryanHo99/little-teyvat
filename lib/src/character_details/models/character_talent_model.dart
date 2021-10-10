@@ -1,5 +1,7 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:little_teyvat/src/character_details/models/character_talent_stats_model.dart';
+import 'package:little_teyvat/strapi/models/strapi_image_model.dart';
 
 part 'character_talent_model.freezed.dart';
 part 'character_talent_model.g.dart';
@@ -7,9 +9,10 @@ part 'character_talent_model.g.dart';
 @freezed
 class CharacterTalentModel with _$CharacterTalentModel {
   const factory CharacterTalentModel({
-    required String key,
     required String name,
-    required IList<String> description,
+    required String description,
+    required StrapiImageModel image,
+    required IList<CharacterTalentStatsModel> stats,
   }) = _CharacterTalentModel;
 
   factory CharacterTalentModel.fromJson(Map<String, dynamic> json) => _$CharacterTalentModelFromJson(json);

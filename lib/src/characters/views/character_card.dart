@@ -1,39 +1,39 @@
 import 'dart:ui';
 
+import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/helpers/asset_helper.dart';
 import 'package:little_teyvat/routes/arguments/character_details_arguments.dart';
 import 'package:little_teyvat/routes/route_constants.dart' as routes;
-import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
 import 'package:little_teyvat/src/characters/characters_constants.dart' as constants;
 import 'package:little_teyvat/src/characters/controllers/colour_controller.dart';
-import 'package:little_teyvat/src/characters/models/character_card_material_model.dart';
 import 'package:little_teyvat/src/characters/views/character_card_painter.dart';
 import 'package:little_teyvat/src/shared/widgets/rarity.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/strapi/models/strapi_image_model.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class CharacterCard extends StatelessWidget {
-  final String characterKey;
-  final String characterName;
-  final String elementKey;
-  final int characterRarity;
-  final List<CharacterCardMaterialModel> characterMaterials;
+  final String id;
+  final String name;
+  final String element;
+  final int rarity;
+  final StrapiImageModel cardImage;
+  final IList<StrapiImageModel> materials;
 
   const CharacterCard({
     Key? key,
-    required this.characterKey,
-    required this.characterName,
-    required this.elementKey,
-    required this.characterRarity,
-    required this.characterMaterials,
+    required this.id,
+    required this.name,
+    required this.element,
+    required this.rarity,
+    required this.cardImage,
+    required this.materials,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final String characterCardImagePath = '${assets.characterCardImagesPath}/$characterKey.png';
-    final String characterElementPath = '${assets.elementImagesPath}/$elementKey.png';
-
     return Container(
       constraints: const BoxConstraints(
         maxHeight: constants.characterCardHeight,
@@ -43,7 +43,7 @@ class CharacterCard extends StatelessWidget {
         child: Consumer(
           builder: (BuildContext context, WidgetRef ref, Widget? child) {
             return Card(
-              color: ref.watch(colourController).getBackgroundColor(elementKey),
+              color: ref.watch(colourController).getBackgroundColor(element),
               clipBehavior: Clip.antiAlias,
               elevation: 5.0,
               shape: RoundedRectangleBorder(
@@ -54,7 +54,7 @@ class CharacterCard extends StatelessWidget {
                   CustomPaint(
                     child: Container(),
                     painter: CharacterCardPainter(
-                      color: ref.watch(colourController).getForegroundColor(elementKey),
+                      color: ref.watch(colourController).getForegroundColor(element),
                     ),
                     willChange: false,
                   ),
@@ -63,7 +63,7 @@ class CharacterCard extends StatelessWidget {
                     right: 8.0,
                     child: FadeInImage(
                       placeholder: MemoryImage(kTransparentImage),
-                      image: AssetImage(characterElementPath),
+                      image: AssetImage(getElementPath(element)),
                       width: constants.elementImageWidth,
                     ),
                   ),
@@ -73,7 +73,7 @@ class CharacterCard extends StatelessWidget {
                         aspectRatio: 1.0,
                         child: FadeInImage(
                           placeholder: MemoryImage(kTransparentImage),
-                          image: AssetImage(characterCardImagePath),
+                          image: NetworkImage(cardImage.imageUrl),
                         ),
                       ),
                       Expanded(
@@ -86,7 +86,7 @@ class CharacterCard extends StatelessWidget {
                               child: FittedBox(
                                 fit: BoxFit.scaleDown,
                                 child: Text(
-                                  characterName,
+                                  name,
                                   textAlign: TextAlign.start,
                                   style: const TextStyle(
                                     color: Colors.white,
@@ -96,19 +96,16 @@ class CharacterCard extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: constants.sizedBoxHeight),
-                            Rarity(rarity: characterRarity),
+                            Rarity(rarity: rarity),
                             const SizedBox(height: constants.sizedBoxHeight),
                             Wrap(
                               spacing: 3.0,
                               children: <Widget>[
-                                ...characterMaterials.map(
-                                  (CharacterCardMaterialModel material) {
-                                    final String materialImagePath =
-                                        '${assets.itemImagesPath}/${material.type}/${material.key}.png';
-
+                                ...materials.map(
+                                  (StrapiImageModel material) {
                                     return FadeInImage(
                                       placeholder: MemoryImage(kTransparentImage),
-                                      image: AssetImage(materialImagePath),
+                                      image: NetworkImage(material.imageUrl),
                                       width: constants.characterMaterialImageWidth,
                                     );
                                   },
@@ -128,8 +125,8 @@ class CharacterCard extends StatelessWidget {
                           child: InkWell(
                             onTap: () {
                               final CharacterDetailsArguments args = CharacterDetailsArguments(
-                                characterKey: characterKey,
-                                characterName: characterName,
+                                id: id,
+                                name: name,
                               );
 
                               ref.read(navigationController.notifier).navigate(context, routes.characterDetails, args);

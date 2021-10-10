@@ -1,13 +1,11 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
-import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
-import 'package:little_teyvat/src/character_details/models/material_row_model.dart';
 import 'package:little_teyvat/src/character_details/models/material_model.dart';
-import 'package:little_teyvat/src/character_details/models/materials_table_model.dart';
+import 'package:little_teyvat/src/character_details/models/materials_model.dart';
 
 class CharacterMaterialsTable extends StatelessWidget {
   final IList<String> headerTitles;
-  final MaterialsTableModel characterMaterials;
+  final IList<MaterialsModel> characterMaterials;
 
   const CharacterMaterialsTable({
     Key? key,
@@ -38,8 +36,8 @@ class CharacterMaterialsTable extends StatelessWidget {
                 ),
               ],
               rows: <DataRow>[
-                ...characterMaterials.materials.map(
-                  (MaterialRowModel row) => DataRow(
+                ...characterMaterials.map(
+                  (MaterialsModel row) => DataRow(
                     cells: <DataCell>[
                       DataCell(Text(row.level.toString())),
                       DataCell(
@@ -47,22 +45,20 @@ class CharacterMaterialsTable extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: <Widget>[
-                            ...row.materials.map((MaterialModel material) {
-                              final String materialImagePath = '${assets.itemImagesPath}/${material.type}/${material.key}.png';
-
-                              return Row(
+                            ...row.materials.map(
+                              (MaterialModel material) => Row(
                                 children: <Widget>[
                                   ConstrainedBox(
                                     constraints: const BoxConstraints(maxWidth: 40),
-                                    child: Image.asset(materialImagePath),
+                                    child: Image.network(material.image.imageUrl),
                                   ),
                                   Text('x${material.amount}'),
                                   const SizedBox(
                                     width: 30.0,
                                   ),
                                 ],
-                              );
-                            }),
+                              ),
+                            ),
                           ],
                         ),
                       ),

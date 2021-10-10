@@ -1,29 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 import 'package:transparent_image/transparent_image.dart';
 
 const double _paddingOffset = 15.0;
 
 class CharacterSkillCard extends StatelessWidget {
-  final String characterKey;
-  final String skillKey;
   final String title;
   final String description;
+  final String imageUrl;
 
   const CharacterSkillCard({
     Key? key,
-    required this.characterKey,
-    required this.skillKey,
     required this.title,
     required this.description,
+    required this.imageUrl,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final String characterSkillImagePath = '${assets.skillImagesPath}/$characterKey/$skillKey.png';
-
     return Card(
       elevation: 8.0,
       color: context.theme.canvasColor,
@@ -41,7 +36,7 @@ class CharacterSkillCard extends StatelessWidget {
                 aspectRatio: 1.0,
                 child: FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
-                  image: AssetImage(characterSkillImagePath),
+                  image: NetworkImage(imageUrl),
                 ),
               ),
             ),

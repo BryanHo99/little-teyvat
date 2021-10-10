@@ -3,6 +3,7 @@
 *.freezed.dart
 
 # Miscellaneous
+*.env
 *.class
 *.log
 *.pyc

@@ -1,10 +1,10 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
-import 'package:little_teyvat/src/character_details/models/stats_table_model.dart';
+import 'package:little_teyvat/src/character_details/models/stats_model.dart';
 
 class CharacterStatsTable extends StatelessWidget {
   final IList<String> header;
-  final StatsTableModel characterStats;
+  final IList<StatsModel> characterStats;
 
   const CharacterStatsTable({
     Key? key,
@@ -37,10 +37,10 @@ class CharacterStatsTable extends StatelessWidget {
                 )
               ],
               rows: <DataRow>[
-                ...characterStats.getStats().map(
-                      (IList<String> row) => DataRow(
+                ...characterStats.map(
+                      (StatsModel row) => DataRow(
                         cells: <DataCell>[
-                          ...row.map(
+                          ...row.getStat().map(
                             (String stat) => DataCell(Text(stat)),
                           ),
                         ],

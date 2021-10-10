@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_cv_cvs",
+  "info": {
+    "name": "cv",
+    "icon": "microphone"
+  },
+  "options": {},
+  "attributes": {
+    "english": {
+      "type": "string",
+      "required": true
+    },
+    "chinese": {
+      "type": "string",
+      "required": true
+    },
+    "japanese": {
+      "type": "string",
+      "required": true
+    },
+    "korean": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

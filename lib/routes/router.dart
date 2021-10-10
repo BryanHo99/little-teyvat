@@ -22,8 +22,8 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return _createRoute(
         routeSettings,
         CharacterDetails(
-          characterKey: args.characterKey,
-          characterName: args.characterName,
+          id: args.id,
+          name: args.name,
         ),
       );
     case constants.settings:

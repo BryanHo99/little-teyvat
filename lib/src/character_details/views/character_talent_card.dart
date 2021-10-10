@@ -2,30 +2,21 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/extensions/iterable_extension.dart';
-import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/models/character_talent_model.dart';
-import 'package:little_teyvat/src/character_details/models/character_talent_stats_model.dart';
 import 'package:little_teyvat/src/character_details/views/character_stats_table.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class CharacterTalentCard extends StatelessWidget {
-  final String characterKey;
-  final CharacterTalentModel characterTalent;
-  final CharacterTalentStatsModel characterTalentStats;
+  final CharacterTalentModel talent;
 
   const CharacterTalentCard({
     Key? key,
-    required this.characterKey,
-    required this.characterTalent,
-    required this.characterTalentStats,
+    required this.talent,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final String characterTalentImagePath = '${assets.skillImagesPath}/$characterKey/${characterTalent.key}.png';
-
     return Card(
       elevation: 8.0,
       color: context.theme.canvasColor,
@@ -42,10 +33,10 @@ class CharacterTalentCard extends StatelessWidget {
                 aspectRatio: 1.0,
                 child: FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
-                  image: AssetImage(characterTalentImagePath),
+                  image: NetworkImage(talent.image.imageUrl),
                 ),
               ),
-              title: Text(characterTalent.name),
+              title: Text(talent.name),
             ),
             const Divider(
               height: constants.dividerHeight,
@@ -53,23 +44,12 @@ class CharacterTalentCard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  ...characterTalent.description.mapIndex(
-                    (String data, int index) => Column(
-                      children: <Widget>[
-                        MarkdownBody(
-                          data: data,
-                        ),
-                        SizedBox(
-                          height: index != characterTalent.description.length - 1 ? 30.0 : 22.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              child: MarkdownBody(
+                data: talent.description,
               ),
+            ),
+            const SizedBox(
+              height: 22.0,
             ),
             ExpansionTile(
               collapsedIconColor: context.theme.primaryColor,
@@ -86,7 +66,7 @@ class CharacterTalentCard extends StatelessWidget {
                     context.tr.level,
                     for (int i = 1; i <= 13; i++) i.toString(),
                   ].lock,
-                  characterStats: characterTalentStats,
+                  characterStats: talent.stats,
                 ),
               ],
             ),

@@ -20,7 +20,7 @@ class CharactersController extends StateNotifier<AsyncValue<IList<CharacterCardM
     state = const AsyncValue<IList<CharacterCardModel>>.loading();
 
     state = await AsyncValue.guard(() async {
-      final IList<Map<String, dynamic>> charactersJson = (await read(characterSummariesService).getCharacterSummaries()).lock;
+      final IList<Map<String, dynamic>> charactersJson = (await read(characterSummariesService).getCharacterSummaries());
       return charactersJson.map((Map<String, dynamic> json) => CharacterCardModel.fromJson(json)).toIList();
     });
   }

@@ -1,7 +1,10 @@
-import 'package:little_teyvat/helpers/json.dart' as helper;
-import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
-import 'package:little_teyvat/src/settings/services/language_service.dart';
+import 'package:fast_immutable_collections/fast_immutable_collections.dart';
+import 'package:graphql/client.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/strapi/strapi.dart';
+import 'package:little_teyvat/src/settings/services/language_service.dart';
+
+part 'queries.dart';
 
 final Provider<CharacterSummariesService> characterSummariesService = Provider<CharacterSummariesService>(
   (ProviderRef<CharacterSummariesService> ref) => CharacterSummariesService(ref.read),
@@ -9,24 +12,20 @@ final Provider<CharacterSummariesService> characterSummariesService = Provider<C
 
 class CharacterSummariesService {
   final Reader read;
+  final Strapi strapi = Strapi();
 
-  const CharacterSummariesService(this.read);
+  CharacterSummariesService(this.read);
 
-  /// Returns the absolute path of a character's summary data.
-  String _getPath(String jsonFileName) {
+  /// Returns all characters' summary data.
+  Future<IList<Map<String, dynamic>>> getCharacterSummaries() async {
     final String languageCode = read(languageService).getLanguageKey();
-    final String path = '${assets.localizationPath}/$languageCode/${assets.characterSummariesPath}/$jsonFileName';
-    return path;
-  }
+    final GraphQLClient client = strapi.getGraphQLClient();
+    final QueryResult result = await client.query(
+      QueryOptions(
+        document: gql(_getCharacterSummaries(languageCode)),
+      ),
+    );
 
-  /// Returns all characters' summary data.zzxzx
-  Future<List<Map<String, dynamic>>> getCharacterSummaries() async {
-    final List<Map<String, dynamic>> jsonList = <Map<String, dynamic>>[];
-
-    for (String jsonFileName in assets.charactersJsonPaths) {
-      jsonList.add(await helper.getJson(_getPath(jsonFileName)));
-    }
-
-    return jsonList;
+    return List<Map<String, dynamic>>.from(result.data!['characters']).lock;
   }
 }
