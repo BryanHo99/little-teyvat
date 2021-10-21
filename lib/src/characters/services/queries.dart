@@ -5,7 +5,6 @@ String _getCharacterSummaries(String languageCode) {
       query {
         characters(locale: "$languageCode", sort: "name") {
           id
-          key
           name
           rarity
           element

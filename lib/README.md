@@ -29,6 +29,12 @@ This personal project is initialized as an avenue to learn Flutter alongside oth
 	- **Freezed** generates immutable data classes and sealed unions that enhances Riverpod.
 	- **json_serializable** generates code for JSON serialization and deserialization.
 
+#### Strapi CMS for Backend
+- [Strapi](https://strapi.io/)
+- Headless CMS to manage and store static content.
+- PostgreSQL as database.
+- All queries are performed using GraphQL.
+
 #### Other Packages
 - [fast_immutable_collections](https://pub.dev/packages/fast_immutable_collections) for immutable lists and maps.
 - [flutter_hooks](https://pub.dev/packages/flutter_hooks) for code reuse, especially for handling animations.
@@ -37,5 +43,5 @@ This personal project is initialized as an avenue to learn Flutter alongside oth
 ## VSCode Extensions
 - [Freezed](https://marketplace.visualstudio.com/items?itemName=blaxou.freezed)
 - [flutter-stylizer](https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer)
-- [Riverpod Snippets](https://marketplace.visualstudio.com/items?itemName=Pythonhub.riverpodsnippets)
+- [Riverpod Snippsets](https://marketplace.visualstudio.com/items?itemName=Pythonhub.riverpodsnippets)
 - [Flutter Intl](https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl)

@@ -9,7 +9,6 @@ part 'character_card_model.g.dart';
 class CharacterCardModel with _$CharacterCardModel {
   const factory CharacterCardModel({
     required String id,
-    required String key,
     required String name,
     required int rarity,
     required String element,
