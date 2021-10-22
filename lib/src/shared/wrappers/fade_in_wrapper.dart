@@ -8,7 +8,7 @@ class FadeInWrapper extends HookWidget {
 
   const FadeInWrapper({
     Key? key,
-    this.duration = const Duration(milliseconds: 280),
+    this.duration = const Duration(milliseconds: 500),
     required this.child,
   }) : super(key: key);
 
