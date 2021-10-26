@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 final ThemeData darkTheme = ThemeData(
   // Miscellaneous
@@ -6,35 +7,35 @@ final ThemeData darkTheme = ThemeData(
   splashFactory: InkRipple.splashFactory,
 
   // Colors
-  primaryColor: Colors.white,
-  scaffoldBackgroundColor: Colors.grey[900],
-  backgroundColor: Colors.grey[900],
-  canvasColor: Colors.grey[850],
+  primaryColor: kcWhite,
+  scaffoldBackgroundColor: kcGrey900,
+  backgroundColor: kcGrey900,
+  canvasColor: kcGrey850,
 
   // Schemes
   appBarTheme: const AppBarTheme().copyWith(
-    color: Colors.black,
+    color: kcBlack,
   ),
   colorScheme: const ColorScheme.dark().copyWith(
-    primary: Colors.white,
-    secondary: Colors.black,
+    primary: kcWhite,
+    secondary: kcBlack,
   ),
   iconTheme: const IconThemeData().copyWith(
-    color: Colors.white,
+    color: kcWhite,
   ),
   switchTheme: const SwitchThemeData().copyWith(
-    thumbColor: MaterialStateProperty.all(Colors.white),
-    trackColor: MaterialStateProperty.all(Colors.grey[500]),
+    thumbColor: MaterialStateProperty.all(kcWhite),
+    trackColor: MaterialStateProperty.all(kcGrey),
   ),
   textTheme: const TextTheme().copyWith(
-    bodyText2: const TextStyle(fontSize: 12),
+    bodyText2: ktBody,
   ),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData().copyWith(
-    selectedItemColor: Colors.white,
-    unselectedItemColor: Colors.grey[500],
+    selectedItemColor: kcWhite,
+    unselectedItemColor: kcGrey,
   ),
   cardTheme: const CardTheme().copyWith(
-    color: Colors.grey[800],
+    color: kcGrey800,
   ),
   inputDecorationTheme: const InputDecorationTheme(
     border: InputBorder.none,

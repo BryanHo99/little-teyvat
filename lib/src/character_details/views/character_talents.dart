@@ -8,7 +8,7 @@ import 'package:little_teyvat/src/character_details/models/character_talent_mode
 import 'package:little_teyvat/src/character_details/views/character_materials_table.dart';
 import 'package:little_teyvat/src/character_details/views/character_skill_card.dart';
 import 'package:little_teyvat/src/character_details/views/character_talent_card.dart';
-import 'package:little_teyvat/src/shared/wrappers/fade_in_wrapper.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 const double _sizedBoxHeight = 10.0;
 const double _dividerPadding = 10.0;
@@ -23,87 +23,79 @@ class CharacterTalents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FadeInWrapper(
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
-                child: Text(
-                  context.tr.talents,
-                  style: const TextStyle(
-                    fontSize: constants.titleFontSize,
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
+              child: Text(
+                context.tr.talents,
+                style: ktHeading1,
+              ),
+            ),
+            const SizedBox(height: _sizedBoxHeight),
+            ...character.talents.map(
+              (CharacterTalentModel talent) => Column(
+                children: <Widget>[
+                  CharacterTalentCard(talent: talent),
+                  const SizedBox(height: _sizedBoxHeight),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: _dividerPadding),
+              child: Divider(
+                height: constants.dividerHeight,
+                thickness: constants.dividerThickness,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 15.0),
+              child: Text(
+                context.tr.talentMaterials,
+                style: ktHeading1,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: CharacterMaterialsTable(
+                headerTitles: <String>[
+                  context.tr.level,
+                  context.tr.materials,
+                ].lock,
+                characterMaterials: character.talentMaterials,
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: _dividerPadding),
+              child: Divider(
+                height: constants.dividerHeight,
+                thickness: constants.dividerThickness,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 10.0),
+              child: Text(
+                context.tr.passives,
+                style: ktHeading1,
+              ),
+            ),
+            ...character.passives.map(
+              (CharacterSkillModel passive) => Column(
+                children: <Widget>[
+                  CharacterSkillCard(
+                    title: passive.name,
+                    description: passive.description,
+                    imageUrl: passive.image.imageUrl,
                   ),
-                ),
+                  const SizedBox(height: _sizedBoxHeight),
+                ],
               ),
-              const SizedBox(height: _sizedBoxHeight),
-              ...character.talents.map(
-                (CharacterTalentModel talent) => Column(
-                  children: <Widget>[
-                    CharacterTalentCard(talent: talent),
-                    const SizedBox(height: _sizedBoxHeight),
-                  ],
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: _dividerPadding),
-                child: Divider(
-                  height: constants.dividerHeight,
-                  thickness: constants.dividerThickness,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 15.0),
-                child: Text(
-                  context.tr.talentMaterials,
-                  style: const TextStyle(
-                    fontSize: constants.titleFontSize,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                child: CharacterMaterialsTable(
-                  headerTitles: <String>[
-                    context.tr.level,
-                    context.tr.materials,
-                  ].lock,
-                  characterMaterials: character.talentMaterials,
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: _dividerPadding),
-                child: Divider(
-                  height: constants.dividerHeight,
-                  thickness: constants.dividerThickness,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 10.0),
-                child: Text(
-                  context.tr.passives,
-                  style: const TextStyle(
-                    fontSize: constants.titleFontSize,
-                  ),
-                ),
-              ),
-              ...character.passives.map(
-                (CharacterSkillModel passive) => Column(
-                  children: <Widget>[
-                    CharacterSkillCard(
-                      title: passive.name,
-                      description: passive.description,
-                      imageUrl: passive.image.imageUrl,
-                    ),
-                    const SizedBox(height: _sizedBoxHeight),
-                  ],
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

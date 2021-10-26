@@ -6,6 +6,7 @@ import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_submit_controller.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class FilterBottomSheet extends HookConsumerWidget {
   final List<Widget> children;
@@ -41,7 +42,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                 children: <Widget>[
                   Text(
                     context.tr.filter,
-                    style: const TextStyle(fontSize: 20.0),
+                    style: ktHeading1,
                   ),
                   const Divider(
                     height: 30.0,
@@ -64,7 +65,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         },
                         child: Text(
                           context.tr.cancel,
-                          style: TextStyle(
+                          style: ktHeading3.copyWith(
                             color: context.theme.primaryColor,
                           ),
                         ),
@@ -79,7 +80,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         onPressed: () => ref.read(filterSubmitController(controllers)).resetControllers(),
                         child: Text(
                           context.tr.reset,
-                          style: TextStyle(
+                          style: ktHeading3.copyWith(
                             color: context.theme.primaryColor,
                           ),
                         ),
@@ -99,7 +100,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         },
                         child: Text(
                           context.tr.filter,
-                          style: TextStyle(
+                          style: ktHeading3.copyWith(
                             color: context.theme.colorScheme.secondary,
                           ),
                         ),

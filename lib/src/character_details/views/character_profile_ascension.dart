@@ -5,6 +5,7 @@ import 'package:little_teyvat/src/character_details/character_details_constants.
 import 'package:little_teyvat/src/character_details/models/character_model.dart';
 import 'package:little_teyvat/src/character_details/views/character_materials_table.dart';
 import 'package:little_teyvat/src/character_details/views/character_stats_table.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class CharacterProfileAscension extends StatelessWidget {
   final CharacterModel character;
@@ -25,9 +26,7 @@ class CharacterProfileAscension extends StatelessWidget {
             children: <Widget>[
               Text(
                 context.tr.ascensionStats,
-                style: const TextStyle(
-                  fontSize: constants.titleFontSize,
-                ),
+                style: ktHeading2
               ),
               const SizedBox(height: constants.sizedBoxHeight),
               CharacterStatsTable(
@@ -54,9 +53,7 @@ class CharacterProfileAscension extends StatelessWidget {
             children: <Widget>[
               Text(
                 context.tr.ascensionMaterials,
-                style: const TextStyle(
-                  fontSize: constants.titleFontSize,
-                ),
+                style: ktHeading1,
               ),
               const SizedBox(height: constants.sizedBoxHeight),
               CharacterMaterialsTable(

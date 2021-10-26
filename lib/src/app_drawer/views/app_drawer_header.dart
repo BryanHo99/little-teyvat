@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 import 'package:little_teyvat/src/app_drawer/app_drawer_constants.dart' as constants;
+import 'package:little_teyvat/themes/themes.dart';
 
 class AppDrawerHeader extends StatelessWidget {
   const AppDrawerHeader({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class AppDrawerHeader extends StatelessWidget {
           const CircleAvatar(
             radius: 40.0,
             backgroundImage: AssetImage(assets.appIconImagePath),
-            backgroundColor: Colors.transparent,
+            backgroundColor: kcTransparent,
           ),
           const SizedBox(
             height: 10.0,
@@ -35,9 +36,8 @@ class AppDrawerHeader extends StatelessWidget {
               children: <Widget>[
                 Text(
                   context.tr.appName,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
+                  style: ktHeading1.copyWith(
+                    color: kcWhite,
                   ),
                 ),
                 const SizedBox(
@@ -45,8 +45,8 @@ class AppDrawerHeader extends StatelessWidget {
                 ),
                 Text(
                   context.tr.version(constants.version),
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: ktBody.copyWith(
+                    color: kcWhite,
                   ),
                 ),
               ],

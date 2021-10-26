@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_drawer/app_drawer.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class SearchScaffold extends HookWidget {
   final String title;
@@ -39,9 +40,7 @@ class SearchScaffold extends HookWidget {
                     onTap: () => focusNode.requestFocus(),
                     decoration: InputDecoration(
                       hintText: hintText,
-                      hintStyle: const TextStyle(
-                        fontSize: 12.0,
-                      ),
+                      hintStyle: ktBody,
                     ),
                     onChanged: onTextChanged,
                   )

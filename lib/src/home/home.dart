@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class Home extends StatelessWidget {
         child: Center(
           child: Text(
             'Little Teyvat',
-            style: TextStyle(fontSize: 20),
+            style: ktHeading1,
           ),
         ),
       ),

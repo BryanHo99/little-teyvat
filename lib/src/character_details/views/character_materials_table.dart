@@ -2,6 +2,7 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/src/character_details/models/material_model.dart';
 import 'package:little_teyvat/src/character_details/models/materials_model.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class CharacterMaterialsTable extends StatelessWidget {
   final IList<String> headerTitles;
@@ -30,7 +31,7 @@ class CharacterMaterialsTable extends StatelessWidget {
                   (String headerTitle) => DataColumn(
                     label: Text(
                       headerTitle,
-                      style: const TextStyle(fontSize: 12),
+                      style: ktBody,
                     ),
                   ),
                 ),

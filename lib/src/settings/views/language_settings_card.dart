@@ -1,10 +1,11 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/settings/controllers/language_controller.dart';
 import 'package:little_teyvat/src/settings/controllers/locales_controller.dart';
 import 'package:little_teyvat/src/settings/models/locale_model.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class LanguageSettingsCard extends StatelessWidget {
   const LanguageSettingsCard({Key? key}) : super(key: key);
@@ -29,9 +30,7 @@ class LanguageSettingsCard extends StatelessWidget {
                 const SizedBox(width: 10.0),
                 Text(
                   context.tr.language,
-                  style: const TextStyle(
-                    fontSize: 20.0,
-                  ),
+                  style: ktHeading1,
                 ),
               ],
             ),

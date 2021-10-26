@@ -1,41 +1,42 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/characters/characters_constants.dart' as constants;
 import 'package:little_teyvat/src/characters/models/colour_model.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 final AutoDisposeProvider<ColourController> colourController =
     Provider.autoDispose<ColourController>((ProviderRef<ColourController> ref) => ColourController._());
 
 class ColourController {
   final IMap<String, ColourModel> colours = <String, ColourModel>{
-    constants.anemo: ColourModel(
-      foregroundColor: Colors.green.shade800,
-      backgroundColor: Colors.green.shade900,
+    constants.anemo: const ColourModel(
+      foregroundColor: kcGreen800,
+      backgroundColor: kcGreen900,
     ),
-    constants.cryo: ColourModel(
-      foregroundColor: Colors.blue.shade200,
-      backgroundColor: Colors.blue.shade300,
+    constants.cryo: const ColourModel(
+      foregroundColor: kcBlue200,
+      backgroundColor: kcBlue300,
     ),
-    constants.dendro: ColourModel(
-      foregroundColor: Colors.green,
-      backgroundColor: Colors.green.shade800,
+    constants.dendro: const ColourModel(
+      foregroundColor: kcGreen,
+      backgroundColor: kcGreen800,
     ),
-    constants.electro: ColourModel(
-      foregroundColor: Colors.purple.shade800,
-      backgroundColor: Colors.purple.shade900,
+    constants.electro: const ColourModel(
+      foregroundColor: kcPurple800,
+      backgroundColor: kcPurple900,
     ),
-    constants.geo: ColourModel(
-      foregroundColor: Colors.orange,
-      backgroundColor: Colors.yellow.shade900,
+    constants.geo: const ColourModel(
+      foregroundColor: kcOrange,
+      backgroundColor: kcYellow900,
     ),
-    constants.hydro: ColourModel(
-      foregroundColor: Colors.blueAccent,
-      backgroundColor: Colors.blue.shade900,
+    constants.hydro: const ColourModel(
+      foregroundColor: kcBlueAccent,
+      backgroundColor: kcBlue900,
     ),
-    constants.pyro: ColourModel(
-      foregroundColor: Colors.red,
-      backgroundColor: Colors.red.shade900,
+    constants.pyro: const ColourModel(
+      foregroundColor: kcRed,
+      backgroundColor: kcRed900,
     ),
   }.lock;
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class TextDivider extends StatelessWidget {
   final String title;
@@ -16,10 +17,7 @@ class TextDivider extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(5.0, 0.0, 0.0, 5.0),
           child: Text(
             title,
-            style: const TextStyle(
-              fontSize: 13.0,
-              fontWeight: FontWeight.w400,
-            ),
+            style: ktSubheading,
           ),
         ),
         const Expanded(

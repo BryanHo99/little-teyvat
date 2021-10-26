@@ -6,6 +6,7 @@ import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/filters/controllers/sort_filter_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class SortFilter extends StatelessWidget {
   final IList<SortDropdownMenuItemModel> dropdownMenuItems;
@@ -43,9 +44,7 @@ class SortFilter extends StatelessWidget {
                         (SortDropdownMenuItemModel item) => DropdownMenuItem<String>(
                           child: Text(
                             item.itemName,
-                            style: const TextStyle(
-                              fontSize: 13,
-                            ),
+                            style: ktSubheading,
                           ),
                           value: item.value,
                         ),
@@ -63,9 +62,7 @@ class SortFilter extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         isAscendingOrder ? context.tr.ascending : context.tr.descending,
-                        style: const TextStyle(
-                          fontSize: 13,
-                        ),
+                        style: ktSubheading,
                       ),
                       Switch.adaptive(
                         value: isAscendingOrder,

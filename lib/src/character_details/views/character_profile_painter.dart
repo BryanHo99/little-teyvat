@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class CharacterProfilePainter extends CustomPainter {
   final Color color;
@@ -20,7 +21,7 @@ class CharacterProfilePainter extends CustomPainter {
       ..isAntiAlias = true;
 
     Paint shadowPaint = Paint()
-      ..color = Colors.black.withOpacity(0.5)
+      ..color = kcBlack.withOpacity(0.5)
       ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4.0);
 
     path = Path();

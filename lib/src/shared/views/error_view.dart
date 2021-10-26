@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
+import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 const double _sizedBoxHeight = 20.0;
@@ -20,7 +21,7 @@ class ErrorView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red.shade900,
+      color: kcRed900,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,9 +36,8 @@ class ErrorView extends StatelessWidget {
           Text(
             context.tr.error,
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 16.0,
-              color: Colors.white,
+            style: ktHeading2.copyWith(
+              color: kcWhite,
             ),
           ),
           if (errorDescription.isNotEmpty) ...<Widget>[
@@ -45,8 +45,8 @@ class ErrorView extends StatelessWidget {
             Text(
               errorDescription,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
+              style: ktHeading3.copyWith(
+                color: kcWhite,
               ),
             ),
           ],
@@ -82,7 +82,7 @@ class ErrorView extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     context.tr.stackTrace,
-                    style: const TextStyle(fontSize: 20.0),
+                    style: ktHeading1,
                   ),
                   const Divider(
                     height: 30.0,

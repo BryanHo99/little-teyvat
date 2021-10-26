@@ -3,6 +3,7 @@ import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/models/character_model.dart';
 import 'package:little_teyvat/src/shared/widgets/flexible_row.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 class CharacterProfileCv extends StatelessWidget {
   final CharacterModel character;
@@ -23,9 +24,7 @@ class CharacterProfileCv extends StatelessWidget {
             children: <Widget>[
               Text(
                 context.tr.cv,
-                style: const TextStyle(
-                  fontSize: constants.titleFontSize,
-                ),
+                style: ktHeading1,
               ),
               const SizedBox(height: constants.sizedBoxHeight),
               FlexibleRow(

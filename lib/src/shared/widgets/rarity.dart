@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:little_teyvat/themes/themes.dart';
 
 /// A star generator for character/weapon rarities.
 class Rarity extends StatelessWidget {
@@ -23,9 +24,9 @@ class Rarity extends StatelessWidget {
 
     return List<Icon>.unmodifiable(() sync* {
       for (int i = 0; i < value; i++) {
-        yield Icon(
+        yield const Icon(
           Icons.star_rounded,
-          color: Colors.yellow.shade600,
+          color: kcYellow600,
           size: iconSize,
         );
       }

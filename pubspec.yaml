@@ -34,6 +34,7 @@ dependencies:
   flutter_hooks: ^0.18.0
   flutter_markdown: ^0.6.6
   flutter_rating_bar: ^4.0.0
+  flutter_spinkit: ^5.1.0
   freezed: ^0.14.5
   graphql: ^5.0.0
   hive: ^2.0.4
@@ -59,6 +60,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
+  remove_alpha_ios: true
   image_path: "assets/images/app/app.png"
 
 # For information on the generic Dart part of this file, see the

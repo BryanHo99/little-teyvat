@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
+import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 const double _paddingOffset = 15.0;
@@ -49,9 +50,7 @@ class CharacterSkillCard extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title,
-                    style: const TextStyle(
-                      fontSize: 16.0,
-                    ),
+                    style: ktHeading2,
                   ),
                   const Divider(
                     height: 20.0,

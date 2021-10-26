@@ -12,6 +12,7 @@ import 'package:little_teyvat/src/characters/controllers/colour_controller.dart'
 import 'package:little_teyvat/src/characters/views/character_card_painter.dart';
 import 'package:little_teyvat/src/shared/widgets/rarity.dart';
 import 'package:little_teyvat/strapi/models/strapi_image_model.dart';
+import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class CharacterCard extends StatelessWidget {
@@ -88,9 +89,8 @@ class CharacterCard extends StatelessWidget {
                                 child: Text(
                                   name,
                                   textAlign: TextAlign.start,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16.5,
+                                  style: ktHeading2.copyWith(
+                                    color: kcWhite,
                                   ),
                                 ),
                               ),
@@ -121,7 +121,7 @@ class CharacterCard extends StatelessWidget {
                     child: Consumer(
                       builder: (BuildContext context, WidgetRef ref, Widget? child) {
                         return Material(
-                          color: Colors.transparent,
+                          color: kcTransparent,
                           child: InkWell(
                             onTap: () {
                               final CharacterDetailsArguments args = CharacterDetailsArguments(

@@ -10,6 +10,7 @@ import 'package:little_teyvat/src/character_details/views/character_profile.dart
 import 'package:little_teyvat/src/character_details/views/character_talents.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
+import 'package:little_teyvat/src/shared/wrappers/fade_in_wrapper.dart';
 import 'package:little_teyvat/src/shared/wrappers/keep_alive_wrapper.dart';
 
 class CharacterDetails extends HookConsumerWidget {
@@ -56,20 +57,22 @@ class CharacterDetails extends HookConsumerWidget {
             ),
           ],
         ),
-        body: PageView(
-          controller: pageController,
-          physics: const NeverScrollableScrollPhysics(),
-          children: <Widget>[
-            KeepAliveWrapper(
-              child: CharacterProfile(character: state),
-            ),
-            KeepAliveWrapper(
-              child: CharacterTalents(character: state),
-            ),
-            KeepAliveWrapper(
-              child: CharacterConstellations(character: state),
-            ),
-          ],
+        body: FadeInWrapper(
+          child: PageView(
+            controller: pageController,
+            physics: const NeverScrollableScrollPhysics(),
+            children: <Widget>[
+              KeepAliveWrapper(
+                child: CharacterProfile(character: state),
+              ),
+              KeepAliveWrapper(
+                child: CharacterTalents(character: state),
+              ),
+              KeepAliveWrapper(
+                child: CharacterConstellations(character: state),
+              ),
+            ],
+          ),
         ),
       ),
       loading: () => AbsorbPointer(
