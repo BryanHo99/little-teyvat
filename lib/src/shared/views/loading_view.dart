@@ -13,7 +13,7 @@ class LoadingView extends StatelessWidget {
       child: Container(
         color: context.theme.backgroundColor,
         child: Center(
-          child: SpinKitSpinningLines(
+          child: SpinKitFadingFour(
             color: context.theme.primaryColor,
           ),
         ),

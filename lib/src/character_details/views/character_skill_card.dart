@@ -50,7 +50,7 @@ class CharacterSkillCard extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title,
-                    style: ktHeading2,
+                    style: ktHeading3,
                   ),
                   const Divider(
                     height: 20.0,

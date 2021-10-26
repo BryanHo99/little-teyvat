@@ -5,10 +5,14 @@ const TextStyle ktHeading1 = TextStyle(
 );
 
 const TextStyle ktHeading2 = TextStyle(
-  fontSize: 16.5,
+  fontSize: 18,
 );
 
 const TextStyle ktHeading3 = TextStyle(
+  fontSize: 16,
+);
+
+const TextStyle ktHeading4 = TextStyle(
   fontSize: 14,
 );
 

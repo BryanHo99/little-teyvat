@@ -36,7 +36,7 @@ class ErrorView extends StatelessWidget {
           Text(
             context.tr.error,
             textAlign: TextAlign.center,
-            style: ktHeading2.copyWith(
+            style: ktHeading3.copyWith(
               color: kcWhite,
             ),
           ),
@@ -45,7 +45,7 @@ class ErrorView extends StatelessWidget {
             Text(
               errorDescription,
               textAlign: TextAlign.center,
-              style: ktHeading3.copyWith(
+              style: ktHeading4.copyWith(
                 color: kcWhite,
               ),
             ),

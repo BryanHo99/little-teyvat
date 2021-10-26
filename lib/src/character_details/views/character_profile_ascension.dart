@@ -26,7 +26,7 @@ class CharacterProfileAscension extends StatelessWidget {
             children: <Widget>[
               Text(
                 context.tr.ascensionStats,
-                style: ktHeading2
+                style: ktHeading1,
               ),
               const SizedBox(height: constants.sizedBoxHeight),
               CharacterStatsTable(

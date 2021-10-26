@@ -65,7 +65,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         },
                         child: Text(
                           context.tr.cancel,
-                          style: ktHeading3.copyWith(
+                          style: ktHeading4.copyWith(
                             color: context.theme.primaryColor,
                           ),
                         ),
@@ -80,7 +80,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         onPressed: () => ref.read(filterSubmitController(controllers)).resetControllers(),
                         child: Text(
                           context.tr.reset,
-                          style: ktHeading3.copyWith(
+                          style: ktHeading4.copyWith(
                             color: context.theme.primaryColor,
                           ),
                         ),
@@ -100,7 +100,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         },
                         child: Text(
                           context.tr.filter,
-                          style: ktHeading3.copyWith(
+                          style: ktHeading4.copyWith(
                             color: context.theme.colorScheme.secondary,
                           ),
                         ),
