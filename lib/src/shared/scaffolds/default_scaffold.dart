@@ -5,7 +5,7 @@ import 'package:little_teyvat/src/app_drawer/app_drawer.dart';
 class DefaultScaffold extends StatelessWidget {
   final String title;
   final Widget body;
-  final BottomNavigationBar? bottomNavigationBar;
+  final BottomNavigationBar? bottomNavigationBar; 
   final bool absorbing;
   final bool enableDrawer;
 
