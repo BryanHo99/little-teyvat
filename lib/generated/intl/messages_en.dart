@@ -47,6 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Constellations"),
         "cryo": MessageLookupByLibrary.simpleMessage("Cryo"),
         "cv": MessageLookupByLibrary.simpleMessage("CV"),
+        "dailyCheckInReminder":
+            MessageLookupByLibrary.simpleMessage("Daily Check-In Reminder"),
         "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
         "darkModeDescription": MessageLookupByLibrary.simpleMessage(
             "Toggle the app\'s theme to use a darker color palette. Reduces light emission and power consumption."),
@@ -70,13 +72,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "materials": MessageLookupByLibrary.simpleMessage("Materials"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
+        "parametricTransformerReminder": MessageLookupByLibrary.simpleMessage(
+            "Parametric Transformer Reminder"),
         "passives": MessageLookupByLibrary.simpleMessage("Passives"),
         "polearm": MessageLookupByLibrary.simpleMessage("Polearm"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "pyro": MessageLookupByLibrary.simpleMessage("Pyro"),
         "rank": MessageLookupByLibrary.simpleMessage("Rank"),
         "rarity": MessageLookupByLibrary.simpleMessage("Rarity"),
+        "reminders": MessageLookupByLibrary.simpleMessage("Reminders"),
         "reset": MessageLookupByLibrary.simpleMessage("Reset"),
+        "resinReminder": MessageLookupByLibrary.simpleMessage("Resin Reminder"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "searchCharacter":
             MessageLookupByLibrary.simpleMessage("Search by name or element"),

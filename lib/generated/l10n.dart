@@ -669,6 +669,46 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Reminders`
+  String get reminders {
+    return Intl.message(
+      'Reminders',
+      name: 'reminders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resin Reminder`
+  String get resinReminder {
+    return Intl.message(
+      'Resin Reminder',
+      name: 'resinReminder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parametric Transformer Reminder`
+  String get parametricTransformerReminder {
+    return Intl.message(
+      'Parametric Transformer Reminder',
+      name: 'parametricTransformerReminder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Daily Check-In Reminder`
+  String get dailyCheckInReminder {
+    return Intl.message(
+      'Daily Check-In Reminder',
+      name: 'dailyCheckInReminder',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -4,6 +4,10 @@ String getElementPath(String element) {
   return '${assets.elementImagesPath}/$element.png';
 }
 
+String getItemPath(String item) {
+  return '${assets.itemImagesPath}/$item.png';
+}
+
 String getWeaponTypePath(String weaponType) {
   return '${assets.weaponTypeImagesPath}/$weaponType.png';
 }

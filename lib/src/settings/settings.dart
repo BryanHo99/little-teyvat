@@ -12,15 +12,13 @@ class Settings extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultScaffold(
       title: context.tr.settings,
-      body: Padding(
+      body: ListView(
         padding: const EdgeInsets.all(8.0),
-        child: ListView(
-          children: const <Widget>[
-            ThemeSettingsCard(),
-            SizedBox(height: 5.0),
-            LanguageSettingsCard(),
-          ],
-        ),
+        children: const <Widget>[
+          ThemeSettingsCard(),
+          SizedBox(height: 5.0),
+          LanguageSettingsCard(),
+        ],
       ),
     );
   }

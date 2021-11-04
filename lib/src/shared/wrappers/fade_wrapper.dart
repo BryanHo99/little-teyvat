@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
-/// Adds a fade in transition to its child widget.
-class FadeInWrapper extends HookWidget {
+/// Adds a fade transition to its child widget that only occurs once.
+class FadeWrapper extends HookWidget {
   final Duration duration;
   final Widget child;
 
-  const FadeInWrapper({
+  const FadeWrapper({
     Key? key,
     this.duration = const Duration(milliseconds: 500),
     required this.child,

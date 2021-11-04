@@ -4,6 +4,7 @@ import 'package:little_teyvat/routes/route_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/character_details.dart';
 import 'package:little_teyvat/src/characters/characters.dart';
 import 'package:little_teyvat/src/home/home.dart';
+import 'package:little_teyvat/src/reminders/reminders.dart';
 import 'package:little_teyvat/src/settings/settings.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 
@@ -26,6 +27,8 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
           name: args.name,
         ),
       );
+    case constants.reminders:
+      return _createRoute(routeSettings, const Reminders());
     case constants.settings:
       return _createRoute(routeSettings, const Settings());
     default:

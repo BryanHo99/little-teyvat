@@ -109,7 +109,10 @@ class CharacterProfile extends HookWidget {
                                   image: AssetImage(getRegionPath(character.region)),
                                 ),
                               ),
-                              Image.network(character.cardImage.imageUrl),
+                              FadeInImage(
+                                placeholder: MemoryImage(kTransparentImage),
+                                image: NetworkImage(character.cardImage.imageUrl),
+                              ),
                             ],
                           ),
                         ),

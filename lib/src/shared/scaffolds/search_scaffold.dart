@@ -8,8 +8,9 @@ class SearchScaffold extends HookWidget {
   final String title;
   final Widget body;
   final String hintText;
-  final ValueChanged<String> onTextChanged;
   final VoidCallback onOpenFilterSheet;
+  final ValueChanged<String> onTextChanged;
+  final bool enableDrawer;
 
   const SearchScaffold({
     Key? key,
@@ -18,7 +19,40 @@ class SearchScaffold extends HookWidget {
     required this.hintText,
     required this.onTextChanged,
     required this.onOpenFilterSheet,
+    this.enableDrawer = true,
   }) : super(key: key);
+
+  /// Closes the search bar on back press if it is present.
+  bool _onBackPressed(TextEditingController textEditingController, ValueNotifier<bool> searching, bool isDrawerOpened) {
+    bool willPop = true;
+
+    // Reverts scaffold to display the title.
+    if (searching.value && !isDrawerOpened) {
+      _reset(textEditingController);
+      searching.value = false;
+      willPop = false;
+    }
+
+    return willPop;
+  }
+
+  /// Clears the search bar.
+  void _onClear(TextEditingController textEditingController, FocusNode focusNode) {
+    _reset(textEditingController);
+    focusNode.requestFocus();
+  }
+
+  /// Opens the search bar.
+  void _onSearch(ValueNotifier<bool> searching, FocusNode focusNode) {
+    searching.value = true;
+    focusNode.requestFocus();
+  }
+
+  /// Resets the search state to its initial condition.
+  void _reset(TextEditingController textEditingController) {
+    textEditingController.clear();
+    onTextChanged('');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,18 +91,12 @@ class SearchScaffold extends HookWidget {
               searching.value
                   ? textEditingController.text.isNotEmpty
                       ? IconButton(
-                          onPressed: () {
-                            _reset(textEditingController);
-                            focusNode.requestFocus();
-                          },
+                          onPressed: () => _onClear(textEditingController, focusNode),
                           icon: const Icon(Icons.clear),
                         )
                       : const SizedBox()
                   : IconButton(
-                      onPressed: () {
-                        searching.value = true;
-                        focusNode.requestFocus();
-                      },
+                      onPressed: () => _onSearch(searching, focusNode),
                       tooltip: context.tr.search,
                       icon: const Icon(Icons.search),
                     ),
@@ -79,32 +107,11 @@ class SearchScaffold extends HookWidget {
               ),
             ],
           ),
-          drawer: const AppDrawer(),
-          drawerEdgeDragWidth: context.width,
+          drawer: enableDrawer ? const AppDrawer() : null,
           onDrawerChanged: (bool isOpened) => isDrawerOpened.value = isOpened,
           body: body,
         ),
       ),
     );
-  }
-
-  /// Closes the search bar on back press if it is present.
-  bool _onBackPressed(TextEditingController textEditingController, ValueNotifier<bool> searching, bool isDrawerOpened) {
-    bool willPop = true;
-
-    // Reverts scaffold to display the title.
-    if (searching.value && !isDrawerOpened) {
-      _reset(textEditingController);
-      searching.value = false;
-      willPop = false;
-    }
-
-    return willPop;
-  }
-
-  /// Clears the text on the search bar.
-  void _reset(TextEditingController textEditingController) {
-    textEditingController.clear();
-    onTextChanged('');
   }
 }

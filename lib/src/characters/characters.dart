@@ -11,7 +11,7 @@ import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
 import 'package:little_teyvat/src/shared/scaffolds/search_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
-import 'package:little_teyvat/src/shared/wrappers/fade_in_wrapper.dart';
+import 'package:little_teyvat/src/shared/wrappers/fade_wrapper.dart';
 
 class Characters extends ConsumerWidget {
   const Characters({Key? key}) : super(key: key);
@@ -47,7 +47,7 @@ class Characters extends ConsumerWidget {
 
         return SearchScaffold(
           title: context.tr.characters,
-          body: FadeInWrapper(
+          body: FadeWrapper(
             child: ListView.builder(
               padding: const EdgeInsets.symmetric(vertical: 5.0),
               itemCount: characters.length,

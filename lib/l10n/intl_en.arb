@@ -60,5 +60,9 @@
 	"ok": "OK",
 	"sortBy": "Sort By",
 	"ascending": "Ascending",
-	"descending": "Descending"
+	"descending": "Descending",
+	"reminders": "Reminders",
+	"resinReminder": "Resin Reminder",
+	"parametricTransformerReminder": "Parametric Transformer Reminder",
+	"dailyCheckInReminder": "Daily Check-In Reminder"
 }

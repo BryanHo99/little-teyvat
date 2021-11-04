@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -8,10 +7,10 @@ import 'package:little_teyvat/src/character_details/models/character_model.dart'
 import 'package:little_teyvat/src/character_details/views/character_constellations.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile.dart';
 import 'package:little_teyvat/src/character_details/views/character_talents.dart';
+import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
-import 'package:little_teyvat/src/shared/wrappers/fade_in_wrapper.dart';
-import 'package:little_teyvat/src/shared/wrappers/keep_alive_wrapper.dart';
+import 'package:little_teyvat/src/shared/wrappers/fade_indexed_stack_wrapper.dart';
 
 class CharacterDetails extends HookConsumerWidget {
   final String id;
@@ -27,21 +26,13 @@ class CharacterDetails extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final AsyncValue<CharacterModel> character = ref.watch(characterDetailsController(id));
     final ValueNotifier<int> bottomTabIndex = useState(0);
-    final PageController pageController = usePageController();
-
-    pageController.addListener(() {
-      bottomTabIndex.value = pageController.page!.toInt();
-    });
 
     return character.when(
-      data: (CharacterModel state) => Scaffold(
-        appBar: AppBar(
-          title: Text(name),
-          centerTitle: true,
-        ),
+      data: (CharacterModel state) => DefaultScaffold(
+        title: name,
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: bottomTabIndex.value,
-          onTap: (int index) => pageController.jumpToPage(index),
+          onTap: (int index) => bottomTabIndex.value = index,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: const Icon(Icons.account_circle),
@@ -57,42 +48,29 @@ class CharacterDetails extends HookConsumerWidget {
             ),
           ],
         ),
-        body: FadeInWrapper(
-          child: PageView(
-            controller: pageController,
-            physics: const NeverScrollableScrollPhysics(),
-            children: <Widget>[
-              KeepAliveWrapper(
-                child: CharacterProfile(character: state),
-              ),
-              KeepAliveWrapper(
-                child: CharacterTalents(character: state),
-              ),
-              KeepAliveWrapper(
-                child: CharacterConstellations(character: state),
-              ),
-            ],
-          ),
+        body: FadeIndexedStackWrapper(
+          index: bottomTabIndex.value,
+          children: <Widget>[
+            CharacterProfile(character: state),
+            CharacterTalents(character: state),
+            CharacterConstellations(character: state),
+          ],
         ),
+        enableDrawer: false,
       ),
-      loading: () => AbsorbPointer(
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text(name),
-            centerTitle: true,
-          ),
-          body: const LoadingView(),
-        ),
+      loading: () => DefaultScaffold(
+        title: name,
+        body: const LoadingView(),
+        absorbing: true,
+        enableDrawer: false,
       ),
-      error: (Object error, StackTrace? stack) => Scaffold(
-        appBar: AppBar(
-          title: Text(name),
-          centerTitle: true,
-        ),
+      error: (Object error, StackTrace? stack) => DefaultScaffold(
+        title: name,
         body: ErrorView(
           errorDescription: error.toString(),
           stackTrace: stack.toString(),
         ),
+        enableDrawer: false,
       ),
     );
   }

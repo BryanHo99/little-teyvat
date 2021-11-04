@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:little_teyvat/src/character_details/models/material_model.dart';
 import 'package:little_teyvat/src/character_details/models/materials_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class CharacterMaterialsTable extends StatelessWidget {
   final IList<String> headerTitles;
@@ -51,7 +52,10 @@ class CharacterMaterialsTable extends StatelessWidget {
                                 children: <Widget>[
                                   ConstrainedBox(
                                     constraints: const BoxConstraints(maxWidth: 40),
-                                    child: Image.network(material.image.imageUrl),
+                                    child: FadeInImage(
+                                      placeholder: MemoryImage(kTransparentImage),
+                                      image: NetworkImage(material.image.imageUrl),
+                                    ),
                                   ),
                                   Text('x${material.amount}'),
                                   const SizedBox(

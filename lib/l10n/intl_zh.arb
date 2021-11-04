@@ -60,5 +60,9 @@
 	"ok": "好",
 	"sortBy": "排序方式",
 	"ascending": "升序",
-	"descending": "降序"
+	"descending": "降序",
+	"reminders": "提醒器",
+	"resinReminder": "树脂使用提醒",
+	"parametricTransformerReminder": "质量参变仪使用提醒",
+	"dailyCheckInReminder": "每日签到提醒"
 }

@@ -10,10 +10,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultScaffold(
       title: context.tr.home,
-      body: const Center(
+      body: Center(
         child: Center(
           child: Text(
-            'Little Teyvat',
+            context.tr.appName,
             style: ktHeading1,
           ),
         ),

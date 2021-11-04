@@ -13,18 +13,17 @@ class CharacterProfilePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Path path = Path();
+    final Path path = Path();
 
-    Paint paint = Paint()
+    final Paint paint = Paint()
       ..color = color
       ..style = PaintingStyle.fill
       ..isAntiAlias = true;
 
-    Paint shadowPaint = Paint()
+    final Paint shadowPaint = Paint()
       ..color = kcBlack.withOpacity(0.5)
       ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4.0);
 
-    path = Path();
     path.moveTo(0, _splitFunction(size, 0));
 
     // Draw the split line.

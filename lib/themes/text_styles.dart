@@ -5,7 +5,7 @@ const TextStyle ktHeading1 = TextStyle(
 );
 
 const TextStyle ktHeading2 = TextStyle(
-  fontSize: 18,
+  fontSize: 17,
 );
 
 const TextStyle ktHeading3 = TextStyle(
