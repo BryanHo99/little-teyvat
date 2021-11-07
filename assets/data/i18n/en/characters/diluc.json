@@ -1,5 +1,5 @@
 {
-  "key": "diluc",
+  "id": "diluc",
   "name": "Diluc",
   "title": "The Dark Side of Dawn",
   "affiliation": "Dawn Winery",
@@ -19,167 +19,162 @@
   "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "diluc_talent_1",
       "name": "Normal Attack: Tempered Sword",
-      "description": [
-        "### Normal Attack\nPerform up to 4 consecutive strikes.",
-        "### Charged Attack\nDrains Stamina over time to perform continuous slashes.\n\nAt end of the sequence, perform a more powerful slash.",
-        "### Plunging Attack\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 4 consecutive strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nDrains Stamina over time to perform continuous slashes.\n\nAt end of the sequence, perform a more powerful slash.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Spinning DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Final DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s/s"
+				},
+				{
+					"attribute": "Max Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "diluc_talent_2",
       "name": "Searing Onslaught",
-      "description": [
-        "Performs a forward slash that deals Pyro DMG.",
-        "This skill can be used 3 times consecutively. Enters CD if not cast again within a short period.",
-        "*The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.*"
-      ]
+      "description": "Performs a forward slash that deals Pyro DMG.\n\n<br>\n\n``` ```\n\nThis skill can be used 3 times consecutively. Enters CD if not cast again within a short period.\n\n<br>\n\n``` ```\n\n*The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.*",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "diluc_talent_3",
       "name": "Dawn",
-      "description": [
-        "Releases intense flames to knock nearby opponents back, dealing Pyro DMG. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive Pyro DMG to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of AoE Pyro DMG.\n\nThe searing flames that run down his blade cause it to be infused with Pyro.",
-        "*The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.*"
-      ]
+      "description": "Releases intense flames to knock nearby opponents back, dealing Pyro DMG. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive Pyro DMG to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of AoE Pyro DMG.\n\nThe searing flames that run down his blade cause it to be infused with Pyro.\n\n<br>\n\n``` ```\n\n*The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.*",
+			"stats": [
+				{
+					"attribute": "Slashing DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "DoT",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Explosion DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Infusion Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "diluc_passive_1",
       "name": "Relentless",
       "description": "Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s."
     },
     {
-      "key": "talent_5",
+      "id": "diluc_passive_2",
       "name": "Blessing of Phoenix",
       "description": "The Pyro Infusion provided by Dawn lasts for 4s longer. Additionally, Diluc gains 20% Pyro DMG Bonus during the duration of this effect."
     },
     {
-      "key": "talent_6",
+      "id": "diluc_passive_3",
       "name": "Tradition of the Dawn Knight",
       "description": "Refunds 15% of the ore used when crafting Claymore-type weapons."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Spinning DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack Final DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d/s"
-			},
-			{
-				"attribute": "Max Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Slashing DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "DoT",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Explosion DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Infusion Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "diluc_constellation_1",
       "name": "Conviction",
       "description": "Diluc deals 15% more DMG to opponents whose HP is above 50%."
     },
     {
-      "key": "constellation_2",
+      "id": "diluc_constellation_2",
       "name": "Searing Ember",
       "description": "When Diluc takes DMG, his ATK increases by 10% and his ATK SPD increases by 5%. Lasts for 10s.\n\nThis effect can stack up to 3 times and can only occur once every 1.5s."
     },
     {
-      "key": "constellation_3",
+      "id": "diluc_constellation_3",
       "name": "Fire and Steel",
       "description": "Increases the Level of Searing Onslaught by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "diluc_constellation_4",
       "name": "Flowing Flame",
       "description": "Casting Searing Onslaught in rhythm greatly increases damage dealt.\n\n2s after casting Searing Onslaught, casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for 2s."
     },
     {
-      "key": "constellation_5",
+      "id": "diluc_constellation_5",
       "name": "Phoenix, Harbinger of Dawn",
       "description": "Increases the Level of Dawn by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "diluc_constellation_6",
       "name": "Flaming Sword, Nemesis of the Dark",
       "description": "After casting Searing Onslaught, the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%.\n\nAdditionally, Searing Onslaught will not interrupt the Normal Attack combo."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_resistance",
+		"character_ascension/everflame_seed",
+		"character_ascension/agnidus_agate_gemstone",
+		"local/small_lamp_grass",
+		"common/lieutenants_insignia",
+		"talent/dvalins_plume"
   ]
 }

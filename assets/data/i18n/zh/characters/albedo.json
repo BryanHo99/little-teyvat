@@ -1,6 +1,6 @@
 {
-  "key": "albedo",
-  "name": "Albedo",
+  "id": "albedo",
+  "name": "阿贝多",
   "title": "Kreideprinz",
   "affiliation": "Knights of Favonius",
   "region": "mondstadt",
@@ -19,157 +19,150 @@
   "description": "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.",
   "talents": [
     {
-      "key": "talent_1",
+			"id": "albedo_talent_1",
       "name": "Normal Attack: Favonius Bladework - Weiss",
-      "description": [
-        "### Normal Attack\nPerform up to 5 rapid strikes.",
-        "### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.",
-        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 5 rapid strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack DMG",
+					"format": "%s%% + %s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+			"id": "albedo_talent_2",
       "name": "Abiogenesis: Solar Isotoma",
-      "description": [
-        "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.",
-        "### Solar Isotoma\nHas the following properties:\n - When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF.\n - Transient Blossoms can only be generated once every 2s.\n - When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\n - Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time.",
-        "Hold to designate the location of the skill.",
-        "*This Geo bloom has an unusual property mirrored in the aim of alchemy. To rise from the earth, soar into the sky, and become the sun.*"
-      ]
+      "description": "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.\n\n<br>\n\n``` ```\n\n### Solar Isotoma\nHas the following properties:\n- When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF.\n- Transient Blossoms can only be generated once every 2s.\n- When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\n- Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time.\n\n<br>\n\n``` ```\n\nHold to designate the location of the skill.\n\n<br>\n\n``` ```\n\n*This Geo bloom has an unusual property mirrored in the aim of alchemy. To rise from the earth, soar into the sky, and become the sun.*\n",
+			"stats": [
+				{
+					"attribute": "Skill DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Transient Blossom DMG",
+					"format": "%s%% DEF"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Skill CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+			"id": "albedo_talent_3",
       "name": "Rite of Progeniture: Tectonic Tide",
-      "description": [
-        "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.\n\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG.",
-        "Tectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.",
-        "*Under the Kreideprinz's command, the tectonic tide of creation seethes into life.*"
-      ]
+      "description": "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.\n\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG.\n\n<br>\n\n``` ```\n\nTectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.\n\n<br>\n\n``` ```\n\n*Under the Kreideprinz's command, the tectonic tide of creation seethes into life.*",
+			"stats": [
+				{
+					"attribute": "Elemental Burst DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Fatal Blossom DMG",
+					"format": "%s%% each"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+			"id": "albedo_passive_1",
       "name": "Calcite Might",
       "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma deal 25% more DMG to opponents whose HP is below 50%."
     },
     {
-      "key": "talent_5",
+			"id": "albedo_passive_2",
       "name": "Homuncular Nature",
       "description": "Using Rite of Progeniture: Tectonic Tide increases the Elemental Mastery of nearby party members by 125 for 10s."
     },
     {
-      "key": "talent_6",
+			"id": "albedo_passive_3",
       "name": "Flash of Genius",
       "description": "When Albedo crafts Weapon Ascension Materials, he has a 10% chance to receive double the product."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack DMG",
-				"format": "%.1f%% + %.1f%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Skill DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Transient Blossom DMG",
-				"format": "%d%% DEF"
-			},
-			{
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Skill CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Elemental Burst DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Fatal Blossom DMG",
-				"format": "%.1f%% each"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+			"id": "albedo_constalletion_1",
       "name": "Flower of Eden",
       "description": "Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo."
     },
     {
-      "key": "constellation_2",
+			"id": "albedo_constalletion_2",
       "name": "Opening of Phanerozoic",
       "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s:\n\n - Unleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Rite of Progeniture: Tectonic Tide's burst DMG by 30% of Albedo's DEF.\n - This effect stacks up to 4 times."
     },
-    {
-      "key": "constellation_3",
+    {	
+			"id": "albedo_constalletion_3",
       "name": "Grace of Helios",
       "description": "Increases the Level of Abiogenesis: Solar Isotoma by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+			"id": "albedo_constalletion_4",
       "name": "Descent of Divinity",
       "description": "Active party members within the Solar Isotoma field have their Plunging Attack DMG increased by 30%."
     },
     {
-      "key": "constellation_5",
+			"id": "albedo_constalletion_5",
       "name": "Tide of Hadean",
       "description": "Increases the Level of Rite of Progeniture: Tectonic Tide by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+			"id": "albedo_constalletion_6",
       "name": "Dust of Purification",
       "description": "Active party members within the Solar Isotoma field who are protected by a shield created by Crystallize have their DMG increased by 17%."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_ballad",
+		"character_ascension/basalt_pillar",
+		"character_ascension/prithiva_topaz_gemstone",
+		"local/cecilia",
+		"common/forbidden_curse_scroll",
+		"talent/tusk_of_monoceros_caeli"
   ]
 }

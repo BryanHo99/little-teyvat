@@ -5,7 +5,11 @@ import 'package:little_teyvat/src/character_details/services/character_service.d
 
 final AutoDisposeStateNotifierProviderFamily<CharacterDetailsController, AsyncValue<CharacterModel>, String>
     characterDetailsController = StateNotifierProvider.autoDispose.family(
-  (AutoDisposeProviderRefBase ref, String id) => CharacterDetailsController._(ref.read, id),
+  (
+    AutoDisposeStateNotifierProviderRef<CharacterDetailsController, AsyncValue<CharacterModel>> ref,
+    String id,
+  ) =>
+      CharacterDetailsController._(ref.read, id),
 );
 
 class CharacterDetailsController extends StateNotifier<AsyncValue<CharacterModel>> {

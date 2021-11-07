@@ -1,5 +1,6 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/src/character_details/models/material_model.dart';
 import 'package:little_teyvat/src/character_details/models/materials_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
@@ -54,7 +55,7 @@ class CharacterMaterialsTable extends StatelessWidget {
                                     constraints: const BoxConstraints(maxWidth: 40),
                                     child: FadeInImage(
                                       placeholder: MemoryImage(kTransparentImage),
-                                      image: NetworkImage(material.image.imageUrl),
+                                      image: AssetImage(helper.getItemPath(material.image)),
                                     ),
                                   ),
                                   Text('x${material.amount}'),

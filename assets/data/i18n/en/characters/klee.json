@@ -1,5 +1,5 @@
 {
-  "key": "klee",
+  "id": "klee",
   "name": "Klee",
   "title": "Fleeing Sunlight",
   "affiliation": "Knights of Favonius",
@@ -19,148 +19,142 @@
   "description": "An explosives expert and a regular at the Knights of Favonius's confinement room. Also known as Fleeing Sunlight.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "klee_talent_1",
       "name": "Normal Attack: Kaboom!",
-      "description": [
-        "### Normal Attack\nThrows things that go boom when they hit things! Perform up to 3 explosive attacks, dealing AoE Pyro DMG.",
-        "### Charged Attack\nConsumes a certain amount of Stamina and deals AoE Pyro DMG to opponents after a short casting time.",
-        "### Plunging Attack\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Pyro DMG upon impact with the ground."
-      ]
+      "description": "### Normal Attack\nThrows things that go boom when they hit things! Perform up to 3 explosive attacks, dealing AoE Pyro DMG.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina and deals AoE Pyro DMG to opponents after a short casting time.\n\n<br>\n\n``` ```\n\n ### Plunging Attack\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Pyro DMG upon impact with the ground.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "klee_talent_2",
       "name": "Jumpy Dumpty",
-      "description": [
-        "Jumpy Dumpty is tons of boom-bang-fun!\n\nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing AoE Pyro DMG with every bounce.",
-        "On the third bounce, the bomb splits into many mines.\n\nThe mines will explode upon contact with opponents, or after a short period of time, dealing AoE Pyro DMG.",
-        "Starts with 2 charges.",
-        "*Jumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone.*"
-      ]
+      "description": "Jumpy Dumpty is tons of boom-bang-fun!\n\nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing AoE Pyro DMG with every bounce.\n\n<br>\n\n``` ```\n\nOn the third bounce, the bomb splits into many mines.\n\nThe mines will explode upon contact with opponents, or after a short period of time, dealing AoE Pyro DMG.\n\n<br>\n\n``` ```\n\nStarts with 2 charges.\n\n<br>\n\n``` ```\n\n*Jumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone.*",
+			"stats": [
+				{
+					"attribute": "Jumpy Dumpty DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Mine DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Mine Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "klee_talent_3",
       "name": "Sparks 'n' Splash",
-      "description": [
-        "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing AoE Pyro DMG.",
-        "*The knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs...*"
-      ]
+      "description": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing AoE Pyro DMG.\n\n<br>\n\n``` ```\n\n*The knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs...*",
+			"stats": [
+				{
+					"attribute": "Sparks 'n' Splash DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "klee_passive_1",
       "name": "Pounding Surprise",
       "description": "When Jumpy Dumpty and Normal Attacks deal DMG, Klee has a 50% chance to obtain an Explosive Spark.\n\nThis Explosive Spark is consumed by the next Charged Attack, which costs no Stamina and deals 50% increased DMG."
     },
     {
-      "key": "talent_5",
+      "id": "klee_passive_2",
       "name": "Sparkling Burst",
       "description": "When Klee's Charged Attack results in a CRIT Hit, all party members gain 2 Elemental Energy."
     },
     {
-      "key": "talent_6",
+      "id": "klee_passive_3",
       "name": "All Of My Treasures!",
       "description": "Displays the location of nearby resources unique to Mondstadt on the mini-map."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Jumpy Dumpty DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Mine DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Mine Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Sparks 'n' Splash DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "klee_constellation_1",
       "name": "Chained Reactions",
       "description": "Attacks and Skills have a certain chance to summon sparks that bombard opponents, dealing DMG equal to 120% of Sparks 'n' Splash's DMG."
     },
     {
-      "key": "constellation_2",
+      "id": "klee_constellation_2",
       "name": "Explosive Frags",
       "description": "Being hit by Jumpy Dumpty's mines decreases opponents' DEF by 23% for 10s."
     },
     {
-      "key": "constellation_3",
+      "id": "klee_constellation_3",
       "name": "Exquisite Compound",
       "description": "Increases the Level of Jumpy Dumpty by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "klee_constellation_4",
       "name": "Sparkly Explosion",
       "description": "If Klee leaves the field during the duration of Sparks 'n' Splash, her departure triggers an explosion that deals 555% of her ATK as AoE Pyro DMG."
     },
     {
-      "key": "constellation_5",
+      "id": "klee_constellation_5",
       "name": "Nova Burst",
       "description": "Increases the Level of Sparks 'n' Splash by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "klee_constellation_6",
       "name": "Blazing Delight",
       "description": "While under the effects of Sparks 'n' Splash, Klee will regenerate 3 Energy for all members of the party (excluding Klee) every 3s.\n\nWhen Sparks 'n' Splash is used, all party members will gain a 10% Pyro DMG Bonus for 25s."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_freedom",
+		"character_ascension/everflame_seed",
+		"character_ascension/agnidus_agate_gemstone",
+		"local/philanemo_mushroom",
+		"common/forbidden_curse_scroll",
+		"talent/ring_of_boreas"
   ]
 }

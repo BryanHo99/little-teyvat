@@ -1,5 +1,5 @@
 {
-  "key": "keqing",
+  "id": "keqing",
   "ascensionStats": [
     {
       "level": 1,
@@ -119,23 +119,19 @@
       "level": 1,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 20000
         },
         {
-          "key": "vajrada_amethyst_sliver",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_sliver",
           "amount": 1
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 3
         },
         {
-          "key": "whopperflower_nectar",
-          "type": "common",
+          "image": "common/whopperflower_nectar",
           "amount": 3
         }
       ]
@@ -144,28 +140,23 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 40000
         },
         {
-          "key": "vajrada_amethyst_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_fragment",
           "amount": 3
         },
         {
-          "key": "lightning_prism",
-          "type": "character_ascension",
+          "image": "character_ascension/lightning_prism",
           "amount": 2
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 10
         },
         {
-          "key": "whopperflower_nectar",
-          "type": "common",
+          "image": "common/whopperflower_nectar",
           "amount": 15
         }
       ]
@@ -174,28 +165,23 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 60000
         },
         {
-          "key": "vajrada_amethyst_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_fragment",
           "amount": 6
         },
         {
-          "key": "lightning_prism",
-          "type": "character_ascension",
+          "image": "character_ascension/lightning_prism",
           "amount": 4
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 20
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 12
         }
       ]
@@ -204,28 +190,23 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 80000
         },
         {
-          "key": "vajrada_amethyst_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_chunk",
           "amount": 3
         },
         {
-          "key": "lightning_prism",
-          "type": "character_ascension",
+          "image": "character_ascension/lightning_prism",
           "amount": 8
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 30
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 18
         }
       ]
@@ -234,28 +215,23 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 100000
         },
         {
-          "key": "vajrada_amethyst_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_chunk",
           "amount": 6
         },
         {
-          "key": "lightning_prism",
-          "type": "character_ascension",
+          "image": "character_ascension/lightning_prism",
           "amount": 12
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 45
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 12
         }
       ]
@@ -264,28 +240,23 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "vajrada_amethyst_gemstone",
-          "type": "character_ascension",
+          "image": "character_ascension/vajrada_amethyst_gemstone",
           "amount": 6
         },
         {
-          "key": "lightning_prism",
-          "type": "character_ascension",
+          "image": "character_ascension/lightning_prism",
           "amount": 20
         },
         {
-          "key": "cor_lapis",
-          "type": "local",
+          "image": "local/cor_lapis",
           "amount": 60
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 24
         }
       ]
@@ -293,100 +264,28 @@
   ],
 	"talentStats": [
 		[
-			{
-				"stats": [
-					[41.0], [44.4], [47.7], [52.5], [55.8], [59.6], [64.9], [70.1], [75.4], [81.1], [86.8], [92.5], [98.3]
-				]
-			},
-			{
-				"stats": [
-					[41.0], [44.4], [47.7], [52.5], [55.8], [59.6], [64.9], [70.1], [75.4], [81.1], [86.8], [92.5], [98.3]
-				]
-			},
-			{
-				"stats": [
-					[54.4], [58.9], [63.3], [69.6], [74.1], [79.1], [86.1], [93.1], [100.0], [107.6], [115.2], [122.8], [130.4]
-				]
-			},
-			{
-				"stats": [
-					[31.5, 34.4], [34.0, 37.2], [36.6, 40.0], [40.3, 44.0], [42.8, 46.8], [45.8, 50.0], [49.8, 54.4], [53.8, 58.8], [57.8, 63.2], [62.2, 68.0], [66.6, 72.8], [71.0, 77.6], [75.4, 82.4]
-				]
-			},
-			{
-				"stats": [
-					[67.0], [72.4], [77.9], [85.7], [91.1], [97.4], [105.9], [114.5], [123.1], [132.4], [141.8], [151.1], [160.5]
-				]
-			},
-			{
-				"stats": [
-					[76.8, 86], [83.0, 93], [89.3, 100], [98.2, 110], [104.5, 117], [111.6, 125], [121.4, 136], [131.3, 147], [141.1, 158], [151.8, 170], [162.5, 182], [173.2, 194], [184.0, 206]
-				]
-			},
-			{
-				"stats": [
-					[25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25]
-				]
-			},
-			{
-				"stats": [
-					[63.9], [69.1], [74.3], [81.8], [87.0], [92.9], [101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]
-				]
-			},
-			{
-				"stats": [
-					[128, 160], [138, 173], [149, 186], [164, 204], [174, 217], [186, 232], [202, 253], [219, 273], [235, 293], [253, 316], [271, 338], [288, 360], [306, 382]
-				]
-			}
+			[[41], [44.4], [47.7], [52.5], [55.8], [59.6], [64.9], [70.1], [75.4], [81.1], [86.8], [92.5], [98.3]],
+			[[41], [44.4], [47.7], [52.5], [55.8], [59.6], [64.9], [70.1], [75.4], [81.1], [86.8], [92.5], [98.3]],
+			[[54.4], [58.9], [63.3], [69.6], [74.1], [79.1], [86.1], [93.1], [100], [107.6], [115.2], [122.8], [130.4]],
+			[[31.5, 34.4], [34, 37.2], [36.6, 40], [40.3, 44], [42.8, 46.8], [45.8, 50], [49.8, 54.4], [53.8, 58.8], [57.8, 63.2], [62.2, 68], [66.6, 72.8], [71, 77.6], [75.4, 82.4]],
+			[[67], [72.4], [77.9], [85.7], [91.1], [97.4], [105.9], [114.5], [123.1], [132.4], [141.8], [151.1], [160.5]],
+			[[76.8, 86], [83, 93], [89.3, 100], [98.2, 110], [104.5, 117], [111.6, 125], [121.4, 136], [131.3, 147], [141.1, 158], [151.8, 170], [162.5, 182], [173.2, 194], [184, 206]],
+			[[25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25], [25]],
+			[[63.9], [69.1], [74.3], [81.8], [87], [92.9], [101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]],
+			[[128, 160], [138, 173], [149, 186], [164, 204], [174, 217], [186, 232], [202, 253], [219, 273], [235, 293], [253, 316], [271, 338], [288, 360], [306, 382]]
 		],
 		[
-      {
-				"stats": [
-					[50.4], [54.2], [58.0], [63.0], [66.8], [70.6], [75.6], [80.6], [85.7], [90.7], [95.8], [100.8], [107.1]
-				]
-			},
-      {
-				"stats": [
-					[168], [181], [193], [210], [223], [235], [252], [269], [286], [302], [319], [336], [357]
-				]
-			},
-      {
-				"stats": [
-					[84.0], [90.3], [96.6], [105.0], [111.3], [117.6], [126.0], [134.4], [142.8], [151.2], [159.6], [168.0], [178.5]
-				]
-			},
-      {
-				"stats": [
-					[7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5]
-				]
-			}
+      [[50.4], [54.2], [58], [63], [66.8], [70.6], [75.6], [80.6], [85.7], [90.7], [95.8], [100.8], [107.1]],
+			[[168], [181], [193], [210], [223], [235], [252], [269], [286], [302], [319], [336], [357]],
+			[[84], [90.3], [96.6], [105], [111.3], [117.6], [126], [134.4], [142.8], [151.2], [159.6], [168], [178.5]],
+			[[7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5], [7.5]]
 		],
     [
-      {
-				"stats": [
-					[88.0], [94.6], [101.2], [110.0], [116.6], [123.2], [132.0], [140.8], [149.6], [158.4], [167.2], [176.0], [187.0]
-				]
-			},
-      {
-				"stats": [
-					[24.0], [25.8], [27.6], [30.0], [31.8], [33.6], [36.0], [38.4], [40.8], [43.2], [45.6], [48.0], [51.0]
-				]
-			},
-      {
-				"stats": [
-					[189], [203], [217], [236], [250], [264], [283], [302], [321], [340], [359], [378], [401]
-				]
-			},
-      {
-				"stats": [
-					[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]
-				]
-			},
-      {
-				"stats": [
-					[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]
-				]
-			}
+      [[88], [94.6], [101.2], [110], [116.6], [123.2], [132], [140.8], [149.6], [158.4], [167.2], [176], [187]],
+			[[24], [25.8], [27.6], [30], [31.8], [33.6], [36], [38.4], [40.8], [43.2], [45.6], [48], [51]],
+			[[189], [203], [217], [236], [250], [264], [283], [302], [321], [340], [359], [378], [401]],
+			[[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]],
+			[[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]]
     ]
 	],
   "talentMaterials": [
@@ -394,18 +293,15 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 12500
         },
         {
-          "key": "teachings_of_prosperity",
-          "type": "talent",
+          "image": "talent/teachings_of_prosperity",
           "amount": 3
         },
         {
-          "key": "whopperflower_nectar",
-          "type": "common",
+          "image": "common/whopperflower_nectar",
           "amount": 6
         }
       ]
@@ -414,18 +310,15 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 17500
         },
         {
-          "key": "guide_to_prosperity",
-          "type": "talent",
+          "image": "talent/guide_to_prosperity",
           "amount": 2
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 3
         }
       ]
@@ -434,18 +327,15 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 25000
         },
         {
-          "key": "guide_to_prosperity",
-          "type": "talent",
+          "image": "talent/guide_to_prosperity",
           "amount": 4
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 4
         }
       ]
@@ -454,18 +344,15 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 30000
         },
         {
-          "key": "guide_to_prosperity",
-          "type": "talent",
+          "image": "talent/guide_to_prosperity",
           "amount": 6
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 6
         }
       ]
@@ -474,18 +361,15 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 37500
         },
         {
-          "key": "guide_to_prosperity",
-          "type": "talent",
+          "image": "talent/guide_to_prosperity",
           "amount": 9
         },
         {
-          "key": "shimmering_nectar",
-          "type": "common",
+          "image": "common/shimmering_nectar",
           "amount": 9
         }
       ]
@@ -494,23 +378,19 @@
       "level": 7,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "philosophies_of_prosperity",
-          "type": "talent",
+          "image": "talent/philosophies_of_prosperity",
           "amount": 4
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 4
         },
         {
-          "key": "ring_of_boreas",
-          "type": "talent",
+          "image": "talent/ring_of_boreas",
           "amount": 1
         }
       ]
@@ -519,23 +399,19 @@
       "level": 8,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 260000
         },
         {
-          "key": "philosophies_of_prosperity",
-          "type": "talent",
+          "image": "talent/philosophies_of_prosperity",
           "amount": 6
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 6
         },
         {
-          "key": "ring_of_boreas",
-          "type": "talent",
+          "image": "talent/ring_of_boreas",
           "amount": 1
         }
       ]
@@ -544,23 +420,19 @@
       "level": 9,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 450000
         },
         {
-          "key": "philosophies_of_prosperity",
-          "type": "talent",
+          "image": "talent/philosophies_of_prosperity",
           "amount": 12
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 9
         },
         {
-          "key": "ring_of_boreas",
-          "type": "talent",
+          "image": "talent/ring_of_boreas",
           "amount": 2
         }
       ]
@@ -569,28 +441,23 @@
       "level": 10,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 700000
         },
         {
-          "key": "philosophies_of_prosperity",
-          "type": "talent",
+          "image": "talent/philosophies_of_prosperity",
           "amount": 16
         },
         {
-          "key": "energy_nectar",
-          "type": "common",
+          "image": "common/energy_nectar",
           "amount": 12
         },
         {
-          "key": "ring_of_boreas",
-          "type": "talent",
+          "image": "talent/ring_of_boreas",
           "amount": 2
         },
         {
-          "key": "crown_of_insight",
-          "type": "talent",
+          "image": "talent/crown_of_insight",
           "amount": 1
         }
       ]

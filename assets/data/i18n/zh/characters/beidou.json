@@ -1,6 +1,6 @@
 {
-  "key": "beidou",
-  "name": "Beidou",
+  "id": "beidou",
+  "name": "北斗",
   "title": "Uncrowned Lord of the Ocean",
   "affiliation": "The Crux",
   "region": "liyue",
@@ -19,174 +19,166 @@
   "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "beidou_talent_1",
       "name": "Normal Attack: Oceanborne",
-      "description": [
-        "### Normal Attack\nPerform up to 5 consecutive strikes.",
-        "### Charged Attack\nDrains Stamina over time to perform continuous slashes.\n\nAt end of the sequence, perform a more powerful slash.",
-        "### Plunging Attack\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 5 consecutive strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nDrains Stamina over time to perform continuous slashes.\n\nAt end of the sequence, perform a more powerful slash.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Spinning DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Final DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s/s"
+				},
+				{
+					"attribute": "Max Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "beidou_talent_2",
       "name": "Tidecaller",
-      "description": [
-        "Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder.",
-        "### Press\nAccumulating the power of lightning, Beidou swings her blade forward fiercely, dealing Electro DMG.",
-        "### Hold\nLifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP.\n\nAttacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing Electro DMG. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice.\n\nThe shield possesses the following properties:\n\n - Has 250% Electro DMG Absorption Efficiency.\n - Applies the Electro element to Beidou upon activation.",
-        "*Conquer the high seas! Pursue the waves and chase the storm!*"
-      ]
+      "description": "Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder.\n\n<br>\n\n``` ```\n\n### Press\nAccumulating the power of lightning, Beidou swings her blade forward fiercely, dealing Electro DMG.\n\n<br>\n\n``` ```\n\n### Hold\nLifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP.\n\nAttacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing Electro DMG. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice.\n\nThe shield possesses the following properties:\n- Has 250% Electro DMG Absorption Efficiency.\n- Applies the Electro element to Beidou upon activation.\n\n<br>\n\n``` ```\n\n*Conquer the high seas! Pursue the waves and chase the storm!*",
+			"stats": [
+				{
+					"attribute": "Shield DMG Absorption",
+					"format": "%s%% Max HP +%s"
+				},
+				{
+					"attribute": "Base DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "DMG Bonus on Hit Taken",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "beidou_talent_3",
       "name": "Stormbreaker",
-      "description": [
-        "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing Electro DMG to nearby opponents.",
-        "### Thunderbeast's Targe\n - When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing Electro DMG.\n - Increases the character's resistance to interruption, and decreases DMG taken.",
-        "A maximum of 1 lightning discharge can be triggered per second.",
-        "*With a peal of thunder, Haishan is slain.*"
-      ]
+      "description": "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing Electro DMG to nearby opponents.\n\n<br>\n\n``` ```\n\n### Thunderbeast's Targe\n- When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing Electro DMG.\n- Increases the character's resistance to interruption, and decreases DMG taken.\n\n<br>\n\n``` ```\n\nA maximum of 1 lightning discharge can be triggered per second.\n\n<br>\n\n``` ```\n\n*With a peal of thunder, Haishan is slain.*",
+			"stats": [
+				{
+					"attribute": "Skill DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Lightning DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "DMG Reduction",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "beidou_passive_1",
       "name": "Retribution",
       "description": "Counterattacking with Tidecaller at the precise moment when the character is hit grants the maximum DMG Bonus."
     },
     {
-      "key": "talent_5",
+      "id": "beidou_passive_2",
       "name": "Lightning Storm",
       "description": "Gain the following effects for 10s after unleashing Tidecaller with its maximum DMG Bonus:\n\n - DMG dealt by Normal and Charged Attacks is increased by 15%. ATK SPD of Normal and Charged Attacks is increased by 15%.\n - Greatly reduced delay before unleashing Charged Attacks."
     },
     {
-      "key": "talent_6",
+      "id": "beidou_passive_3",
       "name": "Conqueror of Tides",
       "description": "Decreases swimming Stamina consumption for your own party members by 20%.\n\nNot stackable with Passive Talents that provide the exact same effects."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Spinning DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack Final DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d/s"
-			},
-			{
-				"attribute": "Max Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-      {
-				"attribute": "Shield DMG Absorption",
-				"format": "%.1f%% Max HP +%d"
-			},
-      {
-				"attribute": "Base DMG",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "DMG Bonus on Hit Taken",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "CD",
-				"format": "%.1fs"
-			}
-		],
-    [
-      {
-				"attribute": "Skill DMG",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "Lightning DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "DMG Reduction",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-      {
-				"attribute": "CD",
-				"format": "%ds"
-			},
-      {
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-    ]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "beidou_constellation_1",
       "name": "Sea Beast's Scourge",
       "description": "When Stormbreaker is used:\n\nCreates a shield that absorbs up to 16% of Beidou's Max HP for 15s.\n\nThis shield absorbs Electro DMG 250% more effectively."
     },
     {
-      "key": "constellation_2",
+      "id": "beidou_constellation_2",
       "name": "Upon the Turbulent Sea, the Thunder Arises",
       "description": "Stormbreaker's arc lightning can jump to 2 additional targets."
     },
     {
-      "key": "constellation_3",
+      "id": "beidou_constellation_3",
       "name": "Summoner of Storm",
       "description": "Increases the Level of Tidecaller by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "beidou_constellation_4",
       "name": "Stunning Revenge",
       "description": "Within 10s of taking DMG, Beidou's Normal Attacks gain 20% additional Electro DMG."
     },
     {
-      "key": "constellation_5",
+      "id": "beidou_constellation_5",
       "name": "Crimson Tidewalker",
       "description": "Increases the Level of Stormbreaker by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "beidou_constellation_6",
       "name": "Bane of Evil",
       "description": "During the duration of Stormbreaker, the Electro RES of surrounding opponents is decreased by 15%."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_gold",
+		"character_ascension/lightning_prism",
+		"character_ascension/vajrada_amethyst_gemstone",
+		"local/noctilucous_jade",
+		"common/golden_raven_insignia",
+		"talent/dvalins_sigh"
   ]
 }

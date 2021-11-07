@@ -1,6 +1,6 @@
 {
-    "name": "ganyu",
-    "short_name": "ganyu",
+    "name": "little-teyvat",
+    "short_name": "little-teyvat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,5 +1,5 @@
 {
-  "key": "kaeya",
+  "id": "kaeya",
   "ascensionStats": [
     {
       "level": 1,
@@ -119,23 +119,19 @@
       "level": 1,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 20000
         },
         {
-          "key": "shivada_jade_sliver",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_sliver",
           "amount": 1
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 3
         },
         {
-          "key": "treasure_hoarder_insignia",
-          "type": "common",
+          "image": "common/treasure_hoarder_insignia",
           "amount": 3
         }
       ]
@@ -144,28 +140,23 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 40000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_fragment",
           "amount": 3
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 2
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 10
         },
         {
-          "key": "treasure_hoarder_insignia",
-          "type": "common",
+          "image": "common/treasure_hoarder_insignia",
           "amount": 15
         }
       ]
@@ -174,28 +165,23 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 60000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_fragment",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 4
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 20
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 12
         }
       ]
@@ -204,28 +190,23 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 80000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 3
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 8
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 30
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 18
         }
       ]
@@ -234,28 +215,23 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 100000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 12
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 45
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 12
         }
       ]
@@ -264,28 +240,23 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "shivada_jade_gemstone",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_gemstone",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 20
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 60
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 24
         }
       ]
@@ -293,85 +264,25 @@
   ],
 	"talentStats": [
 		[
-			{
-				"stats": [
-					[53.8], [58.1], [62.5], [68.8], [73.1], [78.1], [85.0], [91.9], [98.8], [106.3], [114.8], [125.0], [135.1]
-				]
-			},
-			{
-				"stats": [
-					[51.7], [55.9], [60.1], [66.1], [70.3], [75.1], [81.7], [88.3], [95.0], [102.2], [110.4], [120.2], [129.9]
-				]
-			},
-			{
-				"stats": [
-					[65.3], [70.6], [75.9], [83.5], [88.8], [94.9], [103.2], [111.6], [119.9], [129.0], [139.5], [151.7], [164.0]
-				]
-			},
-			{
-				"stats": [
-					[70.9], [76.6], [82.4], [90.6], [96.4], [103.0], [112.1], [121.1], [130.2], [140.1], [151.4], [164.7], [178.1]
-				]
-			},
-			{
-				"stats": [
-					[88.2], [95.4], [102.6], [112.9], [120.0], [128.3], [139.5], [150.8], [162.1], [174.4], [188.5], [205.1], [221.7]
-				]
-			},
-			{
-				"stats": [
-					[55.0, 73.1], [59.5, 79.0], [64.0, 85.0], [70.4, 93.5], [74.9, 99.4], [80.0, 106.3], [87.0, 115.6], [94.1, 125.0], [101.1, 134.3], [108.8, 144.5], [117.6, 156.2], [127.9, 169.9], [138.3, 183.7]
-				]
-			},
-			{
-				"stats": [
-					[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]
-				]
-			},
-			{
-				"stats": [
-					[63.9], [69.1], [74.3], [81.8], [87.0], [92.9], [101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]
-				]
-			},
-			{
-				"stats": [
-					[128, 160],	[138, 173],	[149, 186],	[164, 204],	[174, 217],	[186, 232],	[202, 253],	[219, 273],	[235, 293], [253, 316],	[271, 338],	[288, 360],	[306, 382]
-				]
-			}
+			[[53.8], [58.1], [62.5], [68.8], [73.1], [78.1], [85], [91.9], [98.8], [106.3], [114.8], [125], [135.1]],
+			[[51.7], [55.9], [60.1], [66.1], [70.3], [75.1], [81.7], [88.3], [95], [102.2], [110.4], [120.2], [129.9]],
+			[[65.3], [70.6], [75.9], [83.5], [88.8], [94.9], [103.2], [111.6], [119.9], [129], [139.5], [151.7], [164]],
+			[[70.9], [76.6], [82.4], [90.6], [96.4], [103], [112.1], [121.1], [130.2], [140.1], [151.4], [164.7], [178.1]],
+			[[88.2], [95.4], [102.6], [112.9], [120], [128.3], [139.5], [150.8], [162.1], [174.4], [188.5], [205.1], [221.7]],
+			[[55, 73.1], [59.5, 79], [64, 85], [70.4, 93.5], [74.9, 99.4], [80, 106.3], [87, 115.6], [94.1, 125], [101.1, 134.3], [108.8, 144.5], [117.6, 156.2], [127.9, 169.9], [138.3, 183.7]],
+			[[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]],
+			[[63.9], [69.1], [74.3], [81.8], [87], [92.9], [101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]],
+			[[128, 160],	[138, 173],	[149, 186],	[164, 204],	[174, 217],	[186, 232],	[202, 253],	[219, 273],	[235, 293], [253, 316],	[271, 338],	[288, 360],	[306, 382]]
 		],
 		[
-      {
-				"stats": [
-					[191], [206], [220], [239], [253], [268], [287], [306], [325], [344], [363], [382], [406]
-				]
-			},
-      {
-				"stats": [
-					[6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6]
-				]
-			}
+      [[191], [206], [220], [239], [253], [268], [287], [306], [325], [344], [363], [382], [406]],
+			[[6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6]]
 		],
     [
-      {
-				"stats": [
-					[77.6], [83.4], [89.2], [97.0], [102.8], [108.6], [116.4], [124.2], [131.9], [139.7], [147.4], [155.2], [164.9]
-				]
-			},
-      {
-				"stats": [
-					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
-				]
-			},
-      {
-				"stats": [
-					[8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8]
-				]
-			},
-      {
-				"stats": [
-					[60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60]
-				]
-			}
+      [[77.6], [83.4], [89.2], [97], [102.8], [108.6], [116.4], [124.2], [131.9], [139.7], [147.4], [155.2], [164.9]],
+			[[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]],
+			[[8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8], [8]],
+			[[60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60], [60]]
     ]
 	],
   "talentMaterials": [
@@ -379,18 +290,15 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 12500
         },
         {
-          "key": "teachings_of_ballad",
-          "type": "talent",
+          "image": "talent/teachings_of_ballad",
           "amount": 3
         },
         {
-          "key": "treasure_hoarder_insignia",
-          "type": "common",
+          "image": "common/treasure_hoarder_insignia",
           "amount": 6
         }
       ]
@@ -399,18 +307,15 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 17500
         },
         {
-          "key": "guide_to_ballad",
-          "type": "talent",
+          "image": "talent/guide_to_ballad",
           "amount": 2
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 3
         }
       ]
@@ -419,18 +324,15 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 25000
         },
         {
-          "key": "guide_to_ballad",
-          "type": "talent",
+          "image": "talent/guide_to_ballad",
           "amount": 4
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 4
         }
       ]
@@ -439,18 +341,15 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 30000
         },
         {
-          "key": "guide_to_ballad",
-          "type": "talent",
+          "image": "talent/guide_to_ballad",
           "amount": 6
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 6
         }
       ]
@@ -459,18 +358,15 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 37500
         },
         {
-          "key": "guide_to_ballad",
-          "type": "talent",
+          "image": "talent/guide_to_ballad",
           "amount": 9
         },
         {
-          "key": "silver_raven_insignia",
-          "type": "common",
+          "image": "common/silver_raven_insignia",
           "amount": 9
         }
       ]
@@ -479,23 +375,19 @@
       "level": 7,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "philosophies_of_ballad",
-          "type": "talent",
+          "image": "talent/philosophies_of_ballad",
           "amount": 4
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 4
         },
         {
-          "key": "spirit_locket_of_boreas",
-          "type": "talent",
+          "image": "talent/spirit_locket_of_boreas",
           "amount": 1
         }
       ]
@@ -504,23 +396,19 @@
       "level": 8,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 260000
         },
         {
-          "key": "philosophies_of_ballad",
-          "type": "talent",
+          "image": "talent/philosophies_of_ballad",
           "amount": 6
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 6
         },
         {
-          "key": "spirit_locket_of_boreas",
-          "type": "talent",
+          "image": "talent/spirit_locket_of_boreas",
           "amount": 1
         }
       ]
@@ -529,23 +417,19 @@
       "level": 9,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 450000
         },
         {
-          "key": "philosophies_of_ballad",
-          "type": "talent",
+          "image": "talent/philosophies_of_ballad",
           "amount": 12
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 9
         },
         {
-          "key": "spirit_locket_of_boreas",
-          "type": "talent",
+          "image": "talent/spirit_locket_of_boreas",
           "amount": 2
         }
       ]
@@ -554,28 +438,23 @@
       "level": 10,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 700000
         },
         {
-          "key": "philosophies_of_ballad",
-          "type": "talent",
+          "image": "talent/philosophies_of_ballad",
           "amount": 16
         },
         {
-          "key": "golden_raven_insignia",
-          "type": "common",
+          "image": "common/golden_raven_insignia",
           "amount": 12
         },
         {
-          "key": "spirit_locket_of_boreas",
-          "type": "talent",
+          "image": "talent/spirit_locket_of_boreas",
           "amount": 2
         },
         {
-          "key": "crown_of_insight",
-          "type": "talent",
+          "image": "talent/crown_of_insight",
           "amount": 1
         }
       ]

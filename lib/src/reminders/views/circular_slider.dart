@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/helpers/asset_helper.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/themes/themes.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -49,7 +49,7 @@ class CircularSlider extends StatelessWidget {
             child: FadeInImage(
               placeholder: MemoryImage(kTransparentImage),
               image: AssetImage(
-                getItemPath(itemKey),
+                helper.getItemPath(itemKey),
               ),
             ),
           ),

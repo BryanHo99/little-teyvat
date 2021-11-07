@@ -1,2 +1,2 @@
-const String resin = 'resin';
-const String parametricTransformer = 'parametric_transformer';
+const String resin = 'currency/resin';
+const String parametricTransformer = 'gadget/parametric_transformer';

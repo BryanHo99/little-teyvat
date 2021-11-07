@@ -4,7 +4,10 @@ import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
 
 final ProviderFamily<FilterSubmitController<Object>, IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>>
     filterSubmitController = Provider.family(
-  (ProviderRefBase ref, IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>> controllers) =>
+  (
+    ProviderRef<FilterSubmitController<Object>> ref,
+    IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>> controllers,
+  ) =>
       FilterSubmitController<Object>._(ref.read, controllers),
 );
 

@@ -1,5 +1,5 @@
 {
-  "key": "bennett",
+  "id": "bennett",
   "name": "Bennett",
   "title": "Trial by Fire",
   "affiliation": "Adventurers' Guild",
@@ -19,169 +19,162 @@
   "description": "A good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "bennett_talent_1",
       "name": "Normal Attack: Strike of Fortune",
-      "description": [
-        "### Normal Attack\nPerform up to 5 rapid strikes.",
-        "### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.",
-        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 5 rapid strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack DMG",
+					"format": "%s%% + %s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "bennett_talent_2",
       "name": "Passion Overload",
-      "description": [
-        "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is...",
-        "### Press\nA single, swift flame strike that deals Pyro DMG.",
-        "### Hold (Short)\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n\n - Level 1: Strikes twice, dealing Pyro DMG and launching opponents.\n - Level 2: Unleashes 3 consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy.\n\nBennett takes no damage from being launched.",
-        "*An attack that combines Bennett's dreams and passion with Pyro. But passion is sometimes overblown, and Pyro sometimes blows over.*"
-      ]
+      "description": "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is...\n\n<br>\n\n``` ```\n\n### Press\nA single, swift flame strike that deals Pyro DMG.\n\n<br>\n\n``` ```\n\n### Hold (Short)\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n- Level 1: Strikes twice, dealing Pyro DMG and launching opponents.\n- Level 2: Unleashes 3 consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy.\n\nBennett takes no damage from being launched.\n\n<br>\n\n``` ```\n\n*An attack that combines Bennett's dreams and passion with Pyro. But passion is sometimes overblown, and Pyro sometimes blows over.*",
+			"stats": [
+				{
+					"attribute": "Press DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charge Level 1 DMG",
+					"format": "%s%% + %s%%"
+				},
+				{
+					"attribute": "Charge Level 2 DMG",
+					"format": "%s%% + %s%%"
+				},
+				{
+					"attribute": "Explosion DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "CD",
+					"format": "%s / %s / %ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "bennett_talent_3",
       "name": "Fantastic Voyage",
-      "description": [
-        "Bennett performs a jumping attack that deals Pyro DMG, creating an Inspiration Field.",
-        "### Inspiration Field\n - If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP.\n - If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK.\n - Imbues characters within the AoE with Pyro.",
-        "*Benny's Adventure Team's adventures are always fraught with unexpected danger. However, Bennett is more inclined to call them \"journeys full of wonder, excitement, and beauty.\"*"
-      ]
+      "description": "Bennett performs a jumping attack that deals Pyro DMG, creating an Inspiration Field.\n\n<br>\n\n``` ```\n\n### Inspiration Field\n- If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP.\n- If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK.\n- Imbues characters within the AoE with Pyro.\n\n<br>\n\n``` ```\n\n*Benny's Adventure Team's adventures are always fraught with unexpected danger. However, Bennett is more inclined to call them \"journeys full of wonder, excitement, and beauty.\"*",
+			"stats": [
+				{
+					"attribute": "Skill DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Continuous Regeneration Per Sec",
+					"format": "%s%% Max HP +%s"
+				},
+				{
+					"attribute": "ATK Bonus Ratio",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "bennett_passive_1",
       "name": "Rekindle",
       "description": "Decreases Passion Overload's CD by 20%."
     },
     {
-      "key": "talent_5",
+      "id": "bennett_passive_2",
       "name": "Fearnaught",
       "description": "Within the area created by Fantastic Voyage, Passion Overload takes on the following effects:\n\n - CD is reduced by 50%.\n - Bennett will not be launched by the effects of Charge Level 2."
     },
     {
-      "key": "talent_6",
+      "id": "bennett_passive_3",
       "name": "It Should Be Safe...",
       "description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack DMG",
-				"format": "%.1f%% + %.1f%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Press DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charge Level 1 DMG",
-				"format": "%.1f%% + %.1f%%"
-			},
-			{
-				"attribute": "Charge Level 2 DMG",
-				"format": "%.1f%% + %.1f%%"
-			},
-			{
-				"attribute": "Explosion DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "CD",
-				"format": "%d / %.1f / %ds"
-			}
-		],
-		[
-			{
-				"attribute": "Skill DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Continuous Regeneration Per Sec",
-				"format": "%.2f%% Max HP +%d"
-			},
-			{
-				"attribute": "ATK Bonus Ratio",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "bennett_constellation_1",
       "name": "Grand Expectation",
       "description": "Fantastic Voyage's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK."
     },
     {
-      "key": "constellation_2",
+      "id": "bennett_constellation_2",
       "name": "Impasse Conqueror",
       "description": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%."
     },
     {
-      "key": "constellation_3",
+      "id": "bennett_constellation_3",
       "name": "Unstoppable Fervor",
       "description": "Increases the Level of Passion Overload by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "bennett_constellation_4",
       "name": "Unexpected Odyssey",
       "description": "Using a Normal Attack when executing the second attack of Passion Overload's Charge Level 1 allows an additional attack to be performed.\n\nThis additional attack does 135% of the second attack's DMG."
     },
     {
-      "key": "constellation_5",
+      "id": "bennett_constellation_5",
       "name": "True Explorer",
       "description": "Increases the Level of Fantastic Voyage by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "bennett_constellation_6",
       "name": "Fire Ventures with Me",
       "description": "Sword, Claymore, or Polearm-wielding characters inside Fantastic Voyage's radius gain a 15% Pyro DMG Bonus and their weapons are infused with Pyro."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_resistance",
+		"character_ascension/everflame_seed",
+		"character_ascension/agnidus_agate_gemstone",
+		"local/windwheel_aster",
+		"common/golden_raven_insignia",
+		"talent/dvalins_plume"
   ]
 }

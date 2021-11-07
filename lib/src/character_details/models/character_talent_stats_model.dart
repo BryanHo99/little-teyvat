@@ -12,7 +12,7 @@ class CharacterTalentStatsModel with _$CharacterTalentStatsModel implements Stat
 
   const factory CharacterTalentStatsModel({
     required String attribute,
-    required String textFormat,
+    required String format,
     required IList<IList<num>> stats,
   }) = _CharacterTalentStatsModel;
 
@@ -27,8 +27,8 @@ class CharacterTalentStatsModel with _$CharacterTalentStatsModel implements Stat
           ? result.add('')
           : result.add(
               sprintf(
-                textFormat,
-                <String>[...stat.unlockView.map((num data) => data.toString())],
+                format,
+                <String>[...stat.unlockView.map((num data) => data.toString())]
               ),
             );
     }

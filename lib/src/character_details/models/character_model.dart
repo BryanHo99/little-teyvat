@@ -5,7 +5,6 @@ import 'package:little_teyvat/src/character_details/models/character_skill_model
 import 'package:little_teyvat/src/character_details/models/character_talent_model.dart';
 import 'package:little_teyvat/src/character_details/models/character_voice_model.dart';
 import 'package:little_teyvat/src/character_details/models/materials_model.dart';
-import 'package:little_teyvat/strapi/models/strapi_image_model.dart';
 
 part 'character_model.freezed.dart';
 part 'character_model.g.dart';
@@ -13,6 +12,7 @@ part 'character_model.g.dart';
 @freezed
 class CharacterModel with _$CharacterModel {
   const factory CharacterModel({
+    required String id,
     required String name,
     required String title,
     required String affiliation,
@@ -25,8 +25,6 @@ class CharacterModel with _$CharacterModel {
     required String constellation,
     required String description,
     required CharacterVoiceModel cv,
-    required StrapiImageModel cardImage,
-    required StrapiImageModel characterImage,
     required IList<CharacterAscensionStatsModel> ascensionStats,
     required IList<MaterialsModel> ascensionMaterials,
     required IList<CharacterTalentModel> talents,

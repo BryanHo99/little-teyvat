@@ -2,6 +2,7 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/models/character_talent_model.dart';
 import 'package:little_teyvat/src/character_details/views/character_stats_table.dart';
@@ -33,7 +34,7 @@ class CharacterTalentCard extends StatelessWidget {
                 aspectRatio: 1.0,
                 child: FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
-                  image: NetworkImage(talent.image.imageUrl),
+                  image: AssetImage(helper.getSkillPath(talent.id)),
                 ),
               ),
               title: Text(talent.name),

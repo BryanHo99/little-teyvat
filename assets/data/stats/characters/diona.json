@@ -1,5 +1,5 @@
 {
-  "key": "diona",
+  "id": "diona",
   "ascensionStats": [
     {
       "level": 1,
@@ -119,23 +119,19 @@
       "level": 1,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 20000
         },
         {
-          "key": "shivada_jade_sliver",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_sliver",
           "amount": 1
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 3
         },
         {
-          "key": "firm_arrowhead",
-          "type": "common",
+          "image": "common/firm_arrowhead",
           "amount": 3
         }
       ]
@@ -144,28 +140,23 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 40000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_fragment",
           "amount": 3
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 2
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 10
         },
         {
-          "key": "firm_arrowhead",
-          "type": "common",
+          "image": "common/firm_arrowhead",
           "amount": 15
         }
       ]
@@ -174,28 +165,23 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 60000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+         	"image": "character_ascension/shivada_jade_fragment",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 4
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 20
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+          "image": "common/sharp_arrowhead",
           "amount": 12
         }
       ]
@@ -204,28 +190,23 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 80000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 3
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 8
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 30
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+          "image": "common/sharp_arrowhead",
           "amount": 18
         }
       ]
@@ -234,28 +215,23 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 100000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 12
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 45
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 12
         }
       ]
@@ -264,28 +240,23 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "shivada_jade_gemstone",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_gemstone",
           "amount": 6
         },
         {
-          "key": "hoarfrost_core",
-          "type": "character_ascension",
+          "image": "character_ascension/hoarfrost_core",
           "amount": 20
         },
         {
-          "key": "calla_lily",
-          "type": "local",
+          "image": "local/calla_lily",
           "amount": 60
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 24
         }
       ]
@@ -293,110 +264,30 @@
   ],
 	"talentStats": [
 		[
-			{
-				"stats": [
-					[36.1], [39.1], [42.0], [46.2], [49.1], [52.5], [57.1], [61.7], [66.4], [71.4], [77.2], [84.0], [90.8]
-				]
-			},
-			{
-				"stats": [
-					[33.5], [36.3], [39.0], [42.9], [45.6], [48.8], [53.0], [57.3], [61.6], [66.3], [71.7], [78.0], [84.3]
-				]
-			},
-			{
-				"stats": [
-					[45.6], [49.3], [53.0], [58.3], [62.0], [66.3], [72.1], [77.9], [83.7], [90.1], [97.4], [106.0], [114.5]
-				]
-			},
-			{
-				"stats": [
-					[43.0], [46.5], [50.0], [55.0], [58.5], [62.5], [68.0], [73.5], [79.0], [85.0], [91.9], [100.0], [108.0]
-				]
-			},
-			{
-				"stats": [
-					[53.8], [58.1], [62.5], [68.8], [73.1], [78.1], [85.0], [91.9], [98.8], [106.3], [114.8], [125.0], [135.1]
-				]
-			},
-			{
-				"stats": [
-					[43.9], [47.4], [51.0], [56.1], [59.7], [63.7], [69.4], [75.0], [80.6], [86.7], [93.7], [102.0], [110.2]
-				]
-			},
-			{
-				"stats": [
-					[124], [133], [143], [155], [164], [174], [186], [198], [211], [223], [236], [253], [270]
-				]
-			},
-			{
-				"stats": [
-					[56.8], [61.5], [66.1], [72.7], [77.3], [82.6], [89.9], [97.1], [104.4], [112.3], [120.3], [128.2], [136.1]
-				]
-			},
-			{
-				"stats": [
-					[114, 142], [123, 153], [132, 165], [145, 182], [155, 193], [165, 206], [180, 224], [194, 243], [209, 261], [225, 281], [240, 300], [256, 320], [272, 340]
-				]
-			}
+			[[36.1], [39.1], [42], [46.2], [49.1], [52.5], [57.1], [61.7], [66.4], [71.4], [77.2], [84], [90.8]],
+			[[33.5], [36.3], [39], [42.9], [45.6], [48.8], [53], [57.3], [61.6], [66.3], [71.7], [78], [84.3]],
+			[[45.6], [49.3], [53], [58.3], [62], [66.3], [72.1], [77.9], [83.7], [90.1], [97.4], [106], [114.5]],
+			[[43], [46.5], [50], [55], [58.5], [62.5], [68], [73.5], [79], [85], [91.9], [100], [108]],
+			[[53.8], [58.1], [62.5], [68.8], [73.1], [78.1], [85], [91.9], [98.8], [106.3], [114.8], [125], [135.1]],
+			[[43.9], [47.4], [51], [56.1], [59.7], [63.7], [69.4], [75], [80.6], [86.7], [93.7], [102], [110.2]],
+			[[124], [133], [143], [155], [164], [174], [186], [198], [211], [223], [236], [253], [270]],
+			[[56.8], [61.5], [66.1], [72.7], [77.3], [82.6], [89.9], [97.1], [104.4], [112.3], [120.3], [128.2], [136.1]],
+			[[114, 142], [123, 153], [132, 165], [145, 182], [155, 193], [165, 206], [180, 224], [194, 243], [209, 261], [225, 281], [240, 300], [256, 320], [272, 340]]
 		],
 		[
-      {
-				"stats": [
-					[41.9], [45.1], [48.2], [52.4], [55.5], [58.7], [62.9], [67.1], [71.3], [75.5], [79.6], [83.8], [89.1]
-				]
-			},
-      {
-				"stats": [
-					[7.2, 693], [7.7, 762], [8.3, 837], [9.0, 918], [9.5, 1005], [10.1, 1097], [10.8, 1195], [11.5, 1299], [12.2, 1409], [13.0, 1524], [13.7, 1646], [14.4, 1773], [15.3, 1905]
-				]
-			},
-      {
-				"stats": [
-					[1.8], [1.9], [2.0], [2.1], [2.2], [2.3], [2.4], [2.4], [2.4], [2.4], [2.4], [2.4], [2.4]
-				]
-			},
-      {
-				"stats": [
-					[6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6]
-				]
-			},
-      {
-				"stats": [
-					[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]
-				]
-			}
+			[[41.9], [45.1], [48.2], [52.4], [55.5], [58.7], [62.9], [67.1], [71.3], [75.5], [79.6], [83.8], [89.1]],
+			[[7.2, 693], [7.7, 762], [8.3, 837], [9, 918], [9.5, 1005], [10.1, 1097], [10.8, 1195], [11.5, 1299], [12.2, 1409], [13, 1524], [13.7, 1646], [14.4, 1773], [15.3, 1905]],
+			[[1.8], [1.9], [2], [2.1], [2.2], [2.3], [2.4], [2.4], [2.4], [2.4], [2.4], [2.4], [2.4]],
+			[[6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6], [6]],
+			[[15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15], [15]]
 		],
     [
-      {
-				"stats": [
-					[80], [86], [92], [100], [106], [112], [120], [128], [136], [144], [152], [160], [170]
-				]
-			},
-      {
-				"stats": [
-					[52.6], [56.6], [60.5], [65.8], [69.7], [73.7], [79.0], [84.2], [89.5], [94.8], [100.0], [105.3], [111.9]
-				]
-			},
-      {
-				"stats": [
-					[5.34, 513], [5.74, 565], [6.14, 620], [6.67, 680], [7.07, 744], [7.47, 813], [8.00, 885], [8.54, 962], [9.07, 1044], [9.60, 1129], [10.14, 1219], [10.67, 1313], [11.34, 1411]
-				]
-			},
-      {
-				"stats": [
-					[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]
-				]
-			},
-      {
-				"stats": [
-					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
-				]
-			},
-      {
-				"stats": [
-					[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]
-				]
-			}
+			[[80], [86], [92], [100], [106], [112], [120], [128], [136], [144], [152], [160], [170]],
+			[[52.6], [56.6], [60.5], [65.8], [69.7], [73.7], [79], [84.2], [89.5], [94.8], [100], [105.3], [111.9]],
+			[[5.34, 513], [5.74, 565], [6.14, 620], [6.67, 680], [77, 744], [7.47, 813], [80, 885], [8.54, 962], [97, 1044], [9.60, 1129], [10.14, 1219], [10.67, 1313], [11.34, 1411]],
+			[[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]],
+			[[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]],
+			[[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]]
     ]
 	],
   "talentMaterials": [
@@ -404,18 +295,15 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 12500
         },
         {
-          "key": "teachings_of_freedom",
-          "type": "talent",
+          "image": "talent/teachings_of_freedom",
           "amount": 3
         },
         {
-          "key": "firm_arrowhead",
-          "type": "common",
+          "image": "common/firm_arrowhead",
           "amount": 6
         }
       ]
@@ -424,18 +312,15 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 17500
         },
         {
-          "key": "guide_to_freedom",
-          "type": "talent",
+          "image": "talent/guide_to_freedom",
           "amount": 2
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+         	"image": "common/sharp_arrowhead",
           "amount": 3
         }
       ]
@@ -444,18 +329,15 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 25000
         },
         {
-          "key": "guide_to_freedom",
-          "type": "talent",
+          "image": "talent/guide_to_freedom",
           "amount": 4
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+          "image": "common/sharp_arrowhead",
           "amount": 4
         }
       ]
@@ -464,18 +346,15 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 30000
         },
         {
-          "key": "guide_to_freedom",
-          "type": "talent",
+          "image": "talent/guide_to_freedom",
           "amount": 6
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+          "image": "common/sharp_arrowhead",
           "amount": 6
         }
       ]
@@ -484,18 +363,15 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 37500
         },
         {
-          "key": "guide_to_freedom",
-          "type": "talent",
+          "image": "talent/guide_to_freedom",
           "amount": 9
         },
         {
-          "key": "sharp_arrowhead",
-          "type": "common",
+          "image": "common/sharp_arrowhead",
           "amount": 9
         }
       ]
@@ -504,23 +380,19 @@
       "level": 7,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "philosophies_of_freedom",
-          "type": "talent",
+          "image": "talent/philosophies_of_freedom",
           "amount": 4
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 4
         },
         {
-          "key": "shard_of_a_foul_legacy",
-          "type": "talent",
+          "image": "talent/shard_of_a_foul_legacy",
           "amount": 1
         }
       ]
@@ -529,23 +401,19 @@
       "level": 8,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 260000
         },
         {
-          "key": "philosophies_of_freedom",
-          "type": "talent",
+          "image": "talent/philosophies_of_freedom",
           "amount": 6
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 6
         },
         {
-          "key": "shard_of_a_foul_legacy",
-          "type": "talent",
+          "image": "talent/shard_of_a_foul_legacy",
           "amount": 1
         }
       ]
@@ -554,23 +422,19 @@
       "level": 9,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 450000
         },
         {
-          "key": "philosophies_of_freedom",
-          "type": "talent",
+          "image": "talent/philosophies_of_freedom",
           "amount": 12
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 9
         },
         {
-          "key": "shard_of_a_foul_legacy",
-          "type": "talent",
+          "image": "talent/shard_of_a_foul_legacy",
           "amount": 2
         }
       ]
@@ -579,28 +443,23 @@
       "level": 10,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 700000
         },
         {
-          "key": "philosophies_of_freedom",
-          "type": "talent",
+          "image": "talent/philosophies_of_freedom",
           "amount": 16
         },
         {
-          "key": "weathered_arrowhead",
-          "type": "common",
+          "image": "common/weathered_arrowhead",
           "amount": 12
         },
         {
-          "key": "shard_of_a_foul_legacy",
-          "type": "talent",
+          "image": "talent/shard_of_a_foul_legacy",
           "amount": 2
         },
         {
-          "key": "crown_of_insight",
-          "type": "talent",
+          "image": "talent/crown_of_insight",
           "amount": 1
         }
       ]

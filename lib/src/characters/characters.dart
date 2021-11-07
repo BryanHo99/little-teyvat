@@ -35,6 +35,7 @@ class Characters extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final AsyncValue<IList<CharacterCardModel>> characters = ref.watch(charactersController);
 
+    // Maintain all filter controllers until this view is exited.
     ref.watch(characterRarityFilterController);
     ref.watch(characterElementFilterController);
     ref.watch(characterWeaponFilterController);
@@ -56,7 +57,6 @@ class Characters extends ConsumerWidget {
                 name: characters[index].name,
                 element: characters[index].element,
                 rarity: characters[index].rarity,
-                cardImage: characters[index].cardImage,
                 materials: characters[index].materials,
               ),
             ),

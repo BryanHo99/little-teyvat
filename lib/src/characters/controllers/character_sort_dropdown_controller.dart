@@ -7,7 +7,7 @@ import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.d
 
 final AutoDisposeProvider<CharacterSortDropdownController> characterSortDropdownController =
     Provider.autoDispose<CharacterSortDropdownController>(
-  (AutoDisposeProviderRefBase ref) => const CharacterSortDropdownController._(),
+  (AutoDisposeProviderRef<CharacterSortDropdownController> ref) => const CharacterSortDropdownController._(),
 );
 
 class CharacterSortDropdownController {

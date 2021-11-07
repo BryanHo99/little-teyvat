@@ -34,9 +34,9 @@ class CharacterConstellations extends StatelessWidget {
               (CharacterSkillModel constellation) => Column(
                 children: <Widget>[
                   CharacterSkillCard(
+                    id: constellation.id,
                     title: constellation.name,
                     description: constellation.description,
-                    imageUrl: constellation.image.imageUrl,
                   ),
                   const SizedBox(height: _sizedBoxHeight),
                 ],

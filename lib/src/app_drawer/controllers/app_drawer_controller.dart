@@ -7,7 +7,7 @@ import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 import 'package:little_teyvat/src/app_drawer/models/drawer_item_model.dart';
 
 final AutoDisposeProvider<AppDrawerController> appDrawerController =
-    Provider.autoDispose<AppDrawerController>((AutoDisposeProviderRefBase ref) => const AppDrawerController._());
+    Provider.autoDispose<AppDrawerController>((AutoDisposeProviderRef<AppDrawerController> ref) => const AppDrawerController._());
 
 class AppDrawerController {
   const AppDrawerController._();

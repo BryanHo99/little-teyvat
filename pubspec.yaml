@@ -27,19 +27,19 @@ dependencies:
     sdk: flutter
   
   animations: ^2.0.2
-  cupertino_icons: ^1.0.3
+  cupertino_icons: ^1.0.4
   enum_to_string: ^2.0.1
   fast_immutable_collections: ^7.0.3
   flutter_dotenv: ^5.0.2
   flutter_hooks: ^0.18.0
-  flutter_local_notifications: ^9.0.1
-  flutter_markdown: ^0.6.6
+  flutter_local_notifications: ^9.0.2
+  flutter_markdown: ^0.6.8
   flutter_rating_bar: ^4.0.0
   freezed: ^0.14.5
   graphql: ^5.0.0
   hive: ^2.0.4
   hive_flutter: ^1.1.0
-  hooks_riverpod: ^1.0.0-dev.7
+  hooks_riverpod: ^1.0.0
   http: ^0.13.4
   intl: ^0.17.0
   json_annotation: ^4.1.0
@@ -72,17 +72,34 @@ flutter:
 
   assets:
     - .env
+    - assets/data/i18n/en/characters/
+    - assets/data/i18n/zh/characters/
+    - assets/data/stats/characters/
     - assets/images/app/
     - assets/images/drawer/
+    - assets/images/characters/
+    - assets/images/character_cards/
     - assets/images/elements/
-    - assets/images/items/
+    - assets/images/items/character_ascension/
+    - assets/images/items/common/
+    - assets/images/items/currency/
+    - assets/images/items/event/
+    - assets/images/items/experience/
+    - assets/images/items/forging/
+    - assets/images/items/furnishing/
+    - assets/images/items/gadget/
+    - assets/images/items/local/
+    - assets/images/items/talent/
+    - assets/images/items/weapon_ascension/
     - assets/images/regions/
+    - assets/images/skills/
     - assets/images/weapon_types/
 
   fonts:
     - family: Genshin
       fonts:
         - asset: assets/fonts/Genshin.ttf
+
 flutter_intl:
   enabled: true
   class_name: AppLocalizations

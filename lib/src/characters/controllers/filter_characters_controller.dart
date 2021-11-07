@@ -15,28 +15,32 @@ import 'package:little_teyvat/src/filters/models/weapon_filter_model.dart';
 
 final AutoDisposeStateNotifierProvider<RarityFilterController, RarityFilterState> characterRarityFilterController =
     StateNotifierProvider.autoDispose<RarityFilterController, RarityFilterState>(
-  (AutoDisposeProviderRefBase ref) => RarityFilterController(),
+  (AutoDisposeStateNotifierProviderRef<RarityFilterController, RarityFilterState> ref) => RarityFilterController(),
 );
 
 final AutoDisposeStateNotifierProvider<ElementFilterController, ElementFilterState> characterElementFilterController =
     StateNotifierProvider.autoDispose<ElementFilterController, ElementFilterState>(
-  (AutoDisposeProviderRefBase ref) => ElementFilterController(),
+  (AutoDisposeStateNotifierProviderRef<ElementFilterController, ElementFilterState> ref) => ElementFilterController(),
 );
 
 final AutoDisposeStateNotifierProvider<WeaponFilterController, WeaponFilterState> characterWeaponFilterController =
     StateNotifierProvider.autoDispose<WeaponFilterController, WeaponFilterState>(
-  (AutoDisposeProviderRefBase ref) => WeaponFilterController(),
+  (AutoDisposeStateNotifierProviderRef<WeaponFilterController, WeaponFilterState> ref) => WeaponFilterController(),
 );
 
 final AutoDisposeStateNotifierProvider<SortFilterController, SortFilterState> characterSortFilterController =
     StateNotifierProvider.autoDispose<SortFilterController, SortFilterState>(
-  (AutoDisposeProviderRefBase ref) => SortFilterController(constants.name),
+  (AutoDisposeStateNotifierProviderRef<SortFilterController, SortFilterState> ref) => SortFilterController(constants.name),
 );
 
 final AutoDisposeStateNotifierProviderFamily<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>>
     filterCharactersController =
     StateNotifierProvider.family.autoDispose<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>>(
-  (AutoDisposeProviderRefBase ref, IList<CharacterCardModel> characters) => FilterCharactersController._(ref.read, characters),
+  (
+    AutoDisposeStateNotifierProviderRef<FilterCharactersController, IList<CharacterCardModel>> ref,
+    IList<CharacterCardModel> characters,
+  ) =>
+      FilterCharactersController._(ref.read, characters),
 );
 
 class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>> {

@@ -28,13 +28,7 @@ This personal project is initialized as an avenue to learn Flutter alongside oth
 - Code generation tools where:
 	- **Freezed** generates immutable data classes and sealed unions that enhances Riverpod.
 	- **json_serializable** generates code for JSON serialization and deserialization.
-
-#### Strapi CMS for Backend
-- [Strapi](https://strapi.io/)
-- Headless CMS to manage and store static content.
-- PostgreSQL as database.
-- All queries are performed using GraphQL.
-
+	
 #### Other Packages
 - [fast_immutable_collections](https://pub.dev/packages/fast_immutable_collections) for immutable lists and maps.
 - [flutter_hooks](https://pub.dev/packages/flutter_hooks) for code reuse, especially for handling animations.

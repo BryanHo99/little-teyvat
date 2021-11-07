@@ -1,6 +1,6 @@
 {
-  "key": "fischl",
-  "name": "Fischl",
+  "id": "fischl",
+  "name": "菲谢尔",
   "title": "Prinzessin der Verurteilung!",
   "affiliation": "Adventurers' Guild",
   "region": "mondstadt",
@@ -19,151 +19,146 @@
   "description": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "fischl_talent_1",
       "name": "Normal Attack: Bolts of Downfall",
-      "description": [
-        "### Normal Attack\nPerform up to 5 consecutive shots with a bow.",
-        "### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense Electro DMG.",
-        "### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 5 consecutive shots with a bow.\n\n<br>\n\n``` ```\n\n### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense Electro DMG.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Aimed Shot",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Fully-Charged Aimed Shot",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "fischl_talent_2",
       "name": "Nightrider",
-      "description": [
-        "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE.\n\nFor the ability's duration, Oz will continuously attack nearby opponents with Freikugel.",
-        "Hold to adjust the location Oz will be summoned to.\n\nPress again any time during the ability's duration to once again summon him to Fischl's side.",
-        "*\"My time is most precious, and I shall not waste it on the likes of you... Go, Oz, fall upon them, and bring down upon them your Rachsüchtig Blitz, that which tears open the long night.\"*\n\n*—Flowers for Princess Fischl (IV): Farewell Frau Welt*"
-      ]
+      "description": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE.\n\nFor the ability's duration, Oz will continuously attack nearby opponents with Freikugel.\n\n<br>\n\n``` ```\n\nHold to adjust the location Oz will be summoned to.\n\nPress again any time during the ability's duration to once again summon him to Fischl's side.\n\n<br>\n\n``` ```\n\n*\"My time is most precious, and I shall not waste it on the likes of you... Go, Oz, fall upon them, and bring down upon them your Rachsüchtig Blitz, that which tears open the long night.\"*\n\n*—Flowers for Princess Fischl (IV): Farewell Frau Welt*",
+			"stats": [
+				{
+					"attribute": "Oz's ATK DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Summoning DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Oz's Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "fischl_talent_3",
       "name": "Midnight Phantasmagoria",
-      "description": [
-        "Summons Oz to spread his twin wings of twilight and defend Fischl.\n\nHas the following properties during the ability's duration:\n - Fischl takes on Oz's form, greatly increasing her Movement Speed.\n - Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once.\n - Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence.",
-        "*...In the hordes of beasts that follow the cursed blood, only Prince Nachtraben, who bore witness to the extinction of a thousand worlds, knows her true greatness. Thus the night wings he spreads are his eternal promise to protect Her Royal Highness.\"*\n\n*—Flowers for Princess Fischl (I): End Time Zersetzung*"
-      ]
+     	"description": "Summons Oz to spread his twin wings of twilight and defend Fischl.\n\nHas the following properties during the ability's duration:\n- Fischl takes on Oz's form, greatly increasing her Movement Speed.\n- Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once.\n- Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence.\n\n<br>\n\n``` ```\n\n*\"...In the hordes of beasts that follow the cursed blood, only Prince Nachtraben, who bore witness to the extinction of a thousand worlds, knows her true greatness. Thus the night wings he spreads are his eternal promise to protect Her Royal Highness.\"*\n\n*—Flowers for Princess Fischl (I): End Time Zersetzung*",
+		 	"stats": [
+				{
+					"attribute": "Falling Thunder DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "fischl_passive_1",
       "name": "Stellar Predator",
       "description": "When Fischl hits Oz with a fully-charged Aimed Shot, Oz brings down Thundering Retribution, dealing AoE Electro DMG equal to 152.7% of the arrow's DMG."
     },
     {
-      "key": "talent_5",
+      "id": "fischl_passive_2",
       "name": "Undone Be Thy Sinful Hex",
       "description": "If your current active character triggers an Electro-related Elemental Reaction when Oz is on the field, the opponent shall be stricken with Thundering Retribution, dealing Electro DMG equal to 80% of Fischl's ATK."
     },
     {
-      "key": "talent_6",
+      "id": "fischl_passive_3",
       "name": "Mein Hausgarten",
       "description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Aimed Shot",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Fully-Charged Aimed Shot",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Oz's ATK DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Summoning DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Oz's Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Falling Thunder DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "fischl_constellation_1",
       "name": "Gaze of the Deep",
       "description": "Even when Oz is not present in combat, he can still watch over Fischl through his raven eyes. When Fischl performs a Normal Attack against an opponent, Oz fires a joint attack, dealing DMG equal to 22% of Fischl's ATK."
     },
     {
-      "key": "constellation_2",
+      "id": "fischl_constellation_2",
       "name": "Devourer of All Sins",
       "description": "When Nightrider is used, it deals an additional 200% ATK as DMG, and its AoE is increased by 50%."
     },
     {
-      "key": "constellation_3",
+      "id": "fischl_constellation_3",
       "name": "Wings of Nightmare",
       "description": "Increases the Level of Nightrider by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "fischl_constellation_4",
       "name": "Her Pilgrimage of Bleak",
       "description": "When Midnight Phantasmagoria is used, it deals 222% of ATK as Electro DMG to surrounding opponents.\n\nWhen the skill duration ends, Fischl regenerates 20% of her HP."
     },
     {
-      "key": "constellation_5",
+      "id": "fischl_constellation_5",
       "name": "Against the Fleeing Light",
       "description": "Increases the Level of Midnight Phantasmagoria by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "fischl_constellation_6",
       "name": "Evernight Raven",
       "description": "Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs joint attacks with your active character when present, dealing 30% of Fischl's ATK as Electro DMG."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_ballad",
+		"character_ascension/lightning_prism",
+		"character_ascension/vajrada_amethyst_gemstone",
+		"local/small_lamp_grass",
+		"common/weathered_arrowhead",
+		"talent/spirit_locket_of_boreas"
   ]
 }

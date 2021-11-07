@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:little_teyvat/helpers/asset_helper.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/routes/arguments/character_details_arguments.dart';
 import 'package:little_teyvat/routes/route_constants.dart' as routes;
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
@@ -11,7 +11,6 @@ import 'package:little_teyvat/src/characters/characters_constants.dart' as const
 import 'package:little_teyvat/src/characters/controllers/colour_controller.dart';
 import 'package:little_teyvat/src/characters/views/character_card_painter.dart';
 import 'package:little_teyvat/src/shared/widgets/rarity.dart';
-import 'package:little_teyvat/strapi/models/strapi_image_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -20,8 +19,7 @@ class CharacterCard extends StatelessWidget {
   final String name;
   final String element;
   final int rarity;
-  final StrapiImageModel cardImage;
-  final IList<StrapiImageModel> materials;
+  final IList<String> materials;
 
   const CharacterCard({
     Key? key,
@@ -29,7 +27,6 @@ class CharacterCard extends StatelessWidget {
     required this.name,
     required this.element,
     required this.rarity,
-    required this.cardImage,
     required this.materials,
   }) : super(key: key);
 
@@ -64,7 +61,7 @@ class CharacterCard extends StatelessWidget {
                     right: 8.0,
                     child: FadeInImage(
                       placeholder: MemoryImage(kTransparentImage),
-                      image: AssetImage(getElementPath(element)),
+                      image: AssetImage(helper.getElementPath(element)),
                       width: constants.elementImageWidth,
                     ),
                   ),
@@ -74,7 +71,7 @@ class CharacterCard extends StatelessWidget {
                         aspectRatio: 1.0,
                         child: FadeInImage(
                           placeholder: MemoryImage(kTransparentImage),
-                          image: NetworkImage(cardImage.imageUrl),
+                          image: AssetImage(helper.getCharacterCardImagePath(id)),
                         ),
                       ),
                       Expanded(
@@ -102,10 +99,10 @@ class CharacterCard extends StatelessWidget {
                               spacing: 3.0,
                               children: <Widget>[
                                 ...materials.map(
-                                  (StrapiImageModel material) {
+                                  (String material) {
                                     return FadeInImage(
                                       placeholder: MemoryImage(kTransparentImage),
-                                      image: NetworkImage(material.imageUrl),
+                                      image: AssetImage(helper.getItemPath(material)),
                                       width: constants.characterMaterialImageWidth,
                                     );
                                   },

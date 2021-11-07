@@ -1,5 +1,5 @@
 {
-  "key": "eula",
+  "id": "eula",
   "ascensionStats": [
     {
       "level": 1,
@@ -119,23 +119,19 @@
       "level": 1,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 20000
         },
         {
-          "key": "shivada_jade_sliver",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_sliver",
           "amount": 1
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+					"image": "local/dandelion_seed",
           "amount": 3
         },
         {
-          "key": "damaged_mask",
-          "type": "common",
+					"image": "common/damaged_mask",
           "amount": 3
         }
       ]
@@ -144,28 +140,23 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 40000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_fragment",
           "amount": 3
         },
         {
-          "key": "crystalline_bloom",
-          "type": "character_ascension",
+          "image": "character_ascension/crystalline_bloom",
           "amount": 2
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+          "image": "local/dandelion_seed",
           "amount": 10
         },
         {
-          "key": "damaged_mask",
-          "type": "common",
+          "image": "common/damaged_mask",
           "amount": 15
         }
       ]
@@ -174,28 +165,23 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 60000
         },
         {
-          "key": "shivada_jade_fragment",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_fragment",
           "amount": 6
         },
         {
-          "key": "crystalline_bloom",
-          "type": "character_ascension",
+          "image": "character_ascension/crystalline_bloom",
           "amount": 4
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+          "image": "local/dandelion_seed",
           "amount": 20
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 12
         }
       ]
@@ -204,28 +190,23 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 80000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 3
         },
         {
-          "key": "crystalline_bloom",
-          "type": "character_ascension",
+          "image": "character_ascension/crystalline_bloom",
           "amount": 8
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+          "image": "local/dandelion_seed",
           "amount": 30
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 18
         }
       ]
@@ -234,28 +215,23 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 100000
         },
         {
-          "key": "shivada_jade_chunk",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_chunk",
           "amount": 6
         },
         {
-          "key": "crystalline_bloom",
-          "type": "character_ascension",
+         	"image": "character_ascension/crystalline_bloom",
           "amount": 12
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+          "image": "local/dandelion_seed",
           "amount": 45
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 12
         }
       ]
@@ -264,28 +240,23 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "shivada_jade_gemstone",
-          "type": "character_ascension",
+          "image": "character_ascension/shivada_jade_gemstone",
           "amount": 6
         },
         {
-          "key": "crystalline_bloom",
-          "type": "character_ascension",
+          "image": "character_ascension/crystalline_bloom",
           "amount": 20
         },
         {
-          "key": "dandelion_seed",
-          "type": "local",
+          "image": "local/dandelion_seed",
           "amount": 60
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 24
         }
       ]
@@ -293,145 +264,37 @@
   ],
 	"talentStats": [
 		[
-			{
-				"stats": [
-					[89.7], [97.0], [104.3], [114.8], [122.1], [130.4], [141.9], [153.4], [164.9], [177.4], [191.7], [208.6], [225.5]
-				]
-			},
-			{
-				"stats": [
-					[93.6], [101.2], [108.8], [119.7], [127.3], [136.0], [147.9], [159.9], [171.9], [184.9], [199.9], [217.5], [235.1]
-				]
-			},
-			{
-				"stats": [
-					[56.8, 56.8], [61.4, 61.4], [66.0, 66.0], [72.6, 72.6], [77.3, 77.3], [82.6, 82.6], [89.8, 89.8], [97.1, 97.1], [104.4, 104.4], [112.3, 112.3], [121.4, 121.4], [132.0, 132.0], [142.7, 142.7]
-				]
-			},
-			{
-				"stats": [
-					[112.6], [121.8], [131.0], [144.1], [153.2], [163.7], [178.1], [192.5], [206.9], [222.7], [240.7], [261.9], [283.0]
-				]
-			},
-			{
-				"stats": [
-					[71.8, 71.8], [77.7, 77.7], [83.5, 83.5], [91.9, 91.9], [97.7, 97.7], [104.4, 104.4], [113.6, 113.6], [122.8, 122.8], [132.0, 132.0], [142.0, 142.0], [153.5, 153.5], [167.0, 167.0], [180.5, 180.5]
-				]
-			},
-			{
-				"stats": [
-					[68.8], [74.4], [80.0], [88.0], [93.6], [100.0], [108.8], [117.6], [126.4], [136.0], [147.0], [159.9], [172.9]
-				]
-			},
-			{
-				"stats": [
-					[124], [135], [145], [159], [169], [181], [197], [213], [229], [246], [266], [289], [313]
-				]
-			},
-			{
-				"stats": [
-					[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]
-				]
-			},
-			{
-				"stats": [
-					[5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5]
-				]
-			},
-			{
-				"stats": [
-					[74.6], [80.7], [86.7], [95.4], [101.5], [108.4], [118.0], [127.5], [137.0], [147.4], [159.4], [173.4], [187.4]
-				]
-			},
-			{
-				"stats": [
-					[149, 186], [161, 201], [173, 217], [191, 238], [203, 253], [217, 271], [236, 295], [255, 318], [274, 342], [295, 368], [319, 398], [347, 433], [375, 468]
-				]
-			}
+			[[89.7], [97], [104.3], [114.8], [122.1], [130.4], [141.9], [153.4], [164.9], [177.4], [191.7], [208.6], [225.5]],
+			[[93.6], [101.2], [108.8], [119.7], [127.3], [136], [147.9], [159.9], [171.9], [184.9], [199.9], [217.5], [235.1]],
+			[[56.8, 56.8], [61.4, 61.4], [66, 66], [72.6, 72.6], [77.3, 77.3], [82.6, 82.6], [89.8, 89.8], [97.1, 97.1], [104.4, 104.4], [112.3, 112.3], [121.4, 121.4], [132, 132], [142.7, 142.7]],
+			[[112.6], [121.8], [131], [144.1], [153.2], [163.7], [178.1], [192.5], [206.9], [222.7], [240.7], [261.9], [283]],
+			[[71.8, 71.8], [77.7, 77.7], [83.5, 83.5], [91.9, 91.9], [97.7, 97.7], [104.4, 104.4], [113.6, 113.6], [122.8, 122.8], [132, 132], [142, 142], [153.5, 153.5], [167, 167], [180.5, 180.5]],
+			[[68.8], [74.4], [80], [88], [93.6], [100], [108.8], [117.6], [126.4], [136], [147], [159.9], [172.9]],
+			[[124], [135], [145], [159], [169], [181], [197], [213], [229], [246], [266], [289], [313]],
+			[[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]],
+			[[5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5], [5]],
+			[[74.6], [80.7], [86.7], [95.4], [101.5], [108.4], [118], [127.5], [137], [147.4], [159.4], [173.4], [187.4]],
+			[[149, 186], [161, 201], [173, 217], [191, 238], [203, 253], [217, 271], [236, 295], [255, 318], [274, 342], [295, 368], [319, 398], [347, 433], [375, 468]]
 		],
 		[
-      {
-				"stats": [
-					[146], [157], [168], [183], [194], [205], [220], [234], [249], [264], [278], [293], [311]
-				]
-			},
-      {
-				"stats": [
-					[246], [264], [282], [307], [325], [344], [368], [393], [418], [442], [467], [491], [522]
-				]
-			},
-      {
-				"stats": [
-					[96], [103], [110], [120], [127], [134], [144], [154], [163], [173], [182], [192], [204]
-				]
-			},
-      {
-				"stats": [
-					[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]
-				]
-			},
-      {
-				"stats": [
-					[18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18]
-				]
-			},
-			{
-				"stats": [
-					[16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [25], [25], [25]
-				]
-			},
-			{
-				"stats": [
-					[16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [25], [25], [25]
-				]
-			},
-			{
-				"stats": [
-					[7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7]
-				]
-			},
-      {
-				"stats": [
-					[4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]
-				]
-			},
-			{
-				"stats": [
-					[10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10]
-				]
-			}
+			[[146], [157], [168], [183], [194], [205], [220], [234], [249], [264], [278], [293], [311]],
+			[[246], [264], [282], [307], [325], [344], [368], [393], [418], [442], [467], [491], [522]],
+			[[96], [103], [110], [120], [127], [134], [144], [154], [163], [173], [182], [192], [204]],
+			[[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]],
+			[[18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18]],
+			[[16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [25], [25], [25]],
+			[[16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [25], [25], [25]],
+			[[7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7], [7]],
+			[[4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]],
+			[[10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10]]
 		],
     [
-      {
-				"stats": [
-					[246], [264], [282], [307], [325], [344], [368], [393], [418], [442], [467], [491], [522]
-				]
-			},
-      {
-				"stats": [
-					[367.0], [396.9], [426.8], [469.5], [499.4], [533.5], [580.4], [627.4], [674.3], [725.6], [784.2], [853.3], [922.3]
-				]
-			},
-      {
-				"stats": [
-					[75.0], [81.1], [87.2], [95.9], [102.0], [109.0], [118.6], [128.2], [137.8], [148.2], [160.2], [174.3], [188.4]
-				]
-			},
-      {
-				"stats": [
-					[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]
-				]
-			},
-      {
-				"stats": [
-					[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]
-				]
-			},
-      {
-				"stats": [
-					[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]
-				]
-			}
+			[[246], [264], [282], [307], [325], [344], [368], [393], [418], [442], [467], [491], [522]],
+			[[367], [396.9], [426.8], [469.5], [499.4], [533.5], [580.4], [627.4], [674.3], [725.6], [784.2], [853.3], [922.3]],
+			[[75], [81.1], [87.2], [95.9], [102], [109], [118.6], [128.2], [137.8], [148.2], [160.2], [174.3], [188.4]],
+			[[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]],
+			[[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]],
+			[[80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80], [80]]
     ]
 	],
   "talentMaterials": [
@@ -439,18 +302,15 @@
       "level": 2,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 12500
         },
         {
-          "key": "teachings_of_resistance",
-          "type": "talent",
+          "image": "talent/teachings_of_resistance",
           "amount": 3
         },
         {
-          "key": "damaged_mask",
-          "type": "common",
+          "image": "common/damaged_mask",
           "amount": 6
         }
       ]
@@ -459,18 +319,15 @@
       "level": 3,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 17500
         },
         {
-          "key": "guide_to_resistance",
-          "type": "talent",
+          "image": "talent/guide_to_resistance",
           "amount": 2
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 3
         }
       ]
@@ -479,18 +336,15 @@
       "level": 4,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 25000
         },
         {
-          "key": "guide_to_resistance",
-          "type": "talent",
+          "image": "talent/guide_to_resistance",
           "amount": 4
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 4
         }
       ]
@@ -499,18 +353,15 @@
       "level": 5,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 30000
         },
         {
-          "key": "guide_to_resistance",
-          "type": "talent",
+          "image": "talent/guide_to_resistance",
           "amount": 6
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 6
         }
       ]
@@ -519,18 +370,15 @@
       "level": 6,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 37500
         },
         {
-          "key": "guide_to_resistance",
-          "type": "talent",
+          "image": "talent/guide_to_resistance",
           "amount": 9
         },
         {
-          "key": "stained_mask",
-          "type": "common",
+          "image": "common/stained_mask",
           "amount": 9
         }
       ]
@@ -539,23 +387,19 @@
       "level": 7,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 120000
         },
         {
-          "key": "philosophies_of_resistance",
-          "type": "talent",
+          "image": "talent/philosophies_of_resistance",
           "amount": 4
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 4
         },
         {
-          "key": "dragon_lords_crown",
-          "type": "talent",
+          "image": "talent/dragon_lords_crown",
           "amount": 1
         }
       ]
@@ -564,23 +408,19 @@
       "level": 8,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 260000
         },
         {
-          "key": "philosophies_of_resistance",
-          "type": "talent",
+          "image": "talent/philosophies_of_resistance",
           "amount": 6
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 6
         },
         {
-          "key": "dragon_lords_crown",
-          "type": "talent",
+          "image": "talent/dragon_lords_crown",
           "amount": 1
         }
       ]
@@ -589,23 +429,19 @@
       "level": 9,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 450000
         },
         {
-          "key": "philosophies_of_resistance",
-          "type": "talent",
+          "image": "talent/philosophies_of_resistance",
           "amount": 12
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 9
         },
         {
-          "key": "dragon_lords_crown",
-          "type": "talent",
+          "image": "talent/dragon_lords_crown",
           "amount": 2
         }
       ]
@@ -614,28 +450,23 @@
       "level": 10,
       "materials": [
         {
-          "key": "mora",
-          "type": "currency",
+          "image": "currency/mora",
           "amount": 700000
         },
         {
-          "key": "philosophies_of_resistance",
-          "type": "talent",
+          "image": "talent/philosophies_of_resistance",
           "amount": 16
         },
         {
-          "key": "ominous_mask",
-          "type": "common",
+          "image": "common/ominous_mask",
           "amount": 12
         },
         {
-          "key": "dragon_lords_crown",
-          "type": "talent",
+          "image": "talent/dragon_lords_crown",
           "amount": 2
         },
         {
-          "key": "crown_of_insight",
-          "type": "talent",
+          "image": "talent/crown_of_insight",
           "amount": 1
         }
       ]

@@ -87,9 +87,9 @@ class CharacterTalents extends StatelessWidget {
               (CharacterSkillModel passive) => Column(
                 children: <Widget>[
                   CharacterSkillCard(
+                    id: passive.id,
                     title: passive.name,
                     description: passive.description,
-                    imageUrl: passive.image.imageUrl,
                   ),
                   const SizedBox(height: _sizedBoxHeight),
                 ],

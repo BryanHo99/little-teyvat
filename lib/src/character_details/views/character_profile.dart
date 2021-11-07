@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/helpers/asset_helper.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/src/character_details/models/character_model.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile_ascension.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile_biography.dart';
@@ -55,7 +55,7 @@ class CharacterProfile extends HookWidget {
             ),
             child: FadeInImage(
               placeholder: MemoryImage(kTransparentImage),
-              image: NetworkImage(character.characterImage.imageUrl),
+              image: AssetImage(helper.getCharacterImagePath(character.id)),
               height: characterImageHeight,
               width: context.width,
               fit: BoxFit.fitHeight,
@@ -106,12 +106,12 @@ class CharacterProfile extends HookWidget {
                                 opacity: 0.55,
                                 child: FadeInImage(
                                   placeholder: MemoryImage(kTransparentImage),
-                                  image: AssetImage(getRegionPath(character.region)),
+                                  image: AssetImage(helper.getRegionPath(character.region)),
                                 ),
                               ),
                               FadeInImage(
                                 placeholder: MemoryImage(kTransparentImage),
-                                image: NetworkImage(character.cardImage.imageUrl),
+                                image: AssetImage(helper.getCharacterCardImagePath(character.id)),
                               ),
                             ],
                           ),
@@ -144,14 +144,14 @@ class CharacterProfile extends HookWidget {
                                       const SizedBox(height: _sizedBoxHeight),
                                       FadeInImage(
                                         placeholder: MemoryImage(kTransparentImage),
-                                        image: AssetImage(getElementPath(character.element)),
+                                        image: AssetImage(helper.getElementPath(character.element)),
                                         width: 25.0,
                                       ),
                                     ],
                                   ),
                                   FadeInImage(
                                     placeholder: MemoryImage(kTransparentImage),
-                                    image: AssetImage(getWeaponTypePath(character.weaponType)),
+                                    image: AssetImage(helper.getWeaponTypePath(character.weaponType)),
                                     width: 40.0,
                                   ),
                                 ],

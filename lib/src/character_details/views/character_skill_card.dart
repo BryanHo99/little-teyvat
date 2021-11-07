@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
+import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 const double _paddingOffset = 15.0;
 
 class CharacterSkillCard extends StatelessWidget {
+  final String id;
   final String title;
   final String description;
-  final String imageUrl;
 
   const CharacterSkillCard({
     Key? key,
+    required this.id,
     required this.title,
     required this.description,
-    required this.imageUrl,
   }) : super(key: key);
 
   @override
@@ -37,7 +38,7 @@ class CharacterSkillCard extends StatelessWidget {
                 aspectRatio: 1.0,
                 child: FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
-                  image: NetworkImage(imageUrl),
+                  image: AssetImage(helper.getSkillPath(id)),
                 ),
               ),
             ),

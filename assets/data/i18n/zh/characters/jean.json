@@ -1,6 +1,6 @@
 {
-  "key": "jean",
-  "name": "Jean",
+  "id": "jean",
+  "name": "琴",
   "title": "Dandelion Knight",
   "affiliation": "Knights of Favonius",
   "region": "mondstadt",
@@ -19,164 +19,158 @@
   "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "jean_talent_1",
       "name": "Normal Attack: Favonius Bladework",
-      "description": [
-        "### Normal Attack\nPerforms up to 5 consecutive strikes.",
-        "### Charged Attack\nConsumes a certain amount of stamina to launch an opponent using the power of wind.\n\nLaunched opponents will slowly fall to the ground.",
-        "### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerforms up to 5 consecutive strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of stamina to launch an opponent using the power of wind.\n\nLaunched opponents will slowly fall to the ground.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "jean_talent_2",
       "name": "Gale Blade",
-      "description": [
-        "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive Anemo DMG.",
-        "### Hold\nAt the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front.\n\nDirection can be adjusted.\n\nCharacter is immobile during skill duration.",
-        "*That which follows Jean, the wholehearted defender, is a guardian wind that can banish danger from her comrades' presence.*"
-      ]
+      "description": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive Anemo DMG.\n\n<br>\n\n``` ```\n\n### Hold\nAt the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front.\n\nDirection can be adjusted.\n\nCharacter is immobile during skill duration.\n\n<br>\n\n``` ```\n\n*That which follows Jean, the wholehearted defender, is a guardian wind that can banish danger from her comrades' presence.*",
+			"stats": [
+				{
+					"attribute": "Skill DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Stamina Consumption",
+					"format": "%s Per Second"
+				},
+				{
+					"attribute": "Max Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "jean_talent_3",
       "name": "Dandelion Breeze",
-      "description": [
-        "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding opponents and dealing Anemo DMG.\n\nAt the same time, she instantly regenerates a large amount of HP for all party members. The amount of HP restored scales off Jean's ATK.",
-        "### Dandelion Field\n - Continuously regenerates HP of characters within the AoE and continuously imbues them with Anemo.\n - Deals Anemo DMG to opponents entering or exiting the Dandelion Field.",
-        "*Jean's magnanimity is as vast as the dandelion fields, and it is the root of her wish to protect others.*"
-      ]
+      "description": "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding opponents and dealing Anemo DMG.\n\nAt the same time, she instantly regenerates a large amount of HP for all party members. The amount of HP restored scales off Jean's ATK.\n\n<br>\n\n``` ```\n\n### Dandelion Field\n- Continuously regenerates HP of characters within the AoE and continuously imbues them with Anemo.\n- Deals Anemo DMG to opponents entering or exiting the Dandelion Field.\n\n<br>\n\n``` ```\n\n*Jean's magnanimity is as vast as the dandelion fields, and it is the root of her wish to protect others.*",
+			"stats": [
+				{
+					"attribute": "Elemental Burst DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Field Entering/Exiting DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Field Activation Healing",
+					"format": "%s%% ATK +%s"
+				},
+				{
+					"attribute": "Continuous Regeneration",
+					"format": "%s%% ATK +%s"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "jean_passive_1",
       "name": "Wind Companion",
       "description": "On hit, Jean's Normal Attacks have a 50% chance to regenerate HP equal to 15% of Jean's ATK for all party members."
     },
     {
-      "key": "talent_5",
+      "id": "jean_passive_2",
       "name": "Let the Wind Lead",
       "description": "Using Dandelion Breeze will regenerate 20% of its Energy."
     },
     {
-      "key": "talent_6",
+      "id": "jean_passive_3",
       "name": "Guiding Breeze",
       "description": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Skill DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Stamina Consumption",
-				"format": "%d Per Second"
-			},
-			{
-				"attribute": "Max Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Elemental Burst DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Field Entering/Exiting DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Field Activation Healing",
-				"format": "%d%% ATK +%d"
-			},
-			{
-				"attribute": "Continuous Regeneration",
-				"format": "%.2f%% ATK +%d"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "jean_constellation_1",
       "name": "Spiraling Tempest",
       "description": "Increases the pulling speed of Gale Blade after holding for more than 1s, and increases the DMG dealt by 40%."
     },
     {
-      "key": "constellation_2",
+      "id": "jean_constellation_2",
       "name": "People's Aegis",
       "description": "When Jean picks up an Elemental Orb/Particle, all party members have their Movement SPD and ATK SPD increased by 15% for 15s."
     },
     {
-      "key": "constellation_3",
+      "id": "jean_constellation_3",
       "name": "When the West Wind Arises",
       "description": "Increases the Level of Dandelion Breeze by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "jean_constellation_4",
       "name": "Lands of Dandelion",
       "description": "Within the Field created by Dandelion Breeze, all opponents have their Anemo RES decreased by 40%."
     },
     {
-      "key": "constellation_5",
+      "id": "jean_constellation_5",
       "name": "Outbursting Gust",
       "description": "Increases the Level of Gale Blade by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "jean_constellation_6",
       "name": "Lion's Fang, Fair Protector of Mondstadt",
       "description": "Incoming DMG is decreased by 35% within the Field created by Dandelion Breeze. Upon leaving the Dandelion Field, this effect lasts for 3 attacks or 10s."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_resistance",
+		"character_ascension/hurricane_seed",
+		"character_ascension/vayuda_turquoise_gemstone",
+		"local/dandelion_seed",
+		"common/ominous_mask",
+		"talent/dvalins_plume"
   ]
 }

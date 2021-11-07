@@ -1,6 +1,6 @@
 {
-  "key": "ganyu",
-  "name": "Ganyu",
+  "id": "ganyu",
+  "name": "甘雨",
   "title": "Plenilune Gaze",
   "affiliation": "Yuehai Pavilion",
   "region": "liyue",
@@ -19,167 +19,162 @@
   "description": "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "ganyu_talent_1",
       "name": "Normal Attack: Liutian Archery",
-      "description": [
-        "### Normal Attack\nPerform up to 6 consecutive shots with a bow.",
-        "### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n - Charge Level 1: Fires off an icy arrow that deals Cryo DMG.\n - Charge Level 2: Fires off a Frostflake Arrow that deals Cryo DMG. The Frostflake Arrow blooms after hitting its target, dealing AoE Cryo DMG.",
-        "### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
-      ]
+      "description": "### Normal Attack\nPerform up to 6 consecutive shots with a bow.\n\n<br>\n\n``` ```\n\n### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n- Charge Level 1: Fires off an icy arrow that deals Cryo DMG.\n- Charge Level 2: Fires off a Frostflake Arrow that deals Cryo DMG. The Frostflake Arrow blooms after hitting its target, dealing AoE Cryo DMG.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "5-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "6-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Aimed Shot",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Aimed Shot Charge Level 1",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Frostflake Arrow DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Frostflake Arrow Bloom DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "ganyu_talent_2",
       "name": "Trail of the Qilin",
-      "description": [
-        "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing AoE Cryo DMG.",
-        "### Ice Lotus\n - Continuously taunts surrounding opponents, attracting them to attack it.\n - Endurance scales based on Ganyu's Max HP.\n - Blooms profusely when destroyed or once its duration ends, dealing AoE Cryo DMG.",
-        "*\"You saw me, you say? You must be mistaken. I was working overtime then.\"*"
-      ]
+      "description": "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing AoE Cryo DMG.\n\n<br>\n\n``` ```\n\n### Ice Lotus\n- Continuously taunts surrounding opponents, attracting them to attack it.\n- Endurance scales based on Ganyu's Max HP.\n- Blooms profusely when destroyed or once its duration ends, dealing AoE Cryo DMG.\n\n<br>\n\n``` ```\n\n*\"You saw me, you say? You must be mistaken. I was working overtime then.\"*",
+			"stats": [
+				{
+					"attribute": "Inherited HP",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Skill DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "ganyu_talent_3",
       "name": "Celestial Shower",
-      "description": [
-        "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.\n\nDuring its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing Cryo DMG.",
-        "*Ganyu can bring down sweet rains as a matter of course. But against demons and heretics, they become bitter, freezing snow.*"
-      ]
+      "description": "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.\n\nDuring its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing Cryo DMG.\n\n<br>\n\n``` ```\n\n*Ganyu can bring down sweet rains as a matter of course. But against demons and heretics, they become bitter, freezing snow.*",
+			"stats": [
+				{
+					"attribute": "Ice Shard DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "ganyu_passive_1",
       "name": "Undivided Heart",
       "description": "After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their resulting bloom effects is increased by 20% for 5s."
     },
     {
-      "key": "talent_5",
+      "id": "ganyu_passive_2",
       "name": "Harmony between Heaven and Earth",
       "description": "Celestial Shower grants a 20% Cryo DMG Bonus to active party members in the AoE."
     },
     {
-      "key": "talent_6",
+      "id": "ganyu_passive_3",
       "name": "Preserved for the Hunt",
       "description": "Refunds 15% of the ore used when crafting Bow-type weapons."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "5-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "6-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Aimed Shot",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Aimed Shot Charge Level 1",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Frostflake Arrow DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Frostflake Arrow Bloom DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-      {
-				"attribute": "Inherited HP",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "Skill DMG",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-      {
-				"attribute": "CD",
-				"format": "%ds"
-			}
-		],
-    [
-      {
-				"attribute": "Ice Shard DMG",
-				"format": "%d%%"
-			},
-      {
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-      {
-				"attribute": "CD",
-				"format": "%ds"
-			},
-      {
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-    ]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "ganyu_constellation_1",
       "name": "Dew-Drinker",
       "description": "Taking DMG from a Charge Level 2 Frostflake Arrow or Frostflake Arrow Bloom decreases opponents' Cryo RES by 15% for 6s.\n\nA hit regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hit the target."
     },
     {
-      "key": "constellation_2",
+      "id": "ganyu_constellation_2",
       "name": "The Auspicious",
       "description": "Trail of the Qilin gains 1 additional charge."
     },
     {
-      "key": "constellation_3",
+      "id": "ganyu_constellation_3",
       "name": "Cloud-Strider",
       "description": "Increases the Level of Celestial Shower by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "ganyu_constellation_4",
       "name": "Westward Sojourn",
       "description": "Opponents standing within the AoE of Celestial Shower take increased DMG. This effect strengthens over time.\n\nIncreased DMG taken begins at 5% and increases by 5% every 3s, up to a maximum of 25%.\n\nThe effect lingers for 3s after the opponent leaves the AoE."
     },
     {
-      "key": "constellation_5",
+      "id": "ganyu_constellation_5",
       "name": "The Merciful",
       "description": "Increases the Level of Trail of the Qilin by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "ganyu_constellation_6",
       "name": "The Clement",
       "description": "Using Trail of the Qilin causes the next Frostflake Arrow shot within 30s to not require charging."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_diligence",
+		"character_ascension/hoarfrost_core",
+		"character_ascension/shivada_jade_gemstone",
+		"local/qingxin",
+		"common/energy_nectar",
+		"talent/shadow_of_the_warrior"
   ]
 }

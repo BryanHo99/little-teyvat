@@ -5,7 +5,7 @@ import 'package:little_teyvat/src/settings/services/theme_service.dart';
 
 final AutoDisposeStateNotifierProvider<ThemeController, ThemeState> themeController =
     StateNotifierProvider.autoDispose<ThemeController, ThemeState>(
-  (AutoDisposeProviderRefBase ref) {
+  (AutoDisposeStateNotifierProviderRef<ThemeController, ThemeState> ref) {
     final bool darkModeEnabled = ref.watch(themeService).getThemeKey();
     final ThemeState themeState = ThemeState(
       darkModeEnabled: darkModeEnabled,

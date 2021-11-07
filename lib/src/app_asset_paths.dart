@@ -1,9 +1,17 @@
-// Base image paths.
+import 'package:fast_immutable_collections/fast_immutable_collections.dart';
+
+// Base paths.
 const String imagesBasePath = 'assets/images';
+const String dataBasePath = 'assets/data';
+
+// Image paths.
 const String appImagesPath = '$imagesBasePath/app';
+const String characterImagesPath = '$imagesBasePath/characters';
+const String characterCardImagesPath = '$imagesBasePath/character_cards';
 const String elementImagesPath = '$imagesBasePath/elements';
 const String itemImagesPath = '$imagesBasePath/items';
 const String regionImagesPath = '$imagesBasePath/regions';
+const String skillImagesPath = '$imagesBasePath/skills';
 const String weaponTypeImagesPath = '$imagesBasePath/weapon_types';
 
 // App images.
@@ -38,3 +46,38 @@ const String claymoreImagePath = '$weaponTypeImagesPath/claymore.png';
 const String polearmImagePath = '$weaponTypeImagesPath/polearm.png';
 const String catalystImagePath = '$weaponTypeImagesPath/catalyst.png';
 const String bowImagePath = '$weaponTypeImagesPath/bow.png';
+
+// Localization data.
+const String localizationPath = '$dataBasePath/i18n';
+const String enDataPath = '$localizationPath/en';
+const String zhDataPath = '$localizationPath/zh';
+const String charactersPath = 'characters';
+
+// Stats data.
+const String statsDataPath = '$dataBasePath/stats';
+const String characterStatsDataPath = '$statsDataPath/characters';
+
+const IList<String> charactersJsonPaths = IListConst<String>(
+  <String>[
+    'albedo.json',
+    'amber.json',
+    'ayaka.json',
+    'barbara.json',
+    'beidou.json',
+    'bennett.json',
+    'chongyun.json',
+    'diluc.json',
+    'diona.json',
+    'eula.json',
+    'fischl.json',
+    'ganyu.json',
+    'hu_tao.json',
+    'jean.json',
+    'kaeya.json',
+    'kazuha.json',
+    'keqing.json',
+    'klee.json',
+    'lisa.json',
+    'mona.json',
+  ],
+);

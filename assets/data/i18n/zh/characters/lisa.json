@@ -1,6 +1,6 @@
 {
-  "key": "lisa",
-  "name": "Lisa",
+  "id": "lisa",
+  "name": "丽莎",
   "title": "Witch of Purple Rose",
   "affiliation": "Knights of Favonius",
   "region": "mondstadt",
@@ -19,164 +19,158 @@
   "description": "The languid but knowledgeable Librarian of the Knights of Favonius, deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries.",
   "talents": [
     {
-      "key": "talent_1",
+      "id": "lisa_talent_1",
       "name": "Normal Attack: Lightning Touch",
-      "description": [
-        "### Normal Attack\nPerform up to 4 lightning attacks that deal Electro DMG.",
-        "### Charged Attack\nConsumes a certain amount of Stamina to deal AoE Electro DMG after a short casting time.",
-        "### Plunging Attack\nGathering the might of Electro, Lisa plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Electro DMG upon impact with the ground."
-      ]
+      "description": "### Normal Attack\nPerform up to 4 lightning attacks that deal Electro DMG.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to deal AoE Electro DMG after a short casting time.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nGathering the might of Electro, Lisa plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Electro DMG upon impact with the ground.",
+			"stats": [
+				{
+					"attribute": "1-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "2-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "3-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "4-Hit DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Charged Attack Stamina Cost",
+					"format": "%s"
+				},
+				{
+					"attribute": "Plunge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Low/High Plunge DMG",
+					"format": "%s%% / %s%%"
+				}
+			]
     },
     {
-      "key": "talent_2",
+      "id": "lisa_talent_2",
       "name": "Violet Arc",
-      "description": [
-        "Channels the power of lightning to sweep bothersome matters away.",
-        "### Press\nReleases a homing Lightning Orb.\n\nOn hit, it deals Electro DMG, and applies a stack of the Conductive status (Max 3 stacks) to opponents in a small AoE.",
-        "### Hold\nAfter an extended casting time, calls down lightning from the heavens, dealing massive Electro DMG to all nearby opponents.\n\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.",
-        "*Electro Purple is the raiment of the Witch of Purple Rose.*"
-      ]
+      "description": "Channels the power of lightning to sweep bothersome matters away.\n\n<br>\n\n``` ```\n\n### Press\nReleases a homing Lightning Orb.\n\nOn hit, it deals Electro DMG, and applies a stack of the Conductive status (Max 3 stacks) to opponents in a small AoE.\n\n<br>\n\n``` ```\n\n### Hold\nAfter an extended casting time, calls down lightning from the heavens, dealing massive Electro DMG to all nearby opponents.\n\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.\n\n<br>\n\n``` ```\n\n*Electro Purple is the raiment of the Witch of Purple Rose.*",
+			"stats": [
+				{
+					"attribute": "Press DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Press CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Non-Conductive Hold DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Stack 1 Conductive Hold DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Stack 2 Conductive Hold DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Stack 3 Conductive Hold DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Holding CD",
+					"format": "%ss"
+				}
+			]
     },
     {
-      "key": "talent_3",
+      "id": "lisa_talent_3",
       "name": "Lightning Rose",
-      "description": [
-        "Summons a Lightning Rose that unleashes powerful lightning bolts, launching surrounding opponents and dealing Electro DMG.\n\nThe Lightning Rose will continuously emit lightning to knock back opponents and deal Electro DMG throughout the ability's duration.",
-        "*This rose is beautiful, but beware its mortal thorns.*"
-      ]
+      "description": "Summons a Lightning Rose that unleashes powerful lightning bolts, launching surrounding opponents and dealing Electro DMG.\n\nThe Lightning Rose will continuously emit lightning to knock back opponents and deal Electro DMG throughout the ability's duration.\n\n<br>\n\n``` ```\n\n*This rose is beautiful, but beware its mortal thorns.*",
+			"stats": [
+				{
+					"attribute": "Discharge DMG",
+					"format": "%s%%"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
+				},
+				{
+					"attribute": "CD",
+					"format": "%ss"
+				},
+				{
+					"attribute": "Energy Cost",
+					"format": "%s"
+				}
+			]
     }
   ],
   "passives": [
     {
-      "key": "talent_4",
+      "id": "lisa_passive_1",
       "name": "Induced Aftershock",
       "description": "Hits by Charged Attacks apply Violet Arc's Conductive status to opponents."
     },
     {
-      "key": "talent_5",
+      "id": "lisa_passive_2",
       "name": "Static Electricity Field",
       "description": "Opponents hit by Lightning Rose have their DEF decreased by 15% for 10s."
     },
     {
-      "key": "talent_6",
+      "id": "lisa_passive_3",
       "name": "General Pharmaceutics",
       "description": "When Lisa crafts a potion, she has a 20% chance to refund a portion of the crafting materials used."
     }
   ],
-	"talentFormats": [
-		[
-			{
-				"attribute": "1-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "2-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "3-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "4-Hit DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Charged Attack DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Charged Attack Stamina Cost",
-				"format": "%d"
-			},
-			{
-				"attribute": "Plunge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Low/High Plunge DMG",
-				"format": "%d%% / %d%%"
-			}
-		],
-		[
-			{
-				"attribute": "Press DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Press CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Non-Conductive Hold DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Stack 1 Conductive Hold DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Stack 2 Conductive Hold DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Stack 3 Conductive Hold DMG",
-				"format": "%d%%"
-			},
-			{
-				"attribute": "Holding CD",
-				"format": "%ds"
-			}
-		],
-		[
-			{
-				"attribute": "Discharge DMG",
-				"format": "%.1f%%"
-			},
-			{
-				"attribute": "Duration",
-				"format": "%ds"
-			},
-			{
-				"attribute": "CD",
-				"format": "%ds"
-			},
-			{
-				"attribute": "Energy Cost",
-				"format": "%d"
-			}
-		]
-	],
 	"constellations": [
     {
-      "key": "constellation_1",
+      "id": "lisa_constellation_1",
       "name": "Infinite Circuit",
       "description": "Lisa regenerates 2 Energy for every opponent hit while holding Violet Arc.\n\nA maximum of 10 Energy can be regenerated in this manner at any one time."
     },
     {
-      "key": "constellation_2",
+      "id": "lisa_constellation_2",
       "name": "Electromagnetic Field",
       "description": "Holding Violet Arc has the following effects:\n\n - Increases DEF by 25%.\n- Increases Lisa's resistance to interruption."
     },
     {
-      "key": "constellation_3",
+      "id": "lisa_constellation_3",
       "name": "Resonant Thunder",
       "description": "Increases the Level of Lightning Rose by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_4",
+      "id": "lisa_constellation_4",
       "name": "Plasma Eruption",
       "description": "Increases the number of lightning bolts released by Lightning Rose by 1-3."
     },
     {
-      "key": "constellation_5",
+      "id": "lisa_constellation_5",
       "name": "Electrocute",
       "description": "Increases the Level of Violet Arc by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "key": "constellation_6",
+      "id": "lisa_constellation_6",
       "name": "Pulsating Witch",
       "description": "When Lisa takes the field, she applies 3 stacks of Violet Arc's Conductive status onto nearby opponents.\n\nThis effect can only occur once every 5s."
     }
+  ],
+	"materialsSummary": [
+		"talent/philosophies_of_ballad",
+		"character_ascension/lightning_prism",
+		"character_ascension/vajrada_amethyst_gemstone",
+		"local/valberry",
+		"common/slime_concentrate",
+		"talent/dvalins_claw"
   ]
 }
