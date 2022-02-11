@@ -21,6 +21,7 @@ class FadeIndexedStackWrapper extends HookWidget {
     // Hook that calls the fade transition every time the current index changes.
     useEffect(() {
       animationController.forward(from: 0.0);
+      return null;
     }, <int>[index]);
 
     return FadeTransition(

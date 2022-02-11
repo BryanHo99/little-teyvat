@@ -4,6 +4,8 @@ A Genshin Impact database.
 
 This app is not affiliated with or endorsed by miHoYo. Genshin Impact and its respective materials are trademarks and properties belonging to miHoYo.
 
+For technical information on development, refer to the `README` in `lib`.
+
 ## Features
 - [X] Character Information
 - [ ] Weapon Information

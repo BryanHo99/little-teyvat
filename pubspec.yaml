@@ -71,7 +71,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - .env
     - assets/data/i18n/en/characters/
     - assets/data/i18n/zh/characters/
     - assets/data/stats/characters/

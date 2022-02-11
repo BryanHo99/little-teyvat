@@ -37,5 +37,5 @@ This personal project is initialized as an avenue to learn Flutter alongside oth
 ## VSCode Extensions
 - [Freezed](https://marketplace.visualstudio.com/items?itemName=blaxou.freezed)
 - [flutter-stylizer](https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer)
-- [Riverpod Snippsets](https://marketplace.visualstudio.com/items?itemName=Pythonhub.riverpodsnippets)
+- [Riverpod Snippets](https://marketplace.visualstudio.com/items?itemName=Pythonhub.riverpodsnippets)
 - [Flutter Intl](https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intl)
