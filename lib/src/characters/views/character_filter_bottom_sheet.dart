@@ -26,6 +26,13 @@ class CharacterFilterBottomSheet extends ConsumerWidget {
     final IList<SortDropdownMenuItemModel> dropdownMenuItems = ref.watch(characterSortDropdownController).initDropdownItems(context);
 
     return FilterBottomSheet(
+      controllers: <AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>[
+        characterRarityFilterController,
+        characterElementFilterController,
+        characterWeaponFilterController,
+        characterSortFilterController,
+      ].lock,
+      onSubmit: () => filterController.onSubmit(),
       children: <Widget>[
         RarityFilter(controller: characterRarityFilterController),
         ElementFilter(controller: characterElementFilterController),
@@ -35,13 +42,6 @@ class CharacterFilterBottomSheet extends ConsumerWidget {
           controller: characterSortFilterController,
         ),
       ],
-      controllers: <AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>[
-        characterRarityFilterController,
-        characterElementFilterController,
-        characterWeaponFilterController,
-        characterSortFilterController,
-      ].lock,
-      onSubmit: () => filterController.onSubmit(),
     );
   }
 }

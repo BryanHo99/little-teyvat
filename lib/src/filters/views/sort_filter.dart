@@ -41,11 +41,11 @@ class SortFilter extends StatelessWidget {
                     items: <DropdownMenuItem<String>>[
                       ...dropdownMenuItems.map(
                         (SortDropdownMenuItemModel item) => DropdownMenuItem<String>(
+                          value: item.value,
                           child: Text(
                             item.itemName,
                             style: ktSubheading,
                           ),
-                          value: item.value,
                         ),
                       ),
                     ],

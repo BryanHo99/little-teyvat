@@ -76,14 +76,14 @@ class CharacterProfile extends HookWidget {
                 children: <Widget>[
                   RepaintBoundary(
                     child: CustomPaint(
-                      child: SizedBox(
-                        width: context.width,
-                        height: _painterHeight,
-                      ),
                       painter: CharacterProfilePainter(
                         color: context.theme.backgroundColor,
                       ),
                       willChange: false,
+                      child: SizedBox(
+                        width: context.width,
+                        height: _painterHeight,
+                      ),
                     ),
                   ),
                   Row(

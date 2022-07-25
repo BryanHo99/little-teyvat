@@ -1,6 +1,6 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/app_drawer/controllers/app_drawer_controller.dart';
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
 import 'package:little_teyvat/src/app_drawer/models/drawer_item_model.dart';

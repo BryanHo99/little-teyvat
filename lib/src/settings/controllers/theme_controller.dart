@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/settings/controllers/states/theme_state.dart';
 import 'package:little_teyvat/src/settings/services/theme_service.dart';
 
-final AutoDisposeStateNotifierProvider<ThemeController, ThemeState> themeController =
-    StateNotifierProvider.autoDispose<ThemeController, ThemeState>(
+final AutoDisposeStateNotifierProvider<ThemeController, ThemeState> themeController = StateNotifierProvider.autoDispose<ThemeController, ThemeState>(
   (AutoDisposeStateNotifierProviderRef<ThemeController, ThemeState> ref) {
     final bool darkModeEnabled = ref.watch(themeService).getThemeKey();
     final ThemeState themeState = ThemeState(

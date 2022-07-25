@@ -48,11 +48,11 @@ class CharacterCard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   CustomPaint(
-                    child: Container(),
                     painter: CharacterCardPainter(
                       color: ref.watch(colourController).getForegroundColor(element),
                     ),
                     willChange: false,
+                    child: Container(),
                   ),
                   Positioned(
                     top: 8.0,
