@@ -15,33 +15,24 @@ import 'package:little_teyvat/src/filters/models/weapon_filter_model.dart';
 
 final AutoDisposeStateNotifierProvider<RarityFilterController, RarityFilterState> characterRarityFilterController =
     StateNotifierProvider.autoDispose<RarityFilterController, RarityFilterState>(
-  (AutoDisposeStateNotifierProviderRef<RarityFilterController, RarityFilterState> ref) => RarityFilterController(),
-);
+        (AutoDisposeStateNotifierProviderRef<RarityFilterController, RarityFilterState> ref) => RarityFilterController());
 
 final AutoDisposeStateNotifierProvider<ElementFilterController, ElementFilterState> characterElementFilterController =
     StateNotifierProvider.autoDispose<ElementFilterController, ElementFilterState>(
-  (AutoDisposeStateNotifierProviderRef<ElementFilterController, ElementFilterState> ref) => ElementFilterController(),
-);
+        (AutoDisposeStateNotifierProviderRef<ElementFilterController, ElementFilterState> ref) => ElementFilterController());
 
 final AutoDisposeStateNotifierProvider<WeaponFilterController, WeaponFilterState> characterWeaponFilterController =
     StateNotifierProvider.autoDispose<WeaponFilterController, WeaponFilterState>(
-  (AutoDisposeStateNotifierProviderRef<WeaponFilterController, WeaponFilterState> ref) => WeaponFilterController(),
-);
+        (AutoDisposeStateNotifierProviderRef<WeaponFilterController, WeaponFilterState> ref) => WeaponFilterController());
 
 final AutoDisposeStateNotifierProvider<SortFilterController, SortFilterState> characterSortFilterController =
     StateNotifierProvider.autoDispose<SortFilterController, SortFilterState>(
-  (AutoDisposeStateNotifierProviderRef<SortFilterController, SortFilterState> ref) => SortFilterController(constants.name),
-);
+        (AutoDisposeStateNotifierProviderRef<SortFilterController, SortFilterState> ref) => SortFilterController(constants.name));
 
-final AutoDisposeStateNotifierProviderFamily<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>>
-    filterCharactersController =
+final AutoDisposeStateNotifierProviderFamily<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>> filterCharactersController =
     StateNotifierProvider.family.autoDispose<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>>(
-  (
-    AutoDisposeStateNotifierProviderRef<FilterCharactersController, IList<CharacterCardModel>> ref,
-    IList<CharacterCardModel> characters,
-  ) =>
-      FilterCharactersController._(ref.read, characters),
-);
+        (AutoDisposeStateNotifierProviderRef<FilterCharactersController, IList<CharacterCardModel>> ref, IList<CharacterCardModel> characters) =>
+            FilterCharactersController._(ref.read, characters));
 
 class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>> {
   final IList<CharacterCardModel> characters;
@@ -99,19 +90,21 @@ class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>
     final bool isAscendingOrder = read(characterSortFilterController).filter.isAscendingOrder;
 
     state = state.sort((CharacterCardModel a, CharacterCardModel b) {
-      final int sortByName = isAscendingOrder
-          ? a.name.toLowerCase().compareTo(b.name.toLowerCase())
-          : b.name.toLowerCase().compareTo(a.name.toLowerCase());
+      final int sortByName;
+      final int sortByElement;
+      final int sortByWeaponType;
+      final int sortByRarity;
+      CharacterCardModel temp = a;
 
-      final int sortByElement = isAscendingOrder
-          ? a.element.toLowerCase().compareTo(b.element.toLowerCase())
-          : b.element.toLowerCase().compareTo(a.element.toLowerCase());
+      if (!isAscendingOrder) {
+        a = b;
+        b = temp;
+      }
 
-      final int sortByWeaponType = isAscendingOrder
-          ? a.weaponType.toLowerCase().compareTo(b.weaponType.toLowerCase())
-          : b.weaponType.toLowerCase().compareTo(a.weaponType.toLowerCase());
-
-      final int sortByRarity = isAscendingOrder ? a.rarity.compareTo(b.rarity) : b.rarity.compareTo(a.rarity);
+      sortByName = a.name.toLowerCase().compareTo(b.name.toLowerCase());
+      sortByElement = a.element.toLowerCase().compareTo(b.element.toLowerCase());
+      sortByWeaponType = a.weaponType.toLowerCase().compareTo(b.weaponType.toLowerCase());
+      sortByRarity = a.rarity.compareTo(b.rarity);
 
       final IMap<String, int> sortFilters = <String, int>{
         constants.name: sortByName,
