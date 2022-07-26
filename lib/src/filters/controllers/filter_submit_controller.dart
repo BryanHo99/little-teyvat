@@ -2,14 +2,9 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
 
-final ProviderFamily<FilterSubmitController<Object>, IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>>
-    filterSubmitController = Provider.family(
-  (
-    ProviderRef<FilterSubmitController<Object>> ref,
-    IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>> controllers,
-  ) =>
-      FilterSubmitController<Object>._(ref.read, controllers),
-);
+final ProviderFamily<FilterSubmitController<Object>, IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>> filterSubmitController = Provider.family(
+    (ProviderRef<FilterSubmitController<Object>> ref, IList<AutoDisposeStateNotifierProvider<FilterController<Object>, Object>> controllers) =>
+        FilterSubmitController<Object>._(ref.read, controllers));
 
 class FilterSubmitController<T> {
   final Reader read;

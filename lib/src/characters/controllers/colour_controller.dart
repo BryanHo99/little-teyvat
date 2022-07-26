@@ -5,8 +5,7 @@ import 'package:little_teyvat/src/characters/characters_constants.dart' as const
 import 'package:little_teyvat/src/characters/models/colour_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
-final AutoDisposeProvider<ColourController> colourController =
-    Provider.autoDispose<ColourController>((ProviderRef<ColourController> ref) => ColourController._());
+final AutoDisposeProvider<ColourController> colourController = Provider.autoDispose<ColourController>((ProviderRef<ColourController> ref) => ColourController._());
 
 class ColourController {
   final IMap<String, ColourModel> colours = <String, ColourModel>{

@@ -3,14 +3,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/character_details/models/character_model.dart';
 import 'package:little_teyvat/src/character_details/services/character_service.dart';
 
-final AutoDisposeStateNotifierProviderFamily<CharacterDetailsController, AsyncValue<CharacterModel>, String> characterDetailsController =
-    StateNotifierProvider.autoDispose.family(
-  (
-    AutoDisposeStateNotifierProviderRef<CharacterDetailsController, AsyncValue<CharacterModel>> ref,
-    String id,
-  ) =>
-      CharacterDetailsController._(ref.read, id),
-);
+final AutoDisposeStateNotifierProviderFamily<CharacterDetailsController, AsyncValue<CharacterModel>, String> characterDetailsController = StateNotifierProvider.autoDispose
+    .family((AutoDisposeStateNotifierProviderRef<CharacterDetailsController, AsyncValue<CharacterModel>> ref, String id) => CharacterDetailsController._(ref.read, id));
 
 class CharacterDetailsController extends StateNotifier<AsyncValue<CharacterModel>> {
   final String id;

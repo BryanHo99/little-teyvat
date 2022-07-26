@@ -5,8 +5,7 @@ import 'package:little_teyvat/src/settings/models/locale_model.dart';
 import 'package:little_teyvat/src/settings/services/language_service.dart';
 import 'package:little_teyvat/src/settings/settings_constants.dart' as constants;
 
-final AutoDisposeStateNotifierProvider<LanguageController, LocaleModel> languageController =
-    StateNotifierProvider.autoDispose<LanguageController, LocaleModel>(
+final AutoDisposeStateNotifierProvider<LanguageController, LocaleModel> languageController = StateNotifierProvider.autoDispose<LanguageController, LocaleModel>(
   (AutoDisposeStateNotifierProviderRef<LanguageController, LocaleModel> ref) {
     final String languageCode = ref.watch(languageService).getLanguageKey();
     final IMap<String, LocaleModel> locales = ref.watch(localesController);

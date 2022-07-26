@@ -38,10 +38,7 @@ class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>
   final IList<CharacterCardModel> characters;
   final Reader read;
 
-  FilterCharactersController._(
-    this.read,
-    this.characters,
-  ) : super(characters) {
+  FilterCharactersController._(this.read, this.characters) : super(characters) {
     _sortCharacters();
   }
 

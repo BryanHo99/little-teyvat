@@ -5,9 +5,7 @@ import 'package:little_teyvat/src/characters/services/characters_service.dart';
 
 final AutoDisposeStateNotifierProvider<CharactersController, AsyncValue<IList<CharacterCardModel>>> charactersController =
     StateNotifierProvider.autoDispose<CharactersController, AsyncValue<IList<CharacterCardModel>>>(
-  (AutoDisposeStateNotifierProviderRef<CharactersController, AsyncValue<IList<CharacterCardModel>>> ref) =>
-      CharactersController._(ref.read),
-);
+        (AutoDisposeStateNotifierProviderRef<CharactersController, AsyncValue<IList<CharacterCardModel>>> ref) => CharactersController._(ref.read));
 
 class CharactersController extends StateNotifier<AsyncValue<IList<CharacterCardModel>>> {
   final Reader read;

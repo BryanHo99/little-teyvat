@@ -6,9 +6,7 @@ import 'package:little_teyvat/src/characters/characters_constants.dart' as const
 import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
 
 final AutoDisposeProvider<CharacterSortDropdownController> characterSortDropdownController =
-    Provider.autoDispose<CharacterSortDropdownController>(
-  (AutoDisposeProviderRef<CharacterSortDropdownController> ref) => const CharacterSortDropdownController._(),
-);
+    Provider.autoDispose<CharacterSortDropdownController>((AutoDisposeProviderRef<CharacterSortDropdownController> ref) => const CharacterSortDropdownController._());
 
 class CharacterSortDropdownController {
   const CharacterSortDropdownController._();
