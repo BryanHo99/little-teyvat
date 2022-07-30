@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
+import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class Home extends StatelessWidget {
@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultScaffold(
+    return BasicScaffold(
       title: context.tr.home,
       body: Center(
         child: Center(

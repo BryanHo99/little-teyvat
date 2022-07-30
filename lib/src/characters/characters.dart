@@ -7,7 +7,7 @@ import 'package:little_teyvat/src/characters/controllers/filter_characters_contr
 import 'package:little_teyvat/src/characters/models/character_card_model.dart';
 import 'package:little_teyvat/src/characters/views/character_card.dart';
 import 'package:little_teyvat/src/characters/views/character_filter_bottom_sheet.dart';
-import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
+import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
 import 'package:little_teyvat/src/shared/scaffolds/search_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
@@ -66,12 +66,12 @@ class Characters extends ConsumerWidget {
           onTextChanged: (String value) => filterController.searchCharacters(value),
         );
       },
-      loading: () => DefaultScaffold(
+      loading: () => BasicScaffold(
         title: context.tr.characters,
         body: const LoadingView(),
         absorbing: true,
       ),
-      error: (Object error, StackTrace? stack) => DefaultScaffold(
+      error: (Object error, StackTrace? stack) => BasicScaffold(
         title: context.tr.characters,
         body: ErrorView(
           errorDescription: error.toString(),

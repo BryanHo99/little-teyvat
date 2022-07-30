@@ -6,7 +6,8 @@ import 'package:transparent_image/transparent_image.dart';
 
 const double _sizedBoxHeight = 20.0;
 
-/// The view to be displayed when an error is caught.
+/// The view to be displayed when an exception is caught.
+///
 /// Provides a stack trace to troubleshoot issues.
 class ErrorView extends StatelessWidget {
   final String errorDescription;
@@ -22,42 +23,53 @@ class ErrorView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: kcRed900,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          AspectRatio(
-            aspectRatio: 2.0,
-            child: FadeInImage(
-              placeholder: MemoryImage(kTransparentImage),
-              image: const AssetImage(assets.appErrorImagePath),
+      width: context.width,
+      height: context.height,
+      child: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
+        return SingleChildScrollView(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              minHeight: constraints.maxHeight,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                FadeInImage(
+                  placeholder: MemoryImage(kTransparentImage),
+                  image: const AssetImage(assets.appErrorImagePath),
+                  height: context.height / 3.0,
+                  width: context.width,
+                  fit: BoxFit.fitHeight,
+                ),
+                Text(
+                  context.tr.error,
+                  textAlign: TextAlign.center,
+                  style: ktHeading3.copyWith(
+                    color: kcWhite,
+                  ),
+                ),
+                if (errorDescription.isNotEmpty) ...<Widget>[
+                  const SizedBox(height: _sizedBoxHeight),
+                  Text(
+                    errorDescription,
+                    textAlign: TextAlign.center,
+                    style: ktHeading4.copyWith(
+                      color: kcWhite,
+                    ),
+                  ),
+                ],
+                const SizedBox(height: _sizedBoxHeight),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: context.theme.primaryColor),
+                  onPressed: () => _openBottomSheet(context, stackTrace ?? StackTrace.current.toString()),
+                  child: Text(context.tr.showStackTrace),
+                ),
+              ],
             ),
           ),
-          Text(
-            context.tr.error,
-            textAlign: TextAlign.center,
-            style: ktHeading3.copyWith(
-              color: kcWhite,
-            ),
-          ),
-          if (errorDescription.isNotEmpty) ...<Widget>[
-            const SizedBox(height: _sizedBoxHeight),
-            Text(
-              errorDescription,
-              textAlign: TextAlign.center,
-              style: ktHeading4.copyWith(
-                color: kcWhite,
-              ),
-            ),
-          ],
-          const SizedBox(height: _sizedBoxHeight),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(primary: context.theme.primaryColor),
-            onPressed: () => _openBottomSheet(context, stackTrace ?? StackTrace.current.toString()),
-            child: Text(context.tr.showStackTrace),
-          ),
-        ],
-      ),
+        );
+      }),
     );
   }
 

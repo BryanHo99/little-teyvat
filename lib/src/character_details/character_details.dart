@@ -7,7 +7,7 @@ import 'package:little_teyvat/src/character_details/models/character_model.dart'
 import 'package:little_teyvat/src/character_details/views/character_constellations.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile.dart';
 import 'package:little_teyvat/src/character_details/views/character_talents.dart';
-import 'package:little_teyvat/src/shared/scaffolds/default_scaffold.dart';
+import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
 import 'package:little_teyvat/src/shared/wrappers/fade_indexed_stack_wrapper.dart';
@@ -28,7 +28,7 @@ class CharacterDetails extends HookConsumerWidget {
     final ValueNotifier<int> bottomTabIndex = useState(0);
 
     return character.when(
-      data: (CharacterModel state) => DefaultScaffold(
+      data: (CharacterModel state) => BasicScaffold(
         title: name,
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: bottomTabIndex.value,
@@ -58,13 +58,13 @@ class CharacterDetails extends HookConsumerWidget {
         ),
         enableDrawer: false,
       ),
-      loading: () => DefaultScaffold(
+      loading: () => BasicScaffold(
         title: name,
         body: const LoadingView(),
         absorbing: true,
         enableDrawer: false,
       ),
-      error: (Object error, StackTrace? stack) => DefaultScaffold(
+      error: (Object error, StackTrace? stack) => BasicScaffold(
         title: name,
         body: ErrorView(
           errorDescription: error.toString(),

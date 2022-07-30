@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/src/app_drawer/app_drawer.dart';
 
-/// Default scaffold to be used by all views in the app that do not require search functionalities.
-class DefaultScaffold extends StatelessWidget {
+/// Basic scaffold to be used by all views in the app that do not require search functionalities.
+class BasicScaffold extends StatelessWidget {
   final String title;
   final Widget body;
-  final BottomNavigationBar? bottomNavigationBar; 
+  final BottomNavigationBar? bottomNavigationBar;
   final bool absorbing;
   final bool enableDrawer;
 
-  const DefaultScaffold({
+  const BasicScaffold({
     Key? key,
     required this.title,
     required this.body,
