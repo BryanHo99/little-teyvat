@@ -58,7 +58,7 @@ class CharacterTalentCard extends StatelessWidget {
               iconColor: context.theme.primaryColor,
               textColor: context.theme.primaryColor,
               tilePadding: const EdgeInsets.symmetric(horizontal: 6.0),
-              childrenPadding: const EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 10.0),
+              childrenPadding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
               expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
               title: Text(context.tr.talentStats),
               children: <Widget>[

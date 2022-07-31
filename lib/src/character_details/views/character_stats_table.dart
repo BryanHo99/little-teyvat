@@ -17,7 +17,6 @@ class CharacterStatsTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: IgnorePointer(
         child: DataTable(
           headingRowHeight: 30.0,
