@@ -1,8 +1,8 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
 
-String getCharacterCardImagePath(String characterKey) {
-  return '${assets.characterCardImagesPath}/$characterKey.webp';
+String getCharacterIconImagePath(String characterKey) {
+  return '${assets.characterIconImagesPath}/$characterKey.webp';
 }
 
 String getCharacterImagePath(String characterKey) {

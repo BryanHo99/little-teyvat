@@ -110,7 +110,7 @@ class CharacterProfile extends HookWidget {
                               ),
                               FadeInImage(
                                 placeholder: MemoryImage(kTransparentImage),
-                                image: AssetImage(helper.getCharacterCardImagePath(character.id)),
+                                image: AssetImage(helper.getCharacterIconImagePath(character.id)),
                               ),
                             ],
                           ),

@@ -38,7 +38,7 @@ class ErrorView extends StatelessWidget {
                 FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
                   image: const AssetImage(assets.appErrorImagePath),
-                  height: context.height / 3.0,
+                  height: context.height / 4.0,
                   width: context.width,
                   fit: BoxFit.fitHeight,
                 ),

@@ -69,7 +69,7 @@ class CharacterCard extends StatelessWidget {
                         aspectRatio: 1.0,
                         child: FadeInImage(
                           placeholder: MemoryImage(kTransparentImage),
-                          image: AssetImage(helper.getCharacterCardImagePath(id)),
+                          image: AssetImage(helper.getCharacterIconImagePath(id)),
                         ),
                       ),
                       Expanded(

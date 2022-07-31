@@ -77,7 +77,7 @@ flutter:
     - assets/images/app/
     - assets/images/drawer/
     - assets/images/characters/
-    - assets/images/character_cards/
+    - assets/images/character_icons/
     - assets/images/elements/
     - assets/images/items/character_ascension/
     - assets/images/items/common/

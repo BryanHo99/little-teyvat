@@ -7,7 +7,7 @@ const String dataBasePath = 'assets/data';
 // Image paths.
 const String appImagesPath = '$imagesBasePath/app';
 const String characterImagesPath = '$imagesBasePath/characters';
-const String characterCardImagesPath = '$imagesBasePath/character_cards';
+const String characterIconImagesPath = '$imagesBasePath/character_icons';
 const String elementImagesPath = '$imagesBasePath/elements';
 const String itemImagesPath = '$imagesBasePath/items';
 const String regionImagesPath = '$imagesBasePath/regions';
@@ -79,5 +79,6 @@ const IList<String> charactersJsonPaths = IListConst<String>(
     'klee.json',
     'lisa.json',
     'mona.json',
+    'sangonomiya_kokomi.json',
   ],
 );
