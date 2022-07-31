@@ -75,7 +75,7 @@ const IList<String> charactersJsonPaths = IListConst<String>(
     'kaedehara_kazuha.json',
     'kaeya.json',
     'kamisato_ayaka.json',
-    'a.json',
+    'keqing.json',
     'klee.json',
     'lisa.json',
     'mona.json',
