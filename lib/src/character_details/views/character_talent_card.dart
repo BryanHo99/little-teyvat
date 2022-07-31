@@ -65,7 +65,7 @@ class CharacterTalentCard extends StatelessWidget {
                 CharacterStatsTable(
                   header: <String>[
                     context.tr.level,
-                    for (int i = 1; i <= 13; i++) i.toString(),
+                    for (int i = 1; i <= talent.rowCount(); i++) i.toString(),
                   ].lock,
                   characterStats: talent.stats,
                 ),

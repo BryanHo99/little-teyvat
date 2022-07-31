@@ -8,8 +8,6 @@ part 'character_talent_stats_model.g.dart';
 
 @freezed
 class CharacterTalentStatsModel with _$CharacterTalentStatsModel implements StatsModel {
-  const CharacterTalentStatsModel._();
-
   const factory CharacterTalentStatsModel({
     required String attribute,
     required String format,
@@ -26,10 +24,7 @@ class CharacterTalentStatsModel with _$CharacterTalentStatsModel implements Stat
       stat.isEmpty
           ? result.add('')
           : result.add(
-              sprintf(
-                format,
-                <String>[...stat.unlockView.map((num data) => data.toString())]
-              ),
+              sprintf(format, <String>[...stat.unlockView.map((num data) => data.toString())]),
             );
     }
 

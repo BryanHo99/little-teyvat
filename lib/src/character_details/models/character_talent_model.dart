@@ -7,6 +7,8 @@ part 'character_talent_model.g.dart';
 
 @freezed
 class CharacterTalentModel with _$CharacterTalentModel {
+  const CharacterTalentModel._();
+
   const factory CharacterTalentModel({
     required String id,
     required String name,
@@ -15,4 +17,8 @@ class CharacterTalentModel with _$CharacterTalentModel {
   }) = _CharacterTalentModel;
 
   factory CharacterTalentModel.fromJson(Map<String, dynamic> json) => _$CharacterTalentModelFromJson(json);
+
+  int rowCount() {
+    return stats.first.stats.length;
+  }
 }
