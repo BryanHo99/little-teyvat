@@ -40,7 +40,10 @@ class CharacterTalents extends StatelessWidget {
             ...character.talents.map(
               (CharacterTalentModel talent) => Column(
                 children: <Widget>[
-                  CharacterTalentCard(talent: talent),
+                  CharacterTalentCard(
+                    element: character.element,
+                    talent: talent,
+                  ),
                   const SizedBox(height: _sizedBoxHeight),
                 ],
               ),
@@ -90,6 +93,7 @@ class CharacterTalents extends StatelessWidget {
                     id: passive.id,
                     title: passive.name,
                     description: passive.description,
+                    element: character.element,
                   ),
                   const SizedBox(height: _sizedBoxHeight),
                 ],

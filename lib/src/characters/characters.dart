@@ -7,11 +7,11 @@ import 'package:little_teyvat/src/characters/controllers/filter_characters_contr
 import 'package:little_teyvat/src/characters/models/character_card_model.dart';
 import 'package:little_teyvat/src/characters/views/character_card.dart';
 import 'package:little_teyvat/src/characters/views/character_filter_bottom_sheet.dart';
-import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
-import 'package:little_teyvat/src/shared/scaffolds/search_scaffold.dart';
+import 'package:little_teyvat/src/shared/views/basic_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
+import 'package:little_teyvat/src/shared/views/fade_wrapper.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
-import 'package:little_teyvat/src/shared/wrappers/fade_wrapper.dart';
+import 'package:little_teyvat/src/shared/views/search_scaffold.dart';
 
 class Characters extends ConsumerWidget {
   const Characters({Key? key}) : super(key: key);

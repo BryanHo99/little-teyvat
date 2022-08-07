@@ -37,6 +37,7 @@ class CharacterConstellations extends StatelessWidget {
                     id: constellation.id,
                     title: constellation.name,
                     description: constellation.description,
+                    element: character.element,
                   ),
                   const SizedBox(height: _sizedBoxHeight),
                 ],

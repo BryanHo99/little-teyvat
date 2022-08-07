@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/models/character_model.dart';
-import 'package:little_teyvat/src/shared/widgets/flexible_row.dart';
+import 'package:little_teyvat/src/shared/views/flexible_row.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class CharacterProfileBiography extends StatelessWidget {

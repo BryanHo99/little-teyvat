@@ -19,7 +19,7 @@
   "description": "Always energetic and full of life, Amber's the best — albeit only — Outrider of the Knights of Favonius.",
   "talents": [
     {
-      "id": "amber_talent_1",
+      "id": "amber_t1",
       "name": "Normal Attack: Sharpshooter",
       "description": "### Normal Attack\nPerform up to 5 consecutive shots with a bow.\n\n<br>\n\n``` ```\n\n### Charged Attack\nPerform a more precise Aimed Shot with increased DMG.\n\nWhile aiming, flames will accumulate on the arrowhead. A fully charged flaming arrow will deal Pyro DMG.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
 			"stats": [
@@ -62,7 +62,7 @@
 			]
     },
     {
-      "id": "amber_talent_2",
+      "id": "amber_t2",
       "name": "Explosive Puppet",
       "description": "The ever-reliable Baron Bunny takes the stage.\n\n<br>\n\n``` ```\n\n### Baron Bunny\n- Continuously taunts the enemy, drawing their fire.\n- Baron Bunny's HP scales with Amber's Max HP.\n- When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG.\n\n<br>\n\n``` ```\n\n### Hold\nAdjusts the throwing direction of Baron Bunny.\n\nThe longer the button is held, the further the throw.\n\n<br>\n\n``` ```\n\n*Baron Bunny hails from a storied lineage, but Amber has stopped keeping count since Baron Bunny the 893rd.*",
 			"stats": [
@@ -81,7 +81,7 @@
 			]
 		},
     {
-      "id": "amber_talent_3",
+      "id": "amber_t3",
       "name": "Fiery Rain",
       "description": "Fires off a shower of arrows, dealing continuous AoE Pyro DMG.\n\n<br>\n\n``` ```\n\n*Amber's passion truly burns hot.*",
 			"stats": [
@@ -110,49 +110,49 @@
   ],
   "passives": [
     {
-      "id": "amber_passive_1",
+      "id": "amber_p1",
       "name": "Every Arrow Finds Its Target",
       "description": "Increases the CRIT Rate of Fiery Rain by 10% and widens its AoE by 30%."
     },
     {
-      "id": "amber_passive_2",
+      "id": "amber_p2",
       "name": "Precise Shot",
       "description": "Aimed Shot hits on weak points increase ATK by 15% for 10s."
     },
     {
-      "id": "amber_passive_3",
+      "id": "amber_p3",
       "name": "Gliding Champion",
       "description": "Decreases gliding Stamina consumption for your own party members by 20%.\n\nNot stackable with Passive Talents that provide the exact same effects."
     }
   ],
 	"constellations": [
     {
-      "id": "amber_constellation_1",
+      "id": "amber_c1",
       "name": "One Arrow to Rule Them All",
       "description": "Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG."
     },
     {
-      "id": "amber_constellation_2",
+      "id": "amber_c2",
       "name": "Bunny Triggered",
       "description": "Baron Bunny, new and improved! Hitting Baron Bunny's foot with a fully-charged Aimed Shot manually detonates it.\n\nExplosion via manual detonation deals 200% additional DMG."
     },
     {
-      "id": "amber_constellation_3",
+      "id": "amber_c3",
       "name": "It Burns!",
       "description": "Increases the Level of Fiery Rain by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "amber_constellation_4",
+      "id": "amber_c4",
       "name": "It's Not Just Any Doll...",
       "description": "Decreases Explosive Puppet's CD by 20%. Adds 1 additional charge."
     },
     {
-      "id": "amber_constellation_5",
+      "id": "amber_c5",
       "name": "It's Baron Bunny!",
       "description": "Increases the Level of Explosive Puppet by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "amber_constellation_6",
+      "id": "amber_c6",
       "name": "Wildfire",
       "description": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
     }

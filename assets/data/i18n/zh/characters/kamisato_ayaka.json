@@ -19,7 +19,7 @@
   "description": "Daughter of the Yashiro Commission's Kamisato Clan. Dignified and elegant, as well as wise and strong.",
   "talents": [
     {
-      "id": "ayaka_talent_1",
+      "id": "kamisato_ayaka_t1",
       "name": "Normal Attack: Kamisato Art - Kabuki",
       "description": "### Normal Attack\nPerforms up to 5 rapid strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to unleash a flurry of sword ki.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.",
 			"stats": [
@@ -62,7 +62,7 @@
 			]
     },
     {
-      "id": "ayaka_talent_2",
+      "id": "kamisato_ayaka_t2",
       "name": "Kamisato Art: Hyouka",
       "description": "Summons blooming ice to launch nearby opponents, dealing AoE Cryo DMG.\n\n<br>\n\n``` ```\n\n*\"Clouds shroud the moonlit night. Longing descends like a fog, filling the one detained with wanderlust.\"*",
 			"stats": [
@@ -77,7 +77,7 @@
 			]
     },
     {
-      "id": "ayaka_talent_3",
+      "id": "kamisato_ayaka_t3",
       "name": "Kamisato Art: Senho",
       "description": "### Alternate Sprint\nAyaka consumes Stamina and cloaks herself in a frozen fog that moves with her.\n\nIn Senho form, she moves swiftly upon water.\n\nWhen she reappears, the following effects occur:\n- Ayaka unleashes frigid energy to apply Cryo on nearby opponents.\n- Coldness condenses around Ayaka's blade, infusing her attacks with Cryo for a brief period.\n\n<br>\n\n``` ```\n\n*\"Feathers fleeting wet / the white heron treads water / a sight without flaw\"*",
 			"stats": [
@@ -96,7 +96,7 @@
 			]
     },
     {
-      "id": "ayaka_talent_4",
+      "id": "kamisato_ayaka_t4",
       "name": "Kamisato Art: Soumetsu",
 			"description": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.\n\n<br>\n\n``` ```\n\n### Frostflake Seki no To\n- A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing Cryo DMG.\n- The snowstorm explodes after its duration ends, dealing AoE Cryo DMG.\n\n<br>\n\n``` ```\n\n*\"The blizzard veils the heron's thoughts, pity heavy in its heart.\"*",
 			"stats":  [
@@ -125,49 +125,49 @@
   ],
   "passives": [
     {
-      "id": "ayaka_passive_1",
+      "id": "kamisato_ayaka_p1",
       "name": "Amatsumi Kunitsumi Sanctification",
       "description": "After using Kamisato Art: Hyouka, Kamisato Ayaka's Normal and Charged Attacks deal 30% increased DMG for 6s."
     },
     {
-      "id": "ayaka_passive_2",
+      "id": "kamisato_ayaka_p2",
       "name": "Kanten Senmyou Blessing",
       "description": "When the Cryo application at the end of Kamisato Art: Senho hits an opponent, Kamisato Ayaka gains the following effects:\n - Restores 10 Stamina.\n - Gains 18% Cryo DMG Bonus for 10s."
     },
     {
-      "id": "ayaka_passive_3",
+      "id": "kamisato_ayaka_p3",
       "name": "Fruits of Shinsa",
       "description": "When Ayaka crafts Weapon Ascension Materials, she has a 10% chance to receive double the product."
     }
   ],
 	"constellations": [
     {
-      "id": "ayaka_constellation_1",
+      "id": "kamisato_ayaka_c1",
       "name": "Snowswept Sakura",
       "description": "When Kamisato Ayaka's Normal or Charged Attacks deal Cryo DMG to opponents, it has a 50% chance of decreasing the CD of Kamisato Art: Hyouka by 0.3s. This effect can occur once every 0.1s."
     },
     {
-      "id": "ayaka_constellation_2",
+      "id": "kamisato_ayaka_c2",
       "name": "Blizzard Blade Seki no To",
       "description": "When casting Kamisato Art: Soumetsu, unleashes 2 smaller additional Frostflake Seki no To, each dealing 20% of the original storm's DMG."
     },
     {
-      "id": "ayaka_constellation_3",
+      "id": "kamisato_ayaka_c3",
       "name": "Frostbloom Kamifubuki",
       "description": "Increases the Level of Kamisato Art: Soumetsu by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "ayaka_constellation_4",
+      "id": "kamisato_ayaka_c4",
       "name": "Ebb and Flow",
       "description": "Opponents damaged by Kamisato Art: Soumetsu's Frostflake Seki no To will have their DEF decreased by 30% for 6s."
     },
     {
-      "id": "ayaka_constellation_5",
+      "id": "kamisato_ayaka_c5",
       "name": "Blossom Cloud Irutsuki",
       "description": "Increases the Level of Kamisato Art: Hyouka by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "ayaka_constellation_6",
+      "id": "kamisato_ayaka_c6",
       "name": "Dance of Suigetsu",
       "description": "Kamisato Ayaka gains Usurahi Butou every 10s, increasing her Charged Attack DMG by 298%. This buff will be cleared 0.5s after Ayaka's Charged ATK hits an opponent, after which the timer for this ability will restart."
     }

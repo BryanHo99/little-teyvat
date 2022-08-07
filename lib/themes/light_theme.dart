@@ -18,8 +18,9 @@ final ThemeData lightTheme = ThemeData(
     backgroundColor: kcWhite,
   ),
   colorScheme: const ColorScheme.light().copyWith(
-    primary: kcBlack,
-    secondary: kcWhite,
+    primary: kcWhite,
+    secondary: kcBlack54,
+    tertiary: kcBlack,
   ),
   iconTheme: const IconThemeData().copyWith(
     color: kcBlack,

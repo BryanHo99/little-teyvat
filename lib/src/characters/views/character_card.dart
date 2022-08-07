@@ -6,9 +6,9 @@ import 'package:little_teyvat/routes/arguments/character_details_arguments.dart'
 import 'package:little_teyvat/routes/route_constants.dart' as routes;
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
 import 'package:little_teyvat/src/characters/characters_constants.dart' as constants;
-import 'package:little_teyvat/src/characters/controllers/colour_controller.dart';
 import 'package:little_teyvat/src/characters/views/character_card_painter.dart';
-import 'package:little_teyvat/src/shared/widgets/rarity.dart';
+import 'package:little_teyvat/src/shared/controllers/colour_controller.dart';
+import 'package:little_teyvat/src/shared/views/rarity.dart';
 import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 

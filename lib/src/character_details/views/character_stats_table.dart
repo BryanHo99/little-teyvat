@@ -15,35 +15,40 @@ class CharacterStatsTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: IgnorePointer(
-        child: DataTable(
-          headingRowHeight: 30.0,
-          dataRowHeight: 30.0,
-          horizontalMargin: 0.0,
-          columnSpacing: 30.0,
-          columns: <DataColumn>[
-            ...header.map(
-              (String headerTitle) => DataColumn(
-                label: Text(
-                  headerTitle,
-                  style: ktBody,
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) => SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: IgnorePointer(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minWidth: constraints.minWidth),
+            child: DataTable(
+              headingRowHeight: 30.0,
+              dataRowHeight: 30.0,
+              horizontalMargin: 0.0,
+              columnSpacing: 30.0,
+              columns: <DataColumn>[
+                ...header.map(
+                  (String headerTitle) => DataColumn(
+                    label: Text(
+                      headerTitle,
+                      style: ktBody,
+                    ),
+                  ),
+                )
+              ],
+              rows: <DataRow>[
+                ...characterStats.map(
+                  (StatsModel row) => DataRow(
+                    cells: <DataCell>[
+                      ...row.getStat().map(
+                            (String stat) => DataCell(Text(stat)),
+                          ),
+                    ],
+                  ),
                 ),
-              ),
-            )
-          ],
-          rows: <DataRow>[
-            ...characterStats.map(
-              (StatsModel row) => DataRow(
-                cells: <DataCell>[
-                  ...row.getStat().map(
-                        (String stat) => DataCell(Text(stat)),
-                      ),
-                ],
-              ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );

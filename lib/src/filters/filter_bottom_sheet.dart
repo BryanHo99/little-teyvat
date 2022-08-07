@@ -101,7 +101,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         child: Text(
                           context.tr.filter,
                           style: ktHeading4.copyWith(
-                            color: context.theme.colorScheme.secondary,
+                            color: context.theme.colorScheme.primary,
                           ),
                         ),
                       ),

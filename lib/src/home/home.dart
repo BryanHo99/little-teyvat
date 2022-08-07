@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
+import 'package:little_teyvat/src/shared/views/basic_scaffold.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class Home extends StatelessWidget {

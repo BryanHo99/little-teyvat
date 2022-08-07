@@ -17,8 +17,9 @@ final ThemeData darkTheme = ThemeData(
     color: kcBlack,
   ),
   colorScheme: const ColorScheme.dark().copyWith(
-    primary: kcWhite,
-    secondary: kcBlack,
+    primary: kcBlack,
+    secondary: kcGrey850,
+    tertiary: kcWhite,
   ),
   iconTheme: const IconThemeData().copyWith(
     color: kcWhite,

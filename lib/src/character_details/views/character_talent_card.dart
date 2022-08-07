@@ -2,17 +2,18 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/helpers/helpers.dart' as helper;
 import 'package:little_teyvat/src/character_details/character_details_constants.dart' as constants;
 import 'package:little_teyvat/src/character_details/models/character_talent_model.dart';
+import 'package:little_teyvat/src/character_details/views/character_skill_image.dart';
 import 'package:little_teyvat/src/character_details/views/character_stats_table.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class CharacterTalentCard extends StatelessWidget {
+  final String element;
   final CharacterTalentModel talent;
 
   const CharacterTalentCard({
     Key? key,
+    required this.element,
     required this.talent,
   }) : super(key: key);
 
@@ -30,12 +31,9 @@ class CharacterTalentCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             ListTile(
-              leading: AspectRatio(
-                aspectRatio: 1.0,
-                child: FadeInImage(
-                  placeholder: MemoryImage(kTransparentImage),
-                  image: AssetImage(helper.getSkillPath(talent.id)),
-                ),
+              leading: CharacterSkillImage(
+                id: talent.id,
+                element: element,
               ),
               title: Text(talent.name),
             ),

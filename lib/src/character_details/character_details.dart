@@ -7,10 +7,10 @@ import 'package:little_teyvat/src/character_details/models/character_model.dart'
 import 'package:little_teyvat/src/character_details/views/character_constellations.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile.dart';
 import 'package:little_teyvat/src/character_details/views/character_talents.dart';
-import 'package:little_teyvat/src/shared/scaffolds/basic_scaffold.dart';
+import 'package:little_teyvat/src/shared/views/basic_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
+import 'package:little_teyvat/src/shared/views/fade_indexed_stack_wrapper.dart';
 import 'package:little_teyvat/src/shared/views/loading_view.dart';
-import 'package:little_teyvat/src/shared/wrappers/fade_indexed_stack_wrapper.dart';
 
 class CharacterDetails extends HookConsumerWidget {
   final String id;

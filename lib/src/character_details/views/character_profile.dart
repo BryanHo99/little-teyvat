@@ -7,7 +7,7 @@ import 'package:little_teyvat/src/character_details/views/character_profile_asce
 import 'package:little_teyvat/src/character_details/views/character_profile_biography.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile_cv.dart';
 import 'package:little_teyvat/src/character_details/views/character_profile_painter.dart';
-import 'package:little_teyvat/src/shared/widgets/rarity.dart';
+import 'package:little_teyvat/src/shared/views/rarity.dart';
 import 'package:little_teyvat/themes/themes.dart';
 import 'package:transparent_image/transparent_image.dart';
 
