@@ -21,7 +21,7 @@
     {
 			"id": "sangonomiya_kokomi_t1",
       "name": "Normal Attack: The Shape of Water",
-      "description": "### Normal Attack\nPerform up to 5 rapid strikes.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "description": "### Normal Attack\nPerforms up to 3 consecutive attacks that take the form of swimming fish, dealing Hydro DMG.\n\n<br>\n\n``` ```\n\n### Charged Attack\nConsumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time.\n\n<br>\n\n``` ```\n\n### Plunging Attack\nGathering the might of Hydro, Kokomi plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground.",
 			"stats": [
 				{
 					"attribute": "1-Hit DMG",
@@ -36,16 +36,8 @@
 					"format": "%s%%"
 				},
 				{
-					"attribute": "4-Hit DMG",
-					"format": "%s%%"
-				},
-				{
-					"attribute": "5-Hit DMG",
-					"format": "%s%%"
-				},
-				{
 					"attribute": "Charged Attack DMG",
-					"format": "%s%% + %s%%"
+					"format": "%s%%"
 				},
 				{
 					"attribute": "Charged Attack Stamina Cost",
@@ -63,39 +55,55 @@
     },
     {
 			"id": "sangonomiya_kokomi_t2",
-      "name": "Abiogenesis: Solar Isotoma",
-      "description": "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.\n\n<br>\n\n``` ```\n\n### Solar Isotoma\nHas the following properties:\n- When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF.\n- Transient Blossoms can only be generated once every 2s.\n- When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\n- Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time.\n\n<br>\n\n``` ```\n\nHold to designate the location of the skill.\n\n<br>\n\n``` ```\n\n*This Geo bloom has an unusual property mirrored in the aim of alchemy. To rise from the earth, soar into the sky, and become the sun.*\n",
+      "name": "Kurage's Oath",
+      "description": "Summons a \"Bake-Kurage\" created from water that can heal her allies.\n\nUsing this skill will apply the Wet status to Sangonomiya Kokomi.\n\n<br>\n\n``` ```\n\n### Bake-Kurage\nDeals Hydro DMG to surrounding opponents and heals nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.\n\n<br>\n\n``` ```\n\n*Kokomi needs timely \"refreshment\" in order to maintain optimal work efficiency.*\n",
 			"stats": [
 				{
-					"attribute": "Skill DMG",
-					"format": "%s%%"
+					"attribute": "Regeneration",
+					"format": "%s%% Max HP +%s"
 				},
 				{
-					"attribute": "Transient Blossom DMG",
-					"format": "%s%% DEF"
+					"attribute": "Ripple DMG",
+					"format": "%s%%"
 				},
 				{
 					"attribute": "Duration",
 					"format": "%ss"
 				},
 				{
-					"attribute": "Skill CD",
+					"attribute": "CD",
 					"format": "%ss"
 				}
 			]
     },
     {
 			"id": "sangonomiya_kokomi_t3",
-      "name": "Rite of Progeniture: Tectonic Tide",
-      "description": "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.\n\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG.\n\n<br>\n\n``` ```\n\nTectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.\n\n<br>\n\n``` ```\n\n*Under the Kreideprinz's command, the tectonic tide of creation seethes into life.*",
+      "name": "Nereid's Ascension",
+      "description": "Summons the might of Watatsumi, dealing Hydro DMG to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.\n\n<br>\n\n``` ```\n\n### Ceremonial Garment\n- Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP.\n- When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP.\n- Increases Sangonomiya Kokomi's resistance to interruption and allows her to walk on the water's surface.\n\n<br>\n\n``` ```\n\nThese effects will be cleared once Sangonomiya Kokomi leaves the field.\n\n<br>\n\n``` ```\n\n*Clear light coalesces into robes around Her Excellency, Sangonomiya Kokomi, reflecting her magnificent form.*",
 			"stats": [
 				{
-					"attribute": "Elemental Burst DMG",
-					"format": "%s%%"
+					"attribute": "Skill DMG",
+					"format": "%s%% Max HP"
 				},
 				{
-					"attribute": "Fatal Blossom DMG",
-					"format": "%s%% each"
+					"attribute": "Normal Attack DMG Bonus",
+					"format": "%s%% Max HP"
+				},
+				{
+					"attribute": "Charged Attack DMG Bonus",
+					"format": "%s%% Max HP"
+				},
+				{
+					"attribute": "Bake-Kurage DMG Bonus",
+					"format": "%s%% Max HP"
+				},
+				{
+					"attribute": "HP Regeneration Per Hit",
+					"format": "%s%% Max HP +%s"
+				},
+				{
+					"attribute": "Duration",
+					"format": "%ss"
 				},
 				{
 					"attribute": "CD",
@@ -111,58 +119,58 @@
   "passives": [
     {
 			"id": "sangonomiya_kokomi_p1",
-      "name": "Calcite Might",
-      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma deal 25% more DMG to opponents whose HP is below 50%."
+      "name": "Tamanooya's Casket",
+      "description": "If Sangonomiya Kokomi's own Bake-Kurage is on the field when she uses Nereid's Ascension, the Bake-Kurage's duration will be refreshed."
     },
     {
 			"id": "sangonomiya_kokomi_p2",
-      "name": "Homuncular Nature",
-      "description": "Using Rite of Progeniture: Tectonic Tide increases the Elemental Mastery of nearby party members by 125 for 10s."
+      "name": "Song of Pearls",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, the Normal and Charged Attack DMG Bonus Sangonomiya Kokomi gains based on her Max HP will receive a further increase based on 15% of her Healing Bonus."
     },
     {
 			"id": "sangonomiya_kokomi_p3",
-      "name": "Flash of Genius",
-      "description": "When Albedo crafts Weapon Ascension Materials, he has a 10% chance to receive double the product."
+      "name": "Princess of Watatsumi",
+      "description": "Decreases swimming Stamina consumption for your own party members by 20%.\n\nNot stackable with Passive Talents that provide the exact same effects."
     }
   ],
 	"constellations": [
     {
 			"id": "sangonomiya_kokomi_c1",
-      "name": "Flower of Eden",
-      "description": "Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo."
+      "name": "At Water's Edge",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, the final Normal Attack in Sangonomiya Kokomi's combo will unleash a swimming fish to deal 30% of her Max HP as Hydro DMG.\n\nThis DMG is not considered Normal Attack DMG."
     },
     {
 			"id": "sangonomiya_kokomi_c2",
-      "name": "Opening of Phanerozoic",
-      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s:\n\n - Unleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Rite of Progeniture: Tectonic Tide's burst DMG by 30% of Albedo's DEF.\n - This effect stacks up to 4 times."
+      "name": "The Clouds Like Waves Rippling",
+      "description": "Sangonomiya Kokomi gains the following Healing Bonuses with regard to characters with 50% or less HP via the following methods:\n\n- Kurage's Oath Bake-Kurage: 4.5% of Kokomi's Max HP.\n- Nereid's Ascension Normal and Charged Attacks: 0.6% of Kokomi's Max HP."
     },
     {	
 			"id": "sangonomiya_kokomi_c3",
-      "name": "Grace of Helios",
-      "description": "Increases the Level of Abiogenesis: Solar Isotoma by 3.\n\nMaximum upgrade level is 15."
+      "name": "The Moon, A Ship O'er the Seas",
+      "description": "Increases the Level of Nereid's Ascension by 3.\n\nMaximum upgrade level is 15."
     },
     {
 			"id": "sangonomiya_kokomi_c4",
-      "name": "Descent of Divinity",
-      "description": "Active party members within the Solar Isotoma field have their Plunging Attack DMG increased by 30%."
+      "name": "The Moon Overlooks the Waters",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, Sangonomiya Kokomi's Normal Attack SPD is increased by 10%, and Normal Attacks that hit opponents will restore 0.8 Energy for her.\n\nThis effect can occur once every 0.2s."
     },
     {
 			"id": "sangonomiya_kokomi_c5",
-      "name": "Tide of Hadean",
-      "description": "Increases the Level of Rite of Progeniture: Tectonic Tide by 3.\n\nMaximum upgrade level is 15."
+      "name": "All Streams Flow to the Sea",
+      "description": "Increases the Level of Kurage's Oath by 3.\n\nMaximum upgrade level is 15."
     },
     {
 			"id": "sangonomiya_kokomi_c6",
-      "name": "Dust of Purification",
-      "description": "Active party members within the Solar Isotoma field who are protected by a shield created by Crystallize have their DMG increased by 17%."
+      "name": "Sango Isshin",
+      "description": "While donning the Ceremonial Garment created by Nereid's Ascension, Sangonomiya Kokomi gains a 40% Hydro DMG Bonus for 4s when her Normal and Charged Attacks heal, or would heal, any party member with 80% or more HP."
     }
   ],
 	"materialsSummary": [
-		"talent/philosophies_of_ballad",
-		"character_ascension/basalt_pillar",
-		"character_ascension/prithiva_topaz_gemstone",
-		"local/cecilia",
-		"common/forbidden_curse_scroll",
-		"talent/tusk_of_monoceros_caeli"
+		"talent/philosophies_of_transience",
+		"character_ascension/dew_of_repudiation",
+		"character_ascension/varunada_lazurite_gemstone",
+		"local/sango_pearl",
+		"common/spectral_nucleus",
+		"talent/hellfire_butterfly"
   ]
 }

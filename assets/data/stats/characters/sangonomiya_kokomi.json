@@ -3,113 +3,113 @@
   "ascensionStats": [
     {
       "level": 1,
-      "baseHp": 1030,
-      "baseAtk": 20,
-      "baseDef": 68,
+      "baseHp": 1049,
+      "baseAtk": 18,
+      "baseDef": 51,
       "bonus": 0,
       "isAscension": false
     },
     {
       "level": 20,
-      "baseHp": 2671,
-      "baseAtk": 51,
+      "baseHp": 2720,
+      "baseAtk": 47,
+      "baseDef": 133,
+      "bonus": 0,
+      "isAscension": false
+    },
+    {
+      "level": 20,
+      "baseHp": 3619,
+      "baseAtk": 63,
       "baseDef": 177,
       "bonus": 0,
-      "isAscension": false
-    },
-    {
-      "level": 20,
-      "baseHp": 3554,
-      "baseAtk": 67,
-      "baseDef": 235,
-      "bonus": 0,
       "isAscension": true
     },
     {
       "level": 40,
-      "baseHp": 5317,
-      "baseAtk": 101,
-      "baseDef": 352,
+      "baseHp": 5416,
+      "baseAtk": 94,
+      "baseDef": 264,
       "bonus": 0,
       "isAscension": false
     },
     {
       "level": 40,
-      "baseHp": 5944,
-      "baseAtk": 113,
-      "baseDef": 394,
+      "baseHp": 6055,
+      "baseAtk": 105,
+      "baseDef": 295,
       "bonus": 7.2,
       "isAscension": true
     },
     {
       "level": 50,
-      "baseHp": 6839,
-      "baseAtk": 130,
-      "baseDef": 453,
+      "baseHp": 6966,
+      "baseAtk": 121,
+      "baseDef": 340,
       "bonus": 7.2,
       "isAscension": false
     },
     {
       "level": 50,
-      "baseHp": 7675,
-      "baseAtk": 146,
-      "baseDef": 508,
+      "baseHp": 7818,
+      "baseAtk": 136,
+      "baseDef": 381,
       "bonus": 14.4,
       "isAscension": true
     },
     {
       "level": 60,
-      "baseHp": 8579,
+      "baseHp": 8738,
+      "baseAtk": 152,
+      "baseDef": 426,
+      "bonus": 14.4,
+      "isAscension": false
+    },
+    {
+      "level": 60,
+      "baseHp": 9377,
       "baseAtk": 163,
-      "baseDef": 568,
-      "bonus": 14.4,
-      "isAscension": false
-    },
-    {
-      "level": 60,
-      "baseHp": 9207,
-      "baseAtk": 175,
-      "baseDef": 610,
+      "baseDef": 457,
       "bonus": 14.4,
       "isAscension": true
     },
     {
       "level": 70,
-      "baseHp": 10119,
-      "baseAtk": 192,
-      "baseDef": 670,
+      "baseHp": 10306,
+      "baseAtk": 179,
+      "baseDef": 503,
       "bonus": 14.4,
       "isAscension": false
     },
     {
       "level": 70,
-      "baseHp": 10746,
-      "baseAtk": 204,
-      "baseDef": 712,
+      "baseHp": 10945,
+      "baseAtk": 190,
+      "baseDef": 534,
       "bonus": 21.6,
       "isAscension": true
     },
     {
       "level": 80,
-      "baseHp": 11669,
-      "baseAtk": 222,
-      "baseDef": 773,
+      "baseHp": 11885,
+      "baseAtk": 207,
+      "baseDef": 580,
       "bonus": 21.6,
       "isAscension": false
     },
     {
       "level": 80,
-      "baseHp": 12296,
-      "baseAtk": 233,
-      "baseDef": 815,
+      "baseHp": 12524,
+      "baseAtk": 218,
+      "baseDef": 611,
       "bonus": 28.8,
       "isAscension": true
     },
     {
       "level": 90,
-      "baseHp": 13226,
-      "baseAtk": 251,
-      "baseDef": 876,
+      "baseHp": 13471,
+      "baseAtk": 234,
+      "baseDef": 657,
       "bonus": 28.8,
       "isAscension": false
     }
@@ -119,19 +119,19 @@
       "level": 1,
       "materials": [
         {
-					"image": "currency/mora",
+          "image": "currency/mora",
           "amount": 20000
         },
         {
-					"image": "character_ascension/prithiva_topaz_sliver",
+          "image": "character_ascension/varunada_lazurite_sliver",
           "amount": 1
         },
         {
-					"image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 3
         },
         {
-					"image": "common/divining_scroll",
+          "image": "common/spectral_husk",
           "amount": 3
         }
       ]
@@ -140,23 +140,23 @@
       "level": 2,
       "materials": [
         {
-					"image": "currency/mora",
+          "image": "currency/mora",
           "amount": 40000
         },
         {
-					"image": "character_ascension/prithiva_topaz_fragment",
+          "image": "character_ascension/varunada_lazurite_fragment",
           "amount": 3
         },
         {
-					"image": "character_ascension/basalt_pillar",
+          "image": "character_ascension/dew_of_repudiation",
           "amount": 2
         },
         {
-					"image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 10
         },
         {
-					"image": "common/divining_scroll",
+          "image": "common/spectral_husk",
           "amount": 15
         }
       ]
@@ -165,23 +165,23 @@
       "level": 3,
       "materials": [
         {
-					"image": "currency/mora",
+          "image": "currency/mora",
           "amount": 60000
         },
         {
-          "image": "character_ascension/prithiva_topaz_fragment",
+          "image": "character_ascension/varunada_lazurite_fragment",
           "amount": 6
         },
         {
-          "image": "character_ascension/basalt_pillar",
+          "image": "character_ascension/dew_of_repudiation",
           "amount": 4
         },
         {
-          "image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 20
         },
         {
-					"image": "common/sealed_scroll",
+          "image": "common/spectral_heart",
           "amount": 12
         }
       ]
@@ -194,19 +194,19 @@
           "amount": 80000
         },
         {
-					"image": "character_ascension/prithiva_topaz_chunk",
+          "image": "character_ascension/varunada_lazurite_chunk",
           "amount": 3
         },
         {
-          "image": "character_ascension/basalt_pillar",
+          "image": "character_ascension/dew_of_repudiation",
           "amount": 8
         },
         {
-          "image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 30
         },
         {
-          "image": "common/sealed_scroll",
+          "image": "common/spectral_heart",
           "amount": 18
         }
       ]
@@ -219,19 +219,19 @@
           "amount": 100000
         },
         {
-          "image": "character_ascension/prithiva_topaz_chunk",
+          "image": "character_ascension/varunada_lazurite_chunk",
           "amount": 6
         },
         {
-          "image": "character_ascension/basalt_pillar",
+          "image": "character_ascension/dew_of_repudiation",
           "amount": 12
         },
         {
-          "image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 45
         },
         {
-					"image": "common/forbidden_curse_scroll",
+          "image": "common/spectral_nucleus",
           "amount": 12
         }
       ]
@@ -244,19 +244,19 @@
           "amount": 120000
         },
         {
-					"image": "character_ascension/prithiva_topaz_gemstone",
+          "image": "character_ascension/varunada_lazurite_gemstone",
           "amount": 6
         },
         {
-          "image": "character_ascension/basalt_pillar",
+          "image": "character_ascension/dew_of_repudiation",
           "amount": 20
         },
         {
-          "image": "local/cecilia",
+          "image": "local/sango_pearl",
           "amount": 60
         },
         {
-          "image": "common/forbidden_curse_scroll",
+          "image": "common/spectral_nucleus",
           "amount": 24
         }
       ]
@@ -264,27 +264,29 @@
   ],
 	"talentStats": [
 		[
-			[[36.7], [39.7], [42.7],	[47],	[50],	[53.4],	[58.1],	[62.8],	[67.5],	[72.6],	[78.5],	[85.4],	[92.3]],
-			[[36.7], [39.7], [42.7],	[47],	[50],	[53.4],	[58.1],	[62.8],	[67.5],	[72.6],	[78.5],	[85.4],	[92.3]],
-			[[47.5],	[51.3],	[55.2],	[60.7],	[64.6],	[69],	[75],	[81.1],	[87.2],	[93.8],	[101.4], [110.3], [119.2]],
-			[[49.8], [53.8], [57.8], [63.6], [67.7], [72.3], [78.7], [85], [91.4], [98.3], [106.3], [115.7], [125]],
-			[[62.1],	[67.1],	[72.2],	[79.4],	[84.4],	[90.2],	[98.2],	[106.1], [114],	[122.7], [132.6],	[144.3], [156]],
-			[[47.3, 60.2],	[51.2, 65.1],	[55, 70],	[60.5, 77],	[64.3, 81.9],	[68.8, 87.5],	[74.8, 95.2],	[80.8, 102.9], [86.9, 110.6],	[93.5, 119], [101.1, 128.6],	[110, 139.9],	[118.8, 151.3]],
-			[[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20],	[20]],
-			[[63.9],	[69.1],	[74.3],	[81.8],	[87],	[92.9],	[101.1], [109.3], [117.5], [126.4], [135.3], [144.2], [153.1]],
-			[[128, 160],	[138, 173],	[149, 186],	[164, 204],	[174, 217],	[186, 232],	[202, 253],	[219, 273],	[235, 293], [253, 316],	[271, 338],	[288, 360],	[306, 382]]
+			[[68.4], [73.5], [78.6], [85.5], [90.6], [95.7], [102.6], [109.4], [116.2], [123.1], [129.9], [136.8], [145.3]],
+			[[61.5], [66.2], [70.8],	[76.9],	[81.5],	[86.2],	[92.3],	[98.5],	[104.6],	[110.8],	[116.9],	[123.1],	[130.8]],
+			[[94.3], [101.4], [108.5], [117.9], [125], [132], [141.5], [150.9], [160.3], [169.8], [179.2], [188.6], [200.4]],
+			[[148], [159], [171], [185], [197], [208], [222], [237], [252], [267], [282], [297], [315]],
+			[[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50],	[50]],
+			[[56.8], [61.5], [66.1], [72.7], [77.3], [82.6], [89.9], [97.1], [104.4], [112.3], [120.3], [128.2], [136.1]],
+			[[114, 142], [123, 153], [132, 165], [145, 182], [155, 193], [165, 206], [180, 224], [194, 243], [209, 261], [225, 281], [240, 300], [256, 320], [272, 340]]
 		],
 		[
-      [[130], [140], [150], [163], [173], [183], [196], [209], [222], [235], [248], [261], [277]],
-      [[134], [144], [154], [167], [177], [187], [200], [214], [227], [240], [254], [267], [284]],
-      [[30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30], [30]],
-      [[4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]]
+      [[4.4, 424], [4.7, 466], [5.1, 512], [5.5, 561], [5.8, 614], [6.2, 671], [6.6, 731], [7, 795], [7.5, 862], [7.9, 932], [8.4, 1006], [8.8, 1084], [9.4, 1165]],
+      [[109.2], [117.4], [125.6], [136.5], [144.7], [152.9], [163.8], [174.7], [185.6], [196.5], [207.5], [218.4], [232]],
+      [[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]],
+      [[20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20], [20]]
 		],
     [
-      [[367], [395], [422], [459], [487], [514], [551], [588], [624], [661], [698], [734], [780]],
-      [[72], [77.4], [82.8], [90], [95.4], [100.8], [108], [115.2], [122.4], [129.6], [136.8], [144], [153]],
-      [[12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12], [12]],
-      [[40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40], [40]]
+      [[10.4], [11.2], [12], [13], [13.8], [14.6], [15.6], [16.7], [17.7], [18.7], [19.8], [20.8], [22.1]],
+      [[4.8], [5.2], [5.6], [6], [6.4], [6.8], [7.3], [7.7], [8.2], [8.7], [9.2], [9.7], [10.3]],
+      [[6.8], [7.3], [7.8], [8.5], [9], [9.5], [10.2], [10.8], [11.5], [12.2], [12.9], [13.6], [14.4]],
+      [[7.1], [7.6], [8.2], [8.9], [9.4], [9.9], [10.6], [11.4], [12.1], [12.8], [13.5], [14.2], [15.1]],
+      [[0.81, 77], [0.87, 85], [0.93, 93], [1.01, 102], [1.07, 112], [1.13, 122], [1.21, 133], [1.29, 144], [1.37, 157], [1.45, 169], [1.54, 183], [1.62, 197], [1.72, 212]],
+      [[10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10], [10]],
+      [[18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18], [18]],
+      [[70], [70], [70], [70], [70], [70], [70], [70], [70], [70], [70], [70], [70]]
     ]
 	],
   "talentMaterials": [
@@ -296,11 +298,11 @@
           "amount": 12500
         },
         {
-					"image": "talent/teachings_of_ballad",
+					"image": "talent/teachings_of_transience",
           "amount": 3
         },
         {
-					"image": "common/divining_scroll",
+					"image": "common/spectral_husk",
           "amount": 6
         }
       ]
@@ -313,11 +315,11 @@
           "amount": 17500
         },
         {
-					"image": "talent/guide_to_ballad",
+					"image": "talent/guide_to_transience",
           "amount": 2
         },
         {
-					"image": "common/sealed_scroll",
+					"image": "common/spectral_heart",
           "amount": 3
         }
       ]
@@ -330,11 +332,11 @@
           "amount": 25000
         },
         {
-         	"image": "talent/guide_to_ballad",
+         	"image": "talent/guide_to_transience",
           "amount": 4
         },
         {
-          "image": "common/sealed_scroll",
+          "image": "common/spectral_heart",
           "amount": 4
         }
       ]
@@ -347,11 +349,11 @@
           "amount": 30000
         },
         {
-          "image": "talent/guide_to_ballad",
+          "image": "talent/guide_to_transience",
           "amount": 6
         },
         {
-          "image": "common/sealed_scroll",
+          "image": "common/spectral_heart",
           "amount": 6
         }
       ]
@@ -364,11 +366,11 @@
           "amount": 37500
         },
         {
-          "image": "talent/guide_to_ballad",
+          "image": "talent/guide_to_transience",
           "amount": 9
         },
         {
-          "image": "common/sealed_scroll",
+          "image": "common/spectral_heart",
           "amount": 9
         }
       ]
@@ -381,15 +383,15 @@
           "amount": 120000
         },
         {
-					"image": "talent/philosophies_of_ballad",
+					"image": "talent/philosophies_of_transience",
           "amount": 4
         },
         {
-					"image": "common/forbidden_curse_scroll",
+					"image": "common/spectral_nucleus",
           "amount": 4
         },
         {
-					"image": "talent/tusk_of_monoceros_caeli",
+					"image": "talent/hellfire_butterfly",
           "amount": 1
         }
       ]
@@ -402,15 +404,15 @@
           "amount": 260000
         },
         {
-          "image": "talent/philosophies_of_ballad",
+          "image": "talent/philosophies_of_transience",
           "amount": 6
         },
         {
-          "image": "common/forbidden_curse_scroll",
+          "image": "common/spectral_nucleus",
           "amount": 6
         },
         {
-          "image": "talent/tusk_of_monoceros_caeli",
+          "image": "talent/hellfire_butterfly",
           "amount": 1
         }
       ]
@@ -423,15 +425,15 @@
           "amount": 450000
         },
         {
-          "image": "talent/philosophies_of_ballad",
+          "image": "talent/philosophies_of_transience",
           "amount": 12
         },
         {
-          "image": "common/forbidden_curse_scroll",
+          "image": "common/spectral_nucleus",
           "amount": 9
         },
         {
-          "image": "talent/tusk_of_monoceros_caeli",
+          "image": "talent/hellfire_butterfly",
           "amount": 2
         }
       ]
@@ -444,15 +446,15 @@
           "amount": 700000
         },
         {
-          "image": "talent/philosophies_of_ballad",
+          "image": "talent/philosophies_of_transience",
           "amount": 16
         },
         {
-          "image": "common/forbidden_curse_scroll",
+          "image": "common/spectral_nucleus",
           "amount": 12
         },
         {
-          "image": "talent/tusk_of_monoceros_caeli",
+          "image": "talent/hellfire_butterfly",
           "amount": 2
         },
         {
