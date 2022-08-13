@@ -137,7 +137,7 @@
       "description": "Refunds 15% of the ore used when crafting Bow-type weapons."
     }
   ],
-	"cs": [
+	"constellations": [
     {
       "id": "ganyu_c_1",
       "name": "Dew-Drinker",
