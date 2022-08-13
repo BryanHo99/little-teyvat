@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_weapon_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/weapon_filter_state.dart';
-import 'package:little_teyvat/src/filters/controllers/weapon_filter_controller.dart';
 import 'package:little_teyvat/src/filters/models/weapon_filter_model.dart';
 import 'package:little_teyvat/src/filters/views/filter_icon_button.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class WeaponFilter extends ConsumerWidget {
-  final AutoDisposeStateNotifierProvider<WeaponFilterController, WeaponFilterState> controller;
+  final AutoDisposeStateNotifierProvider<FilterWeaponController, WeaponFilterState> controller;
 
   const WeaponFilter({
     Key? key,

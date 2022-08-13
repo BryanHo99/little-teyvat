@@ -4,8 +4,8 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_drawer/controllers/navigation_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/filter_submit_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_submit_controller.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class FilterBottomSheet extends HookConsumerWidget {
@@ -27,7 +27,7 @@ class FilterBottomSheet extends HookConsumerWidget {
     return WillPopScope(
       onWillPop: () async {
         if (!hasSubmit.value) {
-          ref.read(filterSubmitController(controllers)).cancelControllers();
+          ref.read(submitFilterController(controllers)).cancelControllers();
         }
         return true;
       },
@@ -60,7 +60,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                           primary: context.theme.backgroundColor,
                         ),
                         onPressed: () {
-                          ref.read(filterSubmitController(controllers)).cancelControllers();
+                          ref.read(submitFilterController(controllers)).cancelControllers();
                           ref.read(navigationController.notifier).back(context);
                         },
                         child: Text(
@@ -77,7 +77,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         style: ElevatedButton.styleFrom(
                           primary: context.theme.backgroundColor,
                         ),
-                        onPressed: () => ref.read(filterSubmitController(controllers)).resetControllers(),
+                        onPressed: () => ref.read(submitFilterController(controllers)).resetControllers(),
                         child: Text(
                           context.tr.reset,
                           style: ktHeading4.copyWith(
@@ -95,7 +95,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         onPressed: () {
                           onSubmit();
                           hasSubmit.value = true;
-                          ref.read(filterSubmitController(controllers)).submitControllers();
+                          ref.read(submitFilterController(controllers)).submitControllers();
                           ref.read(navigationController.notifier).back(context);
                         },
                         child: Text(

@@ -1,11 +1,16 @@
-import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/src/characters/characters_constants.dart' as constants;
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/sort_filter_model.dart';
 
-class SortFilterController extends FilterController<SortFilterState> {
+final AutoDisposeStateNotifierProvider<FilterSortController, SortFilterState> filterSortController = StateNotifierProvider.autoDispose<FilterSortController, SortFilterState>(
+    (AutoDisposeStateNotifierProviderRef<FilterSortController, SortFilterState> ref) => FilterSortController(constants.name));
+
+class FilterSortController extends FilterController<SortFilterState> {
   final String selected;
 
-  SortFilterController(this.selected)
+  FilterSortController(this.selected)
       : super(
           SortFilterState(
             filter: SortFilterModel(selected: selected),

@@ -2,32 +2,12 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/src/characters/characters_constants.dart' as constants;
 import 'package:little_teyvat/src/characters/models/character_card_model.dart';
-import 'package:little_teyvat/src/filters/controllers/element_filter_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/rarity_filter_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/sort_filter_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/states/element_filter_state.dart';
-import 'package:little_teyvat/src/filters/controllers/states/rarity_filter_state.dart';
-import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
-import 'package:little_teyvat/src/filters/controllers/states/weapon_filter_state.dart';
-import 'package:little_teyvat/src/filters/controllers/weapon_filter_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_element_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_rarity_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_sort_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_weapon_controller.dart';
 import 'package:little_teyvat/src/filters/models/element_filter_model.dart';
 import 'package:little_teyvat/src/filters/models/weapon_filter_model.dart';
-
-final AutoDisposeStateNotifierProvider<RarityFilterController, RarityFilterState> characterRarityFilterController =
-    StateNotifierProvider.autoDispose<RarityFilterController, RarityFilterState>(
-        (AutoDisposeStateNotifierProviderRef<RarityFilterController, RarityFilterState> ref) => RarityFilterController());
-
-final AutoDisposeStateNotifierProvider<ElementFilterController, ElementFilterState> characterElementFilterController =
-    StateNotifierProvider.autoDispose<ElementFilterController, ElementFilterState>(
-        (AutoDisposeStateNotifierProviderRef<ElementFilterController, ElementFilterState> ref) => ElementFilterController());
-
-final AutoDisposeStateNotifierProvider<WeaponFilterController, WeaponFilterState> characterWeaponFilterController =
-    StateNotifierProvider.autoDispose<WeaponFilterController, WeaponFilterState>(
-        (AutoDisposeStateNotifierProviderRef<WeaponFilterController, WeaponFilterState> ref) => WeaponFilterController());
-
-final AutoDisposeStateNotifierProvider<SortFilterController, SortFilterState> characterSortFilterController =
-    StateNotifierProvider.autoDispose<SortFilterController, SortFilterState>(
-        (AutoDisposeStateNotifierProviderRef<SortFilterController, SortFilterState> ref) => SortFilterController(constants.name));
 
 final AutoDisposeStateNotifierProviderFamily<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>> filterCharactersController =
     StateNotifierProvider.family.autoDispose<FilterCharactersController, IList<CharacterCardModel>, IList<CharacterCardModel>>(
@@ -44,9 +24,9 @@ class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>
 
   /// Filter characters by rarity, element and weapon.
   void _filterCharacters() {
-    final double rarityFilter = read(characterRarityFilterController).filter;
-    final ElementFilterModel elementFilter = read(characterElementFilterController).filter;
-    final WeaponFilterModel weaponFilter = read(characterWeaponFilterController).filter;
+    final double rarityFilter = read(filterRarityController).filter;
+    final ElementFilterModel elementFilter = read(filterElementController).filter;
+    final WeaponFilterModel weaponFilter = read(filterWeaponController).filter;
 
     final IMap<String, bool> elementFilters = <String, bool>{
       constants.pyro: elementFilter.pyro,
@@ -83,8 +63,8 @@ class FilterCharactersController extends StateNotifier<IList<CharacterCardModel>
 
   /// Sorts characters in ascending or descending order by name or element.
   void _sortCharacters() {
-    final String selected = read(characterSortFilterController).filter.selected;
-    final bool isAscendingOrder = read(characterSortFilterController).filter.isAscendingOrder;
+    final String selected = read(filterSortController).filter.selected;
+    final bool isAscendingOrder = read(filterSortController).filter.isAscendingOrder;
 
     state = state.sort((CharacterCardModel a, CharacterCardModel b) {
       final int sortByName;

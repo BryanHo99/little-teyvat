@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart' hide Element;
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/src/filters/controllers/rarity_filter_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/states/rarity_filter_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:little_teyvat/extensions/build_context_extension.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_rarity_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/states/rarity_filter_state.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class RarityFilter extends StatelessWidget {
-  final AutoDisposeStateNotifierProvider<RarityFilterController, RarityFilterState> controller;
+  final AutoDisposeStateNotifierProvider<FilterRarityController, RarityFilterState> controller;
   final double maxRating;
   final double minRating;
 

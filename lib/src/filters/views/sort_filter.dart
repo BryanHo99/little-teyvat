@@ -2,14 +2,14 @@ import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
-import 'package:little_teyvat/src/filters/controllers/sort_filter_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/abstracts/filter_sort_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class SortFilter extends StatelessWidget {
   final IList<SortDropdownMenuItemModel> dropdownMenuItems;
-  final AutoDisposeStateNotifierProvider<SortFilterController, SortFilterState> controller;
+  final AutoDisposeStateNotifierProvider<FilterSortController, SortFilterState> controller;
 
   const SortFilter({
     Key? key,
