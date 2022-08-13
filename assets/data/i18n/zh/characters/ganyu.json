@@ -139,32 +139,32 @@
   ],
 	"constellations": [
     {
-      "id": "ganyu_c_1",
+      "id": "ganyu_c1",
       "name": "Dew-Drinker",
       "description": "Taking DMG from a Charge Level 2 Frostflake Arrow or Frostflake Arrow Bloom decreases opponents' Cryo RES by 15% for 6s.\n\nA hit regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hit the target."
     },
     {
-      "id": "ganyu_c_2",
+      "id": "ganyu_c2",
       "name": "The Auspicious",
       "description": "Trail of the Qilin gains 1 additional charge."
     },
     {
-      "id": "ganyu_c_3",
+      "id": "ganyu_c3",
       "name": "Cloud-Strider",
       "description": "Increases the Level of Celestial Shower by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "ganyu_c_4",
+      "id": "ganyu_c4",
       "name": "Westward Sojourn",
       "description": "Opponents standing within the AoE of Celestial Shower take increased DMG. This effect strengthens over time.\n\nIncreased DMG taken begins at 5% and increases by 5% every 3s, up to a maximum of 25%.\n\nThe effect lingers for 3s after the opponent leaves the AoE."
     },
     {
-      "id": "ganyu_c_5",
+      "id": "ganyu_c5",
       "name": "The Merciful",
       "description": "Increases the Level of Trail of the Qilin by 3.\n\nMaximum upgrade level is 15."
     },
     {
-      "id": "ganyu_c_6",
+      "id": "ganyu_c6",
       "name": "The Clement",
       "description": "Using Trail of the Qilin causes the next Frostflake Arrow shot within 30s to not require charging."
     }
