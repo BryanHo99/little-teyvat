@@ -4,8 +4,9 @@ import 'package:little_teyvat/src/filters/controllers/abstracts/filter_controlle
 import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/sort_filter_model.dart';
 
-final AutoDisposeStateNotifierProvider<FilterSortController, SortFilterState> filterSortController = StateNotifierProvider.autoDispose<FilterSortController, SortFilterState>(
-    (AutoDisposeStateNotifierProviderRef<FilterSortController, SortFilterState> ref) => FilterSortController(constants.name));
+final AutoDisposeStateNotifierProvider<FilterSortController, SortFilterState> filterSortController =
+    StateNotifierProvider.autoDispose<FilterSortController, SortFilterState>(
+        (AutoDisposeStateNotifierProviderRef<FilterSortController, SortFilterState> ref) => FilterSortController(constants.name));
 
 class FilterSortController extends FilterController<SortFilterState> {
   final String selected;
