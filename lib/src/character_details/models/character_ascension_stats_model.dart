@@ -18,8 +18,7 @@ class CharacterAscensionStatsModel with _$CharacterAscensionStatsModel implement
     required bool isAscension,
   }) = _CharacterAscensionStatModel;
 
-  factory CharacterAscensionStatsModel.fromJson(Map<String, dynamic> json) =>
-      _$CharacterAscensionStatsModelFromJson(json);
+  factory CharacterAscensionStatsModel.fromJson(Map<String, dynamic> json) => _$CharacterAscensionStatsModelFromJson(json);
 
   @override
   IList<String> getStat() {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart' hide Element;
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/app_asset_paths.dart' as assets;
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_element_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_element_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/element_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/element_filter_model.dart';
 import 'package:little_teyvat/src/filters/views/filter_icon_button.dart';

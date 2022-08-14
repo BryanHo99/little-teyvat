@@ -6,11 +6,11 @@ import 'package:little_teyvat/src/characters/controllers/characters_controller.d
 import 'package:little_teyvat/src/characters/models/character_card_model.dart';
 import 'package:little_teyvat/src/characters/views/character_card.dart';
 import 'package:little_teyvat/src/characters/views/character_filter_bottom_sheet.dart';
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_element_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_rarity_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_sort_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_weapon_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_characters_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_element_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_rarity_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_sort_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_weapon_controller.dart';
 import 'package:little_teyvat/src/shared/views/basic_scaffold.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/src/shared/views/fade_wrapper.dart';

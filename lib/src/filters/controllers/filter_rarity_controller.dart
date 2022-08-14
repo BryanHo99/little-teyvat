@@ -1,5 +1,5 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:little_teyvat/src/filters/controllers/abstracts/filter_controller.dart';
+import 'package:little_teyvat/src/filters/controllers/filter_controller.dart';
 import 'package:little_teyvat/src/filters/controllers/states/rarity_filter_state.dart';
 
 final AutoDisposeStateNotifierProvider<FilterRarityController, RarityFilterState> filterRarityController =
