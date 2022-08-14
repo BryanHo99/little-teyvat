@@ -105,7 +105,7 @@ class CharacterProfile extends HookWidget {
                                 opacity: 0.55,
                                 child: FadeInImage(
                                   placeholder: MemoryImage(kTransparentImage),
-                                  image: AssetImage(helper.getRegionPath(character.region)),
+                                  image: AssetImage(helper.getRegionImagePath(character.region)),
                                 ),
                               ),
                               FadeInImage(
@@ -143,14 +143,14 @@ class CharacterProfile extends HookWidget {
                                       const SizedBox(height: _sizedBoxHeight),
                                       FadeInImage(
                                         placeholder: MemoryImage(kTransparentImage),
-                                        image: AssetImage(helper.getElementPath(character.element)),
+                                        image: AssetImage(helper.getElementImagePath(character.element)),
                                         width: 25.0,
                                       ),
                                     ],
                                   ),
                                   FadeInImage(
                                     placeholder: MemoryImage(kTransparentImage),
-                                    image: AssetImage(helper.getWeaponTypePath(character.weaponType)),
+                                    image: AssetImage(helper.getWeaponTypeImagePath(character.weaponType)),
                                     width: 40.0,
                                   ),
                                 ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/generated/l10n.dart';
 import 'package:little_teyvat/routes/route_constants.dart' as routes;
 import 'package:little_teyvat/routes/router.dart' as router;
@@ -7,7 +8,6 @@ import 'package:little_teyvat/src/settings/controllers/language_controller.dart'
 import 'package:little_teyvat/src/settings/controllers/theme_controller.dart';
 import 'package:little_teyvat/src/shared/views/error_view.dart';
 import 'package:little_teyvat/themes/themes.dart' as themes;
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class App extends ConsumerWidget {
   const App({Key? key}) : super(key: key);

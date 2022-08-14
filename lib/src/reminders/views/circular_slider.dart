@@ -49,7 +49,7 @@ class CircularSlider extends StatelessWidget {
             child: FadeInImage(
               placeholder: MemoryImage(kTransparentImage),
               image: AssetImage(
-                helper.getItemPath(itemKey),
+                helper.getItemImagePath(itemKey),
               ),
             ),
           ),

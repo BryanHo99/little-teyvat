@@ -17,7 +17,7 @@ class CharactersService {
     final String languageCode = read(languageService).getLanguageKey();
     final List<Map<String, dynamic>> jsonList = <Map<String, dynamic>>[];
 
-    for (String characterPath in helper.getCharacterPaths(languageCode)) {
+    for (String characterPath in await helper.getCharacterPaths(languageCode)) {
       jsonList.add(await helper.getJson(characterPath));
     }
 

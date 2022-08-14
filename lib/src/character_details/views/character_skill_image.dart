@@ -34,7 +34,7 @@ class CharacterSkillImage extends ConsumerWidget {
           aspectRatio: 1.0,
           child: FadeInImage(
             placeholder: MemoryImage(kTransparentImage),
-            image: AssetImage(helper.getSkillPath(id)),
+            image: AssetImage(helper.getSkillImagePath(id)),
           ),
         ),
       ),

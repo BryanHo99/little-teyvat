@@ -59,7 +59,7 @@ class CharacterCard extends StatelessWidget {
                     right: 8.0,
                     child: FadeInImage(
                       placeholder: MemoryImage(kTransparentImage),
-                      image: AssetImage(helper.getElementPath(element)),
+                      image: AssetImage(helper.getElementImagePath(element)),
                       width: constants.elementImageWidth,
                     ),
                   ),
@@ -100,7 +100,7 @@ class CharacterCard extends StatelessWidget {
                                   (String material) {
                                     return FadeInImage(
                                       placeholder: MemoryImage(kTransparentImage),
-                                      image: AssetImage(helper.getItemPath(material)),
+                                      image: AssetImage(helper.getItemImagePath(material)),
                                       width: constants.characterMaterialImageWidth,
                                     );
                                   },

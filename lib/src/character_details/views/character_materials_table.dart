@@ -55,7 +55,7 @@ class CharacterMaterialsTable extends StatelessWidget {
                                     constraints: const BoxConstraints(maxWidth: 40),
                                     child: FadeInImage(
                                       placeholder: MemoryImage(kTransparentImage),
-                                      image: AssetImage(helper.getItemPath(material.image)),
+                                      image: AssetImage(helper.getItemImagePath(material.image)),
                                     ),
                                   ),
                                   Text('x${material.amount}'),

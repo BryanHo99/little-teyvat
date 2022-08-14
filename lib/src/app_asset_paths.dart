@@ -1,5 +1,3 @@
-import 'package:fast_immutable_collections/fast_immutable_collections.dart';
-
 // Base paths.
 const String imagesBasePath = 'assets/images';
 const String dataBasePath = 'assets/data';
@@ -56,29 +54,3 @@ const String charactersPath = 'characters';
 // Stats data.
 const String statsDataPath = '$dataBasePath/stats';
 const String characterStatsDataPath = '$statsDataPath/characters';
-
-const IList<String> charactersJsonPaths = IListConst<String>(
-  <String>[
-    'albedo.json',
-    'amber.json',
-    'barbara.json',
-    'beidou.json',
-    'bennett.json',
-    'chongyun.json',
-    'diluc.json',
-    'diona.json',
-    'eula.json',
-    'fischl.json',
-    'ganyu.json',
-    'hu_tao.json',
-    'jean.json',
-    'kaedehara_kazuha.json',
-    'kaeya.json',
-    'kamisato_ayaka.json',
-    'keqing.json',
-    'klee.json',
-    'lisa.json',
-    'mona.json',
-    'sangonomiya_kokomi.json',
-  ],
-);
