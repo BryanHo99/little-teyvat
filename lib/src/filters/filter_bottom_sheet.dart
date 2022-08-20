@@ -61,7 +61,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                         ),
                         onPressed: () {
                           ref.read(submitFilterController(controllers)).cancelControllers();
-                          ref.read(navigationController.notifier).back(context);
+                          ref.read(navigationController).back(context);
                         },
                         child: Text(
                           context.tr.cancel,
@@ -96,7 +96,7 @@ class FilterBottomSheet extends HookConsumerWidget {
                           onSubmit();
                           hasSubmit.value = true;
                           ref.read(submitFilterController(controllers)).submitControllers();
-                          ref.read(navigationController.notifier).back(context);
+                          ref.read(navigationController).back(context);
                         },
                         child: Text(
                           context.tr.filter,

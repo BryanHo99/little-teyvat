@@ -124,7 +124,7 @@ class CharacterCard extends StatelessWidget {
                                 name: name,
                               );
 
-                              ref.read(navigationController.notifier).navigate(context, routes.characterDetails, args);
+                              ref.read(navigationController).navigate(context, routes.characterDetails, args);
                             },
                           ),
                         );

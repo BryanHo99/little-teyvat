@@ -12,7 +12,7 @@ class AppDrawer extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final IList<DrawerItemModel> drawerItems = ref.watch(appDrawerController).initDrawerItems(context);
+    final IList<DrawerItemModel> drawerItems = ref.watch(appDrawerController(context));
 
     return Drawer(
       child: ListView(
@@ -24,7 +24,7 @@ class AppDrawer extends ConsumerWidget {
               drawerItemImageIcon: drawerItem.imageIcon,
               drawerItemTitle: drawerItem.title,
               drawerItemRoute: drawerItem.routeName,
-              onTap: () => ref.read(navigationController.notifier).navigateDrawer(context, drawerItem.routeName),
+              onTap: () => ref.read(navigationController).navigateDrawer(context, drawerItem.routeName),
             ),
           ),
         ],

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/routes/route_constants.dart' as routes;
 
-final StateNotifierProvider<NavigationController, String> navigationController =
-    StateNotifierProvider<NavigationController, String>((StateNotifierProviderRef<NavigationController, String> ref) => NavigationController._(routes.home));
+final Provider<NavigationController> navigationController =
+    Provider<NavigationController>((ProviderRef<NavigationController> ref) => NavigationController._(routes.home));
 
 class NavigationController extends StateNotifier<String> {
   NavigationController._(String route) : super(route);
