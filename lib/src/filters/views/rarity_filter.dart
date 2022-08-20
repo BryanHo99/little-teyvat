@@ -3,11 +3,9 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_rarity_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/states/rarity_filter_state.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class RarityFilter extends StatelessWidget {
-  final AutoDisposeStateNotifierProvider<FilterRarityController, RarityFilterState> controller;
   final double maxRating;
   final double minRating;
 
@@ -15,7 +13,6 @@ class RarityFilter extends StatelessWidget {
     Key? key,
     this.minRating = 0.0,
     this.maxRating = 5.0,
-    required this.controller,
   }) : super(key: key);
 
   @override
@@ -32,7 +29,7 @@ class RarityFilter extends StatelessWidget {
           child: RepaintBoundary(
             child: Consumer(
               builder: (BuildContext context, WidgetRef ref, Widget? child) {
-                final double rarityFilter = ref.watch(controller).filter;
+                final double rarityFilter = ref.watch(filterRarityController).filter;
 
                 return RatingBar.builder(
                   initialRating: rarityFilter,
@@ -44,7 +41,7 @@ class RarityFilter extends StatelessWidget {
                     Icons.star_rounded,
                     color: kcYellow600,
                   ),
-                  onRatingUpdate: (double rating) => ref.read(controller.notifier).toggleRarity(rating),
+                  onRatingUpdate: (double rating) => ref.read(filterRarityController.notifier).toggleRarity(rating),
                 );
               },
             ),

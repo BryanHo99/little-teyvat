@@ -3,18 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:little_teyvat/extensions/build_context_extension.dart';
 import 'package:little_teyvat/src/filters/controllers/filter_sort_controller.dart';
-import 'package:little_teyvat/src/filters/controllers/states/sort_filter_state.dart';
 import 'package:little_teyvat/src/filters/models/sort_dropdown_menu_item_model.dart';
 import 'package:little_teyvat/themes/themes.dart';
 
 class SortFilter extends StatelessWidget {
   final IList<SortDropdownMenuItemModel> dropdownMenuItems;
-  final AutoDisposeStateNotifierProvider<FilterSortController, SortFilterState> controller;
 
   const SortFilter({
     Key? key,
     required this.dropdownMenuItems,
-    required this.controller,
   }) : super(key: key);
 
   @override
@@ -28,8 +25,8 @@ class SortFilter extends StatelessWidget {
         ),
         Consumer(
           builder: (BuildContext context, WidgetRef ref, Widget? child) {
-            final String selected = ref.watch(controller).filter.selected;
-            final bool isAscendingOrder = ref.watch(controller).filter.isAscendingOrder;
+            final String selected = ref.watch(filterSortController).filter.selected;
+            final bool isAscendingOrder = ref.watch(filterSortController).filter.isAscendingOrder;
 
             return Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -49,7 +46,7 @@ class SortFilter extends StatelessWidget {
                         ),
                       ),
                     ],
-                    onChanged: (String? value) => ref.read(controller.notifier).toggleSortType(value!),
+                    onChanged: (String? value) => ref.read(filterSortController.notifier).toggleSortType(value!),
                   ),
                 ),
                 const SizedBox(
@@ -65,7 +62,7 @@ class SortFilter extends StatelessWidget {
                       ),
                       Switch.adaptive(
                         value: isAscendingOrder,
-                        onChanged: (bool value) => ref.read(controller.notifier).toggleSortOrder(value),
+                        onChanged: (bool value) => ref.read(filterSortController.notifier).toggleSortOrder(value),
                       ),
                     ],
                   ),

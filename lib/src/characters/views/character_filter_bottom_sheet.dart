@@ -27,7 +27,7 @@ class CharacterFilterBottomSheet extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final FilterCharactersController filterController = ref.watch(filterCharactersController(characters).notifier);
-    final IList<SortDropdownMenuItemModel> dropdownMenuItems = ref.watch(filterCharactersSortDropdownController).initDropdownItems(context);
+    final IList<SortDropdownMenuItemModel> dropdownMenuItems = ref.watch(filterCharactersSortDropdownController(context));
 
     return FilterBottomSheet(
       controllers: <AutoDisposeStateNotifierProvider<FilterController<Object>, Object>>[
@@ -38,13 +38,10 @@ class CharacterFilterBottomSheet extends ConsumerWidget {
       ].lock,
       onSubmit: () => filterController.onSubmit(),
       children: <Widget>[
-        RarityFilter(controller: filterRarityController),
-        ElementFilter(controller: filterElementController),
-        WeaponFilter(controller: filterWeaponController),
-        SortFilter(
-          dropdownMenuItems: dropdownMenuItems,
-          controller: filterSortController,
-        ),
+        const RarityFilter(),
+        const ElementFilter(),
+        const WeaponFilter(),
+        SortFilter(dropdownMenuItems: dropdownMenuItems),
       ],
     );
   }
